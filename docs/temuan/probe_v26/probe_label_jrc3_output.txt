@@ -1,0 +1,26 @@
+--- proyeksi native band occurrence ---
+crs      : EPSG:4326
+transform: [0.00026949458523585647, 0, -180.00001488697754, 0, -0.00026949458523585647, 84.00011474509029]
+--- histogram & threshold mask band (grid WGS default) ---
+min/max mask: {'occurrence_max': 1, 'occurrence_min': 0}
+  mask_gt0: 211137
+  mask_gt025: 86637
+  mask_gt05: 58222
+  mask_gt075: 32520
+  mask_ge1: 1001
+--- banding: mask() vs nilai occ vs unmask, grid WGS & 32749 ---
+[WGS] AOI=1469555 | mask>0=211137 (14.37%) | occ bernilai=63499 (4.32%) | updateMask(occ)=187777 (12.78%) | updateMask(mask)=63499 (4.32%)
+[EPSG:32749] AOI=1448210 | mask>0=208170 (14.37%) | occ bernilai=62543 (4.32%) | updateMask(occ)=185098 (12.78%) | updateMask(mask)=62543 (4.32%)
+
+KESIMPULAN:
+1. Mask band 'occurrence' JRC V1.4 = FRAKSIONAL 0..1 (bukan binari):
+   threshold mencakup 1.001 px >=1; 32.520 >0,75; 58.222 >0,5; 86.637 >0,25; 211.137 >0
+   (semuanya Sigma berbobot mask, lihat probe 4).
+2. Angka kernel "JRC valid = 187.777 (12,78%)" = hasil
+   `constant(1).updateMask(occurrence)` di-reduceRegion sum = Sigma mask
+   (luas efektif berbobot), bukan jumlah piksel. Count sahihnya 189.345 px (12,88%).
+3. Jumlah piksel yang BENAR-BENAR memiliki nilai occ (0..100) hanya sekitar 63.499 px
+   (4,32% AOI). Selisih footprint-vs-nilai diagnosis tetap terbuka.
+4. reduceRegion.sum() pada band boolean masih valid sebagai ukuran luas efektif asalkan
+   definisinya diperjelas; untuk JUMLAH PIKSEL SAHIH gunakan Reducer.count() atau histogram
+   (frequencyHistogram menghitung piksel terbuka sekali per nilai).

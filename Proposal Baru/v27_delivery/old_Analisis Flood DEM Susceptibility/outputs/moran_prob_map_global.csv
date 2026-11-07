@@ -1,0 +1,4 @@
+n,I,E_I,perm_mean,perm_sd,z_perm,p_two_sided,p_upper,p_lower,n_perm,p_min_resolvable,scope,dem,weights,perm_method,seed
+3292156,0.9700639565486319,-3.0375240533935977e-07,-8.422871524798549e-06,0.0002707587669423358,3582.792130334806,0.001,0.001,1.0,999,0.001,peta_probabilitas,srtm,"queen 8 tetangga, row-standardized",permutasi kondisional (acak nilai lintas piksel valid),42
+3292156,0.9648176499144736,-3.0375240533935977e-07,-6.256882302595841e-06,0.00027358499367241,3526.596593788525,0.001,0.001,1.0,999,0.001,peta_probabilitas,glo30,"queen 8 tetangga, row-standardized",permutasi kondisional (acak nilai lintas piksel valid),42
+3277652,0.9673027409324966,-3.050965462765865e-07,1.3043469866714154e-05,0.00027794282251973607,3480.175126284993,0.001,0.001,1.0,999,0.001,peta_probabilitas,aw3d30,"queen 8 tetangga, row-standardized",permutasi kondisional (acak nilai lintas piksel valid),42

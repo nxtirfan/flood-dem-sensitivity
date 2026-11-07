@@ -1,0 +1,82 @@
+pair,metric,lc_code,lc_name,value
+srtm vs glo30,mean_abs_delta_prob,10,Tree cover,0.055448563387734025
+srtm vs glo30,mean_abs_delta_prob,20,Shrubland,0.04000917237955756
+srtm vs glo30,mean_abs_delta_prob,30,Grassland,0.044121301462879826
+srtm vs glo30,mean_abs_delta_prob,40,Cropland,0.040595282046354625
+srtm vs glo30,mean_abs_delta_prob,50,Built-up,0.04703825822013221
+srtm vs glo30,mean_abs_delta_prob,60,Bare/sparse vegetation,0.05046623050142472
+srtm vs glo30,mean_abs_delta_prob,80,Water,0.05618526255739604
+srtm vs glo30,mean_abs_delta_prob,90,Wetland,0.03858995191815085
+srtm vs glo30,mean_abs_delta_prob,95,Mangroves,0.03790723364901882
+srtm vs glo30,agreement_rate,10,Tree cover,0.691156584090258
+srtm vs glo30,agreement_rate,20,Shrubland,0.8601622842483897
+srtm vs glo30,agreement_rate,30,Grassland,0.7696012402533025
+srtm vs glo30,agreement_rate,40,Cropland,0.8025090139691061
+srtm vs glo30,agreement_rate,50,Built-up,0.7539971567867739
+srtm vs glo30,agreement_rate,60,Bare/sparse vegetation,0.7740934262995611
+srtm vs glo30,agreement_rate,80,Water,0.7364277828699354
+srtm vs glo30,agreement_rate,90,Wetland,0.8194392806951701
+srtm vs glo30,agreement_rate,95,Mangroves,0.8190930796249528
+srtm vs glo30,prop_class_changed,10,Tree cover,0.30884341590974174
+srtm vs glo30,prop_class_changed,20,Shrubland,0.1398377157516103
+srtm vs glo30,prop_class_changed,30,Grassland,0.23039875974669752
+srtm vs glo30,prop_class_changed,40,Cropland,0.19749098603089388
+srtm vs glo30,prop_class_changed,50,Built-up,0.24600284321322602
+srtm vs glo30,prop_class_changed,60,Bare/sparse vegetation,0.22590657370043885
+srtm vs glo30,prop_class_changed,80,Water,0.26357221713006485
+srtm vs glo30,prop_class_changed,90,Wetland,0.18056071930482984
+srtm vs glo30,prop_class_changed,95,Mangroves,0.18090692037504713
+srtm vs aw3d30,mean_abs_delta_prob,10,Tree cover,0.0293536347628293
+srtm vs aw3d30,mean_abs_delta_prob,20,Shrubland,0.035551228385722694
+srtm vs aw3d30,mean_abs_delta_prob,30,Grassland,0.032801566229688335
+srtm vs aw3d30,mean_abs_delta_prob,40,Cropland,0.04095010834697608
+srtm vs aw3d30,mean_abs_delta_prob,50,Built-up,0.03013578911271365
+srtm vs aw3d30,mean_abs_delta_prob,60,Bare/sparse vegetation,0.034598798565734494
+srtm vs aw3d30,mean_abs_delta_prob,80,Water,0.04013859831577131
+srtm vs aw3d30,mean_abs_delta_prob,90,Wetland,0.038132849475691184
+srtm vs aw3d30,mean_abs_delta_prob,95,Mangroves,0.03420490456688336
+srtm vs aw3d30,agreement_rate,10,Tree cover,0.8455493944146949
+srtm vs aw3d30,agreement_rate,20,Shrubland,0.8174999302902713
+srtm vs aw3d30,agreement_rate,30,Grassland,0.8317933320487121
+srtm vs aw3d30,agreement_rate,40,Cropland,0.8012304030096603
+srtm vs aw3d30,agreement_rate,50,Built-up,0.8364874041570121
+srtm vs aw3d30,agreement_rate,60,Bare/sparse vegetation,0.8166126705580126
+srtm vs aw3d30,agreement_rate,80,Water,0.7320552179850708
+srtm vs aw3d30,agreement_rate,90,Wetland,0.8197356010862542
+srtm vs aw3d30,agreement_rate,95,Mangroves,0.8136910723097912
+srtm vs aw3d30,prop_class_changed,10,Tree cover,0.15445060558530496
+srtm vs aw3d30,prop_class_changed,20,Shrubland,0.1825000697097287
+srtm vs aw3d30,prop_class_changed,30,Grassland,0.16820666795128775
+srtm vs aw3d30,prop_class_changed,40,Cropland,0.19876959699033972
+srtm vs aw3d30,prop_class_changed,50,Built-up,0.16351259584298833
+srtm vs aw3d30,prop_class_changed,60,Bare/sparse vegetation,0.1833873294419873
+srtm vs aw3d30,prop_class_changed,80,Water,0.26794478201492916
+srtm vs aw3d30,prop_class_changed,90,Wetland,0.1802643989137455
+srtm vs aw3d30,prop_class_changed,95,Mangroves,0.18630892769020865
+glo30 vs aw3d30,mean_abs_delta_prob,10,Tree cover,0.05220680048839384
+glo30 vs aw3d30,mean_abs_delta_prob,20,Shrubland,0.03488110992157793
+glo30 vs aw3d30,mean_abs_delta_prob,30,Grassland,0.04743620659136984
+glo30 vs aw3d30,mean_abs_delta_prob,40,Cropland,0.04115549541914335
+glo30 vs aw3d30,mean_abs_delta_prob,50,Built-up,0.045508112505418294
+glo30 vs aw3d30,mean_abs_delta_prob,60,Bare/sparse vegetation,0.047970288114133515
+glo30 vs aw3d30,mean_abs_delta_prob,80,Water,0.05492245555466897
+glo30 vs aw3d30,mean_abs_delta_prob,90,Wetland,0.04010006619181922
+glo30 vs aw3d30,mean_abs_delta_prob,95,Mangroves,0.0406922911766121
+glo30 vs aw3d30,agreement_rate,10,Tree cover,0.7278879860231523
+glo30 vs aw3d30,agreement_rate,20,Shrubland,0.8032791456375652
+glo30 vs aw3d30,agreement_rate,30,Grassland,0.7492046541294585
+glo30 vs aw3d30,agreement_rate,40,Cropland,0.7997862305370627
+glo30 vs aw3d30,agreement_rate,50,Built-up,0.7581352044685633
+glo30 vs aw3d30,agreement_rate,60,Bare/sparse vegetation,0.7559239907033771
+glo30 vs aw3d30,agreement_rate,80,Water,0.6531972999419556
+glo30 vs aw3d30,agreement_rate,90,Wetland,0.8028165745577304
+glo30 vs aw3d30,agreement_rate,95,Mangroves,0.7900075111033702
+glo30 vs aw3d30,prop_class_changed,10,Tree cover,0.27211201397684764
+glo30 vs aw3d30,prop_class_changed,20,Shrubland,0.19672085436243483
+glo30 vs aw3d30,prop_class_changed,30,Grassland,0.25079534587054136
+glo30 vs aw3d30,prop_class_changed,40,Cropland,0.20021376946293712
+glo30 vs aw3d30,prop_class_changed,50,Built-up,0.24186479553143686
+glo30 vs aw3d30,prop_class_changed,60,Bare/sparse vegetation,0.24407600929662274
+glo30 vs aw3d30,prop_class_changed,80,Water,0.34680270005804453
+glo30 vs aw3d30,prop_class_changed,90,Wetland,0.19718342544226966
+glo30 vs aw3d30,prop_class_changed,95,Mangroves,0.20999248889662978

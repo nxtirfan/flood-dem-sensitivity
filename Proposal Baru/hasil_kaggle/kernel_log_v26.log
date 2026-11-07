@@ -1,0 +1,241 @@
+[{"stream_name":"stderr","time":7.577216717,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.577265473,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":8.563240617,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.563270083,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.563279575,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.563282604,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.221087458,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.221135888,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.221141156,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.221144916,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":22.400027428,"data":"geemap coreutils dipatch (mode tanpa Google Maps API key).\n"}
+,{"stream_name":"stdout","time":24.040205859,"data":"Output dir: outputs_dem_sensitivity\n"}
+,{"stream_name":"stdout","time":24.241121085,"data":"/kaggle/input berisi: ['datasets']\n"}
+,{"stream_name":"stdout","time":24.241156461,"data":"Kandidat kredensial ditemukan via glob: ['/kaggle/input/datasets/nxtirfan/gee-service-account-credential/gee-service-account.json']\n"}
+,{"stream_name":"stdout","time":25.254404144,"data":"GEE siap via service account: nxtirfan@ee-irfan-banjir-2026.iam.gserviceaccount.com\n"}
+,{"stream_name":"stderr","time":25.489890721,"data":"/usr/local/lib/python3.13/dist-packages/ee/deprecation.py:215: DeprecationWarning: \n"}
+,{"stream_name":"stderr","time":25.489924783,"data":"\n"}
+,{"stream_name":"stderr","time":25.489929253,"data":"Attention required for FAO/GAUL/2015/level2! You are using a deprecated asset.\n"}
+,{"stream_name":"stderr","time":25.489933195,"data":"To make sure your code keeps working, please update it.\n"}
+,{"stream_name":"stderr","time":25.489937053,"data":"This dataset has been superseded by FAO/GAUL/2025/level2\n"}
+,{"stream_name":"stderr","time":25.489940743,"data":"\n"}
+,{"stream_name":"stderr","time":25.489944278,"data":"Learn more: https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level2\n"}
+,{"stream_name":"stderr","time":25.489948205,"data":"\n"}
+,{"stream_name":"stderr","time":25.489952461,"data":"  warnings.warn(warning, category=DeprecationWarning)\n"}
+,{"stream_name":"stderr","time":25.489956476,"data":"\n"}
+,{"stream_name":"stderr","time":25.489960537,"data":"/usr/local/lib/python3.13/dist-packages/ee/deprecation.py:215: DeprecationWarning: \n"}
+,{"stream_name":"stderr","time":25.489964646,"data":"\n"}
+,{"stream_name":"stderr","time":25.489968669,"data":"Attention required for FAO/GAUL/2015/level2! You are using a deprecated asset.\n"}
+,{"stream_name":"stderr","time":25.4899728,"data":"To make sure your code keeps working, please update it.\n"}
+,{"stream_name":"stderr","time":25.489976349,"data":"This dataset has been superseded by FAO/GAUL/2025/level2\n"}
+,{"stream_name":"stderr","time":25.490002846,"data":"\n"}
+,{"stream_name":"stderr","time":25.490006379,"data":"Learn more: https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level2\n"}
+,{"stream_name":"stderr","time":25.490010017,"data":"\n"}
+,{"stream_name":"stderr","time":25.490013381,"data":"  warnings.warn(warning, category=DeprecationWarning)\n"}
+,{"stream_name":"stdout","time":26.340360578,"data":"Wilayah administratif terpilih: ['Demak', 'Kota Semarang']\n"}
+,{"stream_name":"stdout","time":26.340396781,"data":"Konfigurasi eksperimen: ['srtm', 'glo30', 'aw3d30']\n"}
+,{"stream_name":"stdout","time":26.340403213,"data":"Kunci: flood inventory, prediktor non-DEM, sampling, split, dan parameter RF identik.\n"}
+,{"stream_name":"stdout","time":26.381722683,"data":"Fungsi bantu siap.\n"}
+,{"stream_name":"stdout","time":26.419677396,"data":"Flood inventory selesai dibuat (dibentuk satu kali, dipakai ketiga eksperimen).\n"}
+,{"stream_name":"stdout","time":32.401389093,"data":"Thumbnail tersimpan: outputs_dem_sensitivity/fig_flood_label.png\n"}
+,{"stream_name":"stdout","time":33.484810318,"data":"Prediktor non-DEM (dikunci):\n"}
+,{"stream_name":"stdout","time":33.48485223,"data":"['hand', 'upa_log', 'river_width', 'dist_river', 'dist_perm_water', 'rain_7d', 'rain_30d', 'ndvi', 'ndwi', 'mndwi', 'ndbi', 'landcover']\n"}
+,{"stream_name":"stdout","time":34.762938938,"data":"Luas per nilai MSK AW3D30 (m^2): {0: 1292843989.3590229, 3: 1439923.2405385936, 48: 10068551.12174838}\n"}
+,{"stream_name":"stdout","time":34.762978541,"data":"Nilai MSK dianggap valid: 0\n"}
+,{"stream_name":"stdout","time":34.762982058,"data":"Grid analisis: EPSG:32749 30 m (identik untuk ketiga DEM)\n"}
+,{"stream_name":"stdout","time":34.762985032,"data":"Offset vertikal rata-rata terhadap SRTM (m):\n"}
+,{"stream_name":"stdout","time":35.936573705,"data":"  glo30: -1.5601385335339437\n"}
+,{"stream_name":"stdout","time":37.064156517,"data":"  aw3d30: 0.3949452763161183\n"}
+,{"stream_name":"stdout","time":37.907294736,"data":"Total band prediktor: 27\n"}
+,{"stream_name":"stdout","time":37.90734744,"data":"['hand', 'upa_log', 'river_width', 'dist_river', 'dist_perm_water', 'rain_7d', 'rain_30d', 'ndvi', 'ndwi', 'mndwi', 'ndbi', 'landcover', 'elevation_srtm', 'slope_srtm', 'aspect_sin_srtm', 'aspect_cos_srtm', 'aspect_valid_srtm', 'elevation_glo30', 'slope_glo30', 'aspect_sin_glo30', 'aspect_cos_glo30', 'aspect_valid_glo30', 'elevation_aw3d30', 'slope_aw3d30', 'aspect_sin_aw3d30', 'aspect_cos_aw3d30', 'aspect_valid_aw3d30']\n"}
+,{"stream_name":"stdout","time":40.855515679,"data":"Peta selisih elevasi siap: srtm-glo30, srtm-aw3d30, glo30-aw3d30.\n"}
+,{"stream_name":"stdout","time":45.97193022,"data":"Histogram label piksel tersedia: {'0': 1410980.843137255, '1': 58573.82352941178}\n"}
+,{"stream_name":"stdout","time":45.971992043,"data":"Piksel non-flood tersedia: 1410980\n"}
+,{"stream_name":"stdout","time":45.972001512,"data":"Piksel flood tersedia    : 58573\n"}
+,{"stream_name":"stdout","time":56.618750487,"data":"[probe] piksel AOI (grid 30 m): 1469555\n"}
+,{"stream_name":"stdout","time":56.618789288,"data":"[probe] JRC valid: 187777 (12.78% dari AOI)\n"}
+,{"stream_name":"stdout","time":56.618802113,"data":"[probe] permanent_water (occ\u003e=80 \u0026 valid): 28948\n"}
+,{"stream_name":"stdout","time":56.618806669,"data":"[probe] label=0 total: 1410981\n"}
+,{"stream_name":"stdout","time":56.61881004,"data":"[probe] pool kelas-0 sabuk/v22: 123616 (8.76% label=0)\n"}
+,{"stream_name":"stdout","time":56.61881333,"data":"[probe] pool kelas-0 unmask0/v24: 1382033 (97.95% label=0)\n"}
+,{"stream_name":"stdout","time":56.618830651,"data":"Sampel per kelas yang diminta: 3000\n"}
+,{"stream_name":"stdout","time":56.618833398,"data":"Mode sampling v24 (FIX): no-data JRC diperlakukan BUKAN air.\n"}
+,{"stream_name":"stdout","time":60.33703009,"data":"Titik tahap-1 (stratifiedSample pada label ter-mask): 6000\n"}
+,{"stream_name":"stdout","time":135.526459613,"data":"Titik tahap-2 (pasca-sampleRegions): 5963\n"}
+,{"stream_name":"stdout","time":139.251882543,"data":"Jumlah sampel mentah non-flood: 2978\n"}
+,{"stream_name":"stdout","time":194.664752276,"data":"Jumlah sampel mentah flood    : 2985\n"}
+,{"stream_name":"stdout","time":213.995412317,"data":"Distribusi sampel awal dari GEE: {'0': 2978, '1': 2985}\n"}
+,{"stream_name":"stdout","time":231.059226349,"data":"SAMPLE_PER_CLASS final: 2978\n"}
+,{"stream_name":"stdout","time":231.059271511,"data":"Distribusi sampel final: {'0': 2978, '1': 2978}\n"}
+,{"stream_name":"stdout","time":246.647883362,"data":"Jumlah sampel total: 5956\n"}
+,{"stream_name":"stdout","time":269.235643592,"data":"Fraksi null per band (TANPA filter notNull), 10 tertinggi:\n"}
+,{"stream_name":"stdout","time":269.235691257,"data":"aspect_cos_aw3d30      0.0\n"}
+,{"stream_name":"stdout","time":269.23569594,"data":"aspect_cos_glo30       0.0\n"}
+,{"stream_name":"stdout","time":269.235699336,"data":"aspect_cos_srtm        0.0\n"}
+,{"stream_name":"stdout","time":269.235702561,"data":"aspect_sin_aw3d30      0.0\n"}
+,{"stream_name":"stdout","time":269.235706949,"data":"aspect_sin_glo30       0.0\n"}
+,{"stream_name":"stdout","time":269.235728665,"data":"aspect_sin_srtm        0.0\n"}
+,{"stream_name":"stdout","time":269.235734561,"data":"aspect_valid_aw3d30    0.0\n"}
+,{"stream_name":"stdout","time":269.235743788,"data":"aspect_valid_glo30     0.0\n"}
+,{"stream_name":"stdout","time":269.235749222,"data":"aspect_valid_srtm      0.0\n"}
+,{"stream_name":"stdout","time":269.23575403,"data":"dist_perm_water        0.0\n"}
+,{"stream_name":"stdout","time":269.235758883,"data":"Baris total pra-filter: 5963\n"}
+,{"stream_name":"stdout","time":443.577588264,"data":"Distribusi label setelah drop NA:\n"}
+,{"stream_name":"stdout","time":443.577644266,"data":"flood\n"}
+,{"stream_name":"stdout","time":443.577649561,"data":"0    2978\n"}
+,{"stream_name":"stdout","time":443.577653242,"data":"1    2978\n"}
+,{"stream_name":"stdout","time":443.577656718,"data":"Name: count, dtype: int64\n"}
+,{"stream_name":"stdout","time":443.577660168,"data":"Total baris: 5956\n"}
+,{"stream_name":"stdout","time":443.577663556,"data":"Jumlah fitur non-DEM: 19\n"}
+,{"stream_name":"stdout","time":443.577667092,"data":"Contoh kolom landcover dummy: ['lc_10', 'lc_30', 'lc_40', 'lc_50', 'lc_60']\n"}
+,{"stream_name":"stdout","time":443.633701666,"data":"Audit distribusi sampel per kelas:\n"}
+,{"stream_name":"stdout","time":443.633739359,"data":"   flood     n     lon_min     lon_max   lat_min   lat_max  elevation_aw3d30_mean  elevation_aw3d30_std  elevation_glo30_mean  elevation_glo30_std  elevation_srtm_mean  elevation_srtm_std  slope_aw3d30_mean  slope_aw3d30_std  slope_glo30_mean  slope_glo30_std  slope_srtm_mean  slope_srtm_std  lc_40_frac  lc_10_frac  lc_50_frac  lc_30_frac  lc_80_frac  lc_90_frac  lc_60_frac  lc_95_frac\n"}
+,{"stream_name":"stdout","time":443.633745356,"data":"0      0  2978  110.275163  110.825741 -7.136890 -6.709741              43.061786             77.943544             41.118723            77.660365            42.668234           77.928527           3.167489          4.176103          2.593386         4.095193         3.076082        3.371043      0.4486      0.2310      0.2075      0.0581      0.0322      0.0158      0.0040      0.0027\n"}
+,{"stream_name":"stdout","time":443.633783896,"data":"1      1  2978  110.294028  110.828435 -7.042028 -6.712706               4.107455              5.736857              1.989657             5.771808             3.248825            6.016175           1.322441          1.095539          0.392773         0.464169         1.731999        1.208652      0.5232      0.0024      0.0037      0.0057      0.3096      0.1545      0.0007      0.0003\n"}
+,{"stream_name":"stdout","time":443.760421499,"data":"Split v24: train_test_split acak (test 25%, stratify=y, seed=42).\n"}
+,{"stream_name":"stdout","time":446.323177226,"data":"RF srtm: selesai dilatih (24 prediktor).\n"}
+,{"stream_name":"stdout","time":448.675453055,"data":"RF glo30: selesai dilatih (24 prediktor).\n"}
+,{"stream_name":"stdout","time":450.982294882,"data":"RF aw3d30: selesai dilatih (24 prediktor).\n"}
+,{"stream_name":"stdout","time":450.982347331,"data":"Fold spasial (blok uji per fold): [[0, 1, 5, 14], [8, 9, 11, 13], [2, 4, 7, 15], [3, 6, 10, 12]]\n"}
+,{"stream_name":"stdout","time":453.142116817,"data":"Fold 0 srtm: train=3467 test=2489 AUCprob=0.952 AUClegacy=0.867 F1=0.847\n"}
+,{"stream_name":"stdout","time":455.234112433,"data":"Fold 0 glo30: train=3467 test=2489 AUCprob=0.959 AUClegacy=0.905 F1=0.890\n"}
+,{"stream_name":"stdout","time":457.306485118,"data":"Fold 0 aw3d30: train=3467 test=2489 AUCprob=0.956 AUClegacy=0.887 F1=0.871\n"}
+,{"stream_name":"stdout","time":459.668003643,"data":"Fold 1 srtm: train=4590 test=1366 AUCprob=0.852 AUClegacy=0.789 F1=0.879\n"}
+,{"stream_name":"stdout","time":462.121109326,"data":"Fold 1 glo30: train=4590 test=1366 AUCprob=0.867 AUClegacy=0.812 F1=0.880\n"}
+,{"stream_name":"stdout","time":464.482610756,"data":"Fold 1 aw3d30: train=4590 test=1366 AUCprob=0.851 AUClegacy=0.789 F1=0.867\n"}
+,{"stream_name":"stdout","time":466.875820623,"data":"Fold 2 srtm: train=4623 test=1333 AUCprob=0.820 AUClegacy=0.728 F1=0.681\n"}
+,{"stream_name":"stdout","time":469.328224985,"data":"Fold 2 glo30: train=4623 test=1333 AUCprob=0.851 AUClegacy=0.752 F1=0.717\n"}
+,{"stream_name":"stdout","time":471.705119533,"data":"Fold 2 aw3d30: train=4623 test=1333 AUCprob=0.827 AUClegacy=0.718 F1=0.670\n"}
+,{"stream_name":"stdout","time":474.26873962,"data":"Fold 3 srtm: train=5188 test=768 AUCprob=0.856 AUClegacy=0.769 F1=0.779\n"}
+,{"stream_name":"stdout","time":476.806073751,"data":"Fold 3 glo30: train=5188 test=768 AUCprob=0.882 AUClegacy=0.799 F1=0.819\n"}
+,{"stream_name":"stdout","time":479.311176425,"data":"Fold 3 aw3d30: train=5188 test=768 AUCprob=0.866 AUClegacy=0.781 F1=0.799\n"}
+,{"stream_name":"stdout","time":479.311215054,"data":"Ringkasan spatial CV (mean lintas fold; *_prob = koreksi MET-002):\n"}
+,{"stream_name":"stdout","time":479.311222889,"data":"        auc_spatial_cv_prob  auc_spatial_cv  f1_spatial_cv  accuracy_spatial_cv\n"}
+,{"stream_name":"stdout","time":479.311229157,"data":"config                                                                         \n"}
+,{"stream_name":"stdout","time":479.311235921,"data":"aw3d30               0.8747          0.7936         0.8016               0.8044\n"}
+,{"stream_name":"stdout","time":479.311242104,"data":"glo30                0.8899          0.8170         0.8263               0.8240\n"}
+,{"stream_name":"stdout","time":479.311248074,"data":"srtm                 0.8699          0.7883         0.7964               0.8020\n"}
+,{"stream_name":"stdout","time":484.864097681,"data":"dAUC srtm - glo30: -0.0141 [-0.0173, -0.0109]\n"}
+,{"stream_name":"stdout","time":490.159251222,"data":"dAUC srtm - aw3d30: -0.0048 [-0.0074, -0.0023]\n"}
+,{"stream_name":"stdout","time":495.529107083,"data":"dAUC glo30 - aw3d30: +0.0094 [+0.0063, +0.0124]\n"}
+,{"stream_name":"stdout","time":495.635027172,"data":"training_sample_features.csv tersimpan.\n"}
+,{"stream_name":"stdout","time":495.832286928,"data":"Block bootstrap: 16 blok, configs=['aw3d30', 'glo30', 'srtm'], iterasi=1000, seed 42\n"}
+,{"stream_name":"stdout","time":503.494837264,"data":"dAUC block srtm - glo30: -0.0155 [-0.0250, -0.0072]\n"}
+,{"stream_name":"stdout","time":503.494868251,"data":"dAUC block srtm - aw3d30: -0.0047 [-0.0096, +0.0013] (CI MEMUAT 0 -\u003e marginal)\n"}
+,{"stream_name":"stdout","time":503.494874835,"data":"dAUC block glo30 - aw3d30: +0.0108 [+0.0041, +0.0198]\n"}
+,{"stream_name":"stdout","time":514.13305484,"data":"[seed 42] mentah: flood=2985 non-flood=2978\n"}
+,{"stream_name":"stdout","time":568.193238606,"data":"[seed 42] holdout AUC: srtm=0.9497, glo30=0.9551, aw3d30=0.9495 | spatial-CV proba: srtm=0.8706, glo30=0.8902, aw3d30=0.8738\n"}
+,{"stream_name":"stdout","time":647.330491041,"data":"[seed 100] mentah: flood=2987 non-flood=2986\n"}
+,{"stream_name":"stdout","time":933.650499708,"data":"[seed 100] holdout AUC: srtm=0.9540, glo30=0.9578, aw3d30=0.9534 | spatial-CV proba: srtm=0.8492, glo30=0.8747, aw3d30=0.8566\n"}
+,{"stream_name":"stdout","time":1047.851533858,"data":"[seed 2024] mentah: flood=2985 non-flood=2977\n"}
+,{"stream_name":"stdout","time":1179.890004097,"data":"[seed 2024] holdout AUC: srtm=0.9322, glo30=0.9378, aw3d30=0.9322 | spatial-CV proba: srtm=0.8890, glo30=0.9049, aw3d30=0.8958\n"}
+,{"stream_name":"stdout","time":1345.208358894,"data":"[seed 7] mentah: flood=2978 non-flood=2973\n"}
+,{"stream_name":"stdout","time":1412.175735677,"data":"[seed 7] holdout AUC: srtm=0.9197, glo30=0.9351, aw3d30=0.9240 | spatial-CV proba: srtm=0.8547, glo30=0.8767, aw3d30=0.8648\n"}
+,{"stream_name":"stdout","time":1493.845502254,"data":"[seed 99] mentah: flood=2979 non-flood=2980\n"}
+,{"stream_name":"stdout","time":1555.383996454,"data":"[seed 99] holdout AUC: srtm=0.9389, glo30=0.9498, aw3d30=0.9417 | spatial-CV proba: srtm=0.8813, glo30=0.8982, aw3d30=0.8934\n"}
+,{"stream_name":"stdout","time":1555.680726975,"data":"Rangkuman multi-seed (mean +- std lintas seed):\n"}
+,{"stream_name":"stdout","time":1555.680763597,"data":"config  auc_holdout_mean  auc_holdout_std  n_seeds_holdout  auc_spatial_cv_prob_mean  auc_spatial_cv_prob_std  n_seeds_cv\n"}
+,{"stream_name":"stdout","time":1555.680769391,"data":"aw3d30            0.9402           0.0121                5                    0.8769                   0.0173           5\n"}
+,{"stream_name":"stdout","time":1555.680773301,"data":" glo30            0.9471           0.0102                5                    0.8889                   0.0132           5\n"}
+,{"stream_name":"stdout","time":1555.680777737,"data":"  srtm            0.9389           0.0138                5                    0.8689                   0.0169           5\n"}
+,{"stream_name":"stdout","time":1555.680781667,"data":"dAUC lintas seed (mean +- std per seed, n seed):\n"}
+,{"stream_name":"stdout","time":1555.680785384,"data":"  holdout          srtm-minus-glo30     -0.0082 +- 0.0048 (n=5)\n"}
+,{"stream_name":"stdout","time":1555.680789011,"data":"  holdout          srtm-minus-aw3d30    -0.0012 +- 0.0021 (n=5)\n"}
+,{"stream_name":"stdout","time":1555.680792561,"data":"  holdout          glo30-minus-aw3d30   +0.0070 +- 0.0027 (n=5)\n"}
+,{"stream_name":"stdout","time":1555.680796337,"data":"  spatial_cv_prob  srtm-minus-glo30     -0.0200 +- 0.0039 (n=5)\n"}
+,{"stream_name":"stdout","time":1555.680818197,"data":"  spatial_cv_prob  srtm-minus-aw3d30    -0.0079 +- 0.0034 (n=5)\n"}
+,{"stream_name":"stdout","time":1555.68082628,"data":"  spatial_cv_prob  glo30-minus-aw3d30   +0.0121 +- 0.0055 (n=5)\n"}
+,{"stream_name":"stdout","time":1557.479044207,"data":"Peta probabilitas selesai: srtm\n"}
+,{"stream_name":"stdout","time":1557.479100909,"data":"Peta probabilitas selesai: glo30\n"}
+,{"stream_name":"stdout","time":1557.479107669,"data":"Peta probabilitas selesai: aw3d30\n"}
+,{"stream_name":"stdout","time":1557.479112185,"data":"Metode klasifikasi: equal_interval\n"}
+,{"stream_name":"stdout","time":1557.479116625,"data":"Batas kelas (sama untuk semua peta): [0.2, 0.4, 0.6, 0.8]\n"}
+,{"stream_name":"stdout","time":1557.479120836,"data":"Klasifikasi kerawanan 5 kelas selesai untuk ['srtm', 'glo30', 'aw3d30']\n"}
+,{"stream_name":"stdout","time":1760.789010195,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/c35cd288e7aa2167d26fceb4fa3a1411-0f3f1d04774376af213670d32ab05782:getPixels\n"}
+,{"stream_name":"stdout","time":1773.065582042,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/ae703e4fceb65513bf09d84c39c6312e-c321b9f18c086448cd54e8a8819b33b0:getPixels\n"}
+,{"stream_name":"stdout","time":1781.98444063,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/638750eb5da21f01efaf2e401f7ac00b-dbad40762a0de329d7e584d7810e9b89:getPixels\n"}
+,{"stream_name":"stdout","time":1790.822103763,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/8903e2e6ffa2d8c6c2e6525739f820e1-6ebe9b68d85f18f54f27327d343e568b:getPixels\n"}
+,{"stream_name":"stdout","time":1795.827344207,"data":"Gagal membuat thumbnail: fig_prob_srtm.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/8903e2e6ffa2d8c6c2e6525739f820e1-6ebe9b68d85f18f54f27327d343e568b:getPixels\n"}
+,{"stream_name":"stdout","time":1801.250954007,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/6d9fdf584bf205927bdec021348ad095-4611dc1fa540dc3b0dccc786e3a1c40f:getPixels\n"}
+,{"stream_name":"stdout","time":1810.43034609,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/8484f013600e1ec7449dfc52c715ca4f-ec3934b6a2571331fb9becf45b2241f3:getPixels\n"}
+,{"stream_name":"stdout","time":1818.954576004,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/d9b559f7db4a0042410349ef30866351-c550997d78ae433dad3eb8a2decb967b:getPixels\n"}
+,{"stream_name":"stdout","time":1829.175311525,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/f1c22f11723844718007bd85076cb6a8-60a335b3a9e341c03c901e415e5ccfd8:getPixels\n"}
+,{"stream_name":"stdout","time":1834.180683244,"data":"Gagal membuat thumbnail: fig_risk_srtm.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/f1c22f11723844718007bd85076cb6a8-60a335b3a9e341c03c901e415e5ccfd8:getPixels\n"}
+,{"stream_name":"stdout","time":1843.22981407,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/602da5d3593e06d01bfca2a0ba5d8d15-468013fc9446652cc742cec9747eac66:getPixels\n"}
+,{"stream_name":"stdout","time":1854.619172771,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/ab04f58102b37ae8741408f97b1dfd96-ad31f44349227897ff2059cfc961f0b3:getPixels\n"}
+,{"stream_name":"stdout","time":1863.172158794,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/6a9664e39eb1d572468f8b94e33969b9-c4c16b36d914cb085a78440c899c869f:getPixels\n"}
+,{"stream_name":"stdout","time":1872.494662677,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/b908c1701ae3c954c1e54aa00f99f9f8-81d9bbb419698ccee90f67aa1075c764:getPixels\n"}
+,{"stream_name":"stdout","time":1877.509945834,"data":"Gagal membuat thumbnail: fig_prob_glo30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/b908c1701ae3c954c1e54aa00f99f9f8-81d9bbb419698ccee90f67aa1075c764:getPixels\n"}
+,{"stream_name":"stdout","time":1882.146035809,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/8c45d99b9b6662eac6ca43adfd98b54d-423fcfaa7c8fa4fe8715d2857485d923:getPixels\n"}
+,{"stream_name":"stdout","time":1892.762495937,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/534aaf16ed8dec33524d32034ffe4ddc-8cd2ec6f3303dcbe684c529df359aa66:getPixels\n"}
+,{"stream_name":"stdout","time":1901.996186277,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/a1141b271f7c13cb2d8fc72f5df1b638-d212b8e053c5d9a97b52afe2a84d1aa5:getPixels\n"}
+,{"stream_name":"stdout","time":1911.267836003,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/80f9ca318462f49872b90da38f74af53-e76f06d0d2c52b870b9a19627019f924:getPixels\n"}
+,{"stream_name":"stdout","time":1916.263543543,"data":"Gagal membuat thumbnail: fig_risk_glo30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/80f9ca318462f49872b90da38f74af53-e76f06d0d2c52b870b9a19627019f924:getPixels\n"}
+,{"stream_name":"stdout","time":1921.690809147,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/9c923d359d76e8241f162cca923b4a97-5a042b342eed0384c0fea4c657f136bf:getPixels\n"}
+,{"stream_name":"stdout","time":1931.184913121,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/7385f14b8454190d89bf06c5facbc9b3-ea07e1856693b31bd3084a8e7810f092:getPixels\n"}
+,{"stream_name":"stdout","time":1942.45846002,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/2896dccb969936fd85b7ff67b1fb38e1-bf7ba4a03509ecbb9fdbeaec03e97f21:getPixels\n"}
+,{"stream_name":"stdout","time":1954.845924722,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/5439a6683ea2ebdfbb3f334a5fbf9f7b-7910ca91740feac4db5019701ed206de:getPixels\n"}
+,{"stream_name":"stdout","time":1959.851225537,"data":"Gagal membuat thumbnail: fig_prob_aw3d30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/5439a6683ea2ebdfbb3f334a5fbf9f7b-7910ca91740feac4db5019701ed206de:getPixels\n"}
+,{"stream_name":"stdout","time":1963.936393308,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/830fe665222ffb79421ea5031175416c-ddd12fe5392347efe49ce2a558191915:getPixels\n"}
+,{"stream_name":"stdout","time":1977.135517428,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/f45581ca6f633c1a3712bf89d1632b11-85a890d038d2334b02948be062b64f83:getPixels\n"}
+,{"stream_name":"stdout","time":1985.527485748,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/b2649b4f4f46813e13cc3576a4334c3d-dc0f81e259e4d6829bb758e38f12b7a6:getPixels\n"}
+,{"stream_name":"stdout","time":1996.02125551,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/a7f06a4b30090b8ddf5d0e14ec6371bb-5e892bc0d506070c12d3088525924674:getPixels\n"}
+,{"stream_name":"stdout","time":2000.824729431,"data":"Gagal membuat thumbnail: fig_risk_aw3d30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/a7f06a4b30090b8ddf5d0e14ec6371bb-5e892bc0d506070c12d3088525924674:getPixels\n"}
+,{"stream_name":"stdout","time":3077.429281605,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/12eb7cbbab5b92a0502dbca5379cf947-17f4f2571f0a22b691a32953b2c4b632:getPixels\n"}
+,{"stream_name":"stdout","time":3090.925692964,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/0db3b7c428ece571d43b2daeec4130d8-5e29b15f8d92f33f0116ccf6cc7e241f:getPixels\n"}
+,{"stream_name":"stdout","time":3100.775130234,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/0a9c3e7781b912674e672174d14a3a5c-74208e8696103f06abef84061bfdb4ff:getPixels\n"}
+,{"stream_name":"stdout","time":3110.096131907,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/7ed34963ee70315f990b0ebcbbb23d5e-905c9ea7f9cdcc4d0823745dfa6847bf:getPixels\n"}
+,{"stream_name":"stdout","time":3115.101471821,"data":"Gagal membuat thumbnail: fig_delta_srtm_vs_glo30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/7ed34963ee70315f990b0ebcbbb23d5e-905c9ea7f9cdcc4d0823745dfa6847bf:getPixels\n"}
+,{"stream_name":"stdout","time":3119.582343647,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/7e1f3acc84aaaac5da3d548bb62fd1a3-55fcbebfa73b47e6117ab7d751ab98f3:getPixels\n"}
+,{"stream_name":"stdout","time":3129.803741584,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/dadbf6fb02efdb97350f29383f2ca8d6-57b265289585a1d7e7c8844ca1ad0849:getPixels\n"}
+,{"stream_name":"stdout","time":3139.063589788,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/a67dc6e9dba920be4b3efcc6a2d9e7d3-f9dc916e855070297b9ab5b143396d10:getPixels\n"}
+,{"stream_name":"stdout","time":3150.029410196,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 503 Server Error: Service Unavailable for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/358db707186a79f1c23efed619e819e0-79683396bb81e1db68d5d1172caeb1c9:getPixels\n"}
+,{"stream_name":"stdout","time":3155.035009944,"data":"Gagal membuat thumbnail: fig_agreement_srtm_vs_glo30.png | 503 Server Error: Service Unavailable for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/358db707186a79f1c23efed619e819e0-79683396bb81e1db68d5d1172caeb1c9:getPixels\n"}
+,{"stream_name":"stdout","time":3163.299246955,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/dadc171d80a00ec7ebb08e0774d07b15-a567d8935d724a66bea32a3ce28603d5:getPixels\n"}
+,{"stream_name":"stdout","time":3172.185907241,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 503 Server Error: Service Unavailable for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/b3bc3dbc827236b9f68628ba651dc971-0df398a32ab39b47892153d141825d04:getPixels\n"}
+,{"stream_name":"stdout","time":3181.998946505,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/4e1ba7baac7c1a5f23db68c9c5345a7e-22f9e5d25fa75b64f6e5dbf90602258e:getPixels\n"}
+,{"stream_name":"stdout","time":3191.611625928,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/8a910080773d765df676a1dc4825ef6b-769f57bc5dd2c131809bdd074986e4ce:getPixels\n"}
+,{"stream_name":"stdout","time":3196.617183985,"data":"Gagal membuat thumbnail: fig_delta_srtm_vs_aw3d30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/8a910080773d765df676a1dc4825ef6b-769f57bc5dd2c131809bdd074986e4ce:getPixels\n"}
+,{"stream_name":"stdout","time":3200.784457932,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/3dfd33a36045cf8d1f15b8d6ca0b0a44-75031f91569988a8b5229dc617f65f69:getPixels\n"}
+,{"stream_name":"stdout","time":3212.1209645,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/fb77947ce2a76c048abd76390019224c-474fdeeafdcc1366e60e717857852060:getPixels\n"}
+,{"stream_name":"stdout","time":3222.844480735,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/85880137f23f5429c972660cf0d8bd98-9fb73cb29f4953618485735aa113bc7c:getPixels\n"}
+,{"stream_name":"stdout","time":3234.768287319,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/16468bef61e6525d54b8c11d280faa21-9d3d89c3fb28889f8a4141b00c71f2d5:getPixels\n"}
+,{"stream_name":"stdout","time":3239.773608107,"data":"Gagal membuat thumbnail: fig_agreement_srtm_vs_aw3d30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/16468bef61e6525d54b8c11d280faa21-9d3d89c3fb28889f8a4141b00c71f2d5:getPixels\n"}
+,{"stream_name":"stdout","time":3246.152266286,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/cbfa4022152828b0c54b33564f4a99c8-d56d92f78cd3ab4378365f18ec8655f6:getPixels\n"}
+,{"stream_name":"stdout","time":3256.259234031,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/88a9e0583f3792df50dd522650647652-1173a444fa1ee8d72ef9f4b493809f73:getPixels\n"}
+,{"stream_name":"stdout","time":3265.120192462,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/629297c35b8ddf69db979a25b2ce889e-9c267d252b29509fa4943cc9169de748:getPixels\n"}
+,{"stream_name":"stdout","time":3275.776602663,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/abe2bc0f6388f37689920ecb8af41ae0-04dbfd5a43dbee9e33186b975d42286d:getPixels\n"}
+,{"stream_name":"stdout","time":3280.793973651,"data":"Gagal membuat thumbnail: fig_delta_glo30_vs_aw3d30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/abe2bc0f6388f37689920ecb8af41ae0-04dbfd5a43dbee9e33186b975d42286d:getPixels\n"}
+,{"stream_name":"stdout","time":3285.412133322,"data":"Thumbnail gagal (percobaan 1/4), coba 1200px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/fb718bf005f3c5f81c5a618810ef64ec-d29a97fa8f4898aae84d3993c6f966be:getPixels\n"}
+,{"stream_name":"stdout","time":3293.947174976,"data":"Thumbnail gagal (percobaan 2/4), coba 900px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/12fda8295b8ba4084a729e71935c35ce-1ebb1a2697b58ceb8c02cf400439f33e:getPixels\n"}
+,{"stream_name":"stdout","time":3303.160337844,"data":"Thumbnail gagal (percobaan 3/4), coba 675px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/e6321bad987530237c580409adcda7d1-0f0ad97807c547262c2e2009a691dace:getPixels\n"}
+,{"stream_name":"stdout","time":3313.060543685,"data":"Thumbnail gagal (percobaan 4/4), coba 600px: 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/fc65ab239b80f0cb57accaf63c9ac1dc-e8fb40fb28430bb0e74f0cbdcb333d75:getPixels\n"}
+,{"stream_name":"stdout","time":3317.851301597,"data":"Gagal membuat thumbnail: fig_agreement_glo30_vs_aw3d30.png | 400 Client Error: Bad Request for url: https://earthengine.googleapis.com/v1/projects/ee-irfan-banjir-2026/thumbnails/fc65ab239b80f0cb57accaf63c9ac1dc-e8fb40fb28430bb0e74f0cbdcb333d75:getPixels\n"}
+,{"stream_name":"stdout","time":4097.558885064,"data":"Export started: prob_srtm\n"}
+,{"stream_name":"stdout","time":4097.860612897,"data":"Export started: risk_class_srtm\n"}
+,{"stream_name":"stdout","time":4098.523249311,"data":"Export started: prob_glo30\n"}
+,{"stream_name":"stdout","time":4099.058764491,"data":"Export started: risk_class_glo30\n"}
+,{"stream_name":"stdout","time":4099.73636898,"data":"Export started: prob_aw3d30\n"}
+,{"stream_name":"stdout","time":4100.376180927,"data":"Export started: risk_class_aw3d30\n"}
+,{"stream_name":"stdout","time":4100.850440734,"data":"Export started: delta_abs_srtm_vs_glo30\n"}
+,{"stream_name":"stdout","time":4101.574450262,"data":"Export started: agreement_srtm_vs_glo30\n"}
+,{"stream_name":"stdout","time":4102.049767822,"data":"Export started: delta_abs_srtm_vs_aw3d30\n"}
+,{"stream_name":"stdout","time":4102.346858461,"data":"Export started: agreement_srtm_vs_aw3d30\n"}
+,{"stream_name":"stdout","time":4102.935623668,"data":"Export started: delta_abs_glo30_vs_aw3d30\n"}
+,{"stream_name":"stdout","time":4103.481507773,"data":"Export started: agreement_glo30_vs_aw3d30\n"}
+,{"stream_name":"stdout","time":4103.736909514,"data":"Export started: proxy_flood_label_sentinel1\n"}
+,{"stream_name":"stdout","time":4103.948194965,"data":"Export started: training_sample_dem_sensitivity (CSV)\n"}
+,{"stream_name":"stdout","time":4103.948232004,"data":"Catatan: CSV metrik/sensitivitas sudah tersimpan di OUTPUT_DIR: outputs_dem_sensitivity\n"}
+,{"stream_name":"stderr","time":4107.710889627,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4107.710928845,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4107.908089815,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4107.9081157,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4108.798415162,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":4109.087819945,"data":"[NbConvertApp] Writing 5795071 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":4112.026223293,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4113.110787441,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":4113.110842832,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":4113.111189416,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":4113.111461353,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":4113.111703391,"data":"[NbConvertApp] Writing 6044269 bytes to __results__.html\n"}
+]

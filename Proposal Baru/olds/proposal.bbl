@@ -1,0 +1,1596 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{marfai2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3919ffb0126b166648d68d40b55d7fbc}{%
+           family={Marfai},
+           familyi={M\bibinitperiod},
+           given={Muh\bibnamedelima Aris},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=436842c780776d8ce7ba950ed442b00d}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Lorenza},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f0e531505b4a0d1e877fe61a1d152ac1}
+      \strng{fullhash}{f0e531505b4a0d1e877fe61a1d152ac1}
+      \strng{bibnamehash}{f0e531505b4a0d1e877fe61a1d152ac1}
+      \strng{authorbibnamehash}{f0e531505b4a0d1e877fe61a1d152ac1}
+      \strng{authornamehash}{f0e531505b4a0d1e877fe61a1d152ac1}
+      \strng{authorfullhash}{f0e531505b4a0d1e877fe61a1d152ac1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0943-0105}
+      \field{journaltitle}{Environmental Geology}
+      \field{number}{6}
+      \field{title}{Potential Vulnerability Implications of Coastal Inundation Due to Sea Level Rise for the Coastal Zone of {Semarang City}, {Indonesia}}
+      \field{volume}{54}
+      \field{year}{2008}
+      \field{pages}{1235\bibrangedash 1245}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s00254-007-0906-4
+      \endverb
+    \endentry
+    \entry{abidin2015}{article}{}
+      \name{author}{6}{}{%
+        {{hash=3f479c6d1abca393e7e68ff2da5ea589}{%
+           family={Abidin},
+           familyi={A\bibinitperiod},
+           given={Hasanuddin\bibnamedelima Z.},
+           giveni={H\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=2a7b06bc806de8aab83efa8e2663c4ce}{%
+           family={Andreas},
+           familyi={A\bibinitperiod},
+           given={Heri},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e3907d0afb38e7b9eb20bcf18c6d94d2}{%
+           family={Gumilar},
+           familyi={G\bibinitperiod},
+           given={Irwan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=fb8e7e9e3f0c6b4eabb6363c1f45f5b7}{%
+           family={Fukuda},
+           familyi={F\bibinitperiod},
+           given={Yoichi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=165270b6565b64f120f031ac01e476a7}{%
+           family={Pohan},
+           familyi={P\bibinitperiod},
+           given={Yoga\bibnamedelima Edi},
+           giveni={Y\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=be61b566984bea75c8d445bdda2e6941}{%
+           family={Deguchi},
+           familyi={D\bibinitperiod},
+           given={Torao},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Taylor}%
+        {Francis}%
+      }
+      \strng{namehash}{672c0b6bfbfd89749e7bacf82402a607}
+      \strng{fullhash}{eeb1969e16ddeb98f5b64d4e2a6e9ce9}
+      \strng{bibnamehash}{672c0b6bfbfd89749e7bacf82402a607}
+      \strng{authorbibnamehash}{672c0b6bfbfd89749e7bacf82402a607}
+      \strng{authornamehash}{672c0b6bfbfd89749e7bacf82402a607}
+      \strng{authorfullhash}{eeb1969e16ddeb98f5b64d4e2a6e9ce9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1947-5705}
+      \field{journaltitle}{Geomatics, Natural Hazards and Risk}
+      \field{number}{5--7}
+      \field{title}{Land Subsidence in Coastal City of {Semarang} ({Indonesia}): Characteristics, Impacts and Causes}
+      \field{volume}{6}
+      \field{year}{2012}
+      \field{pages}{401\bibrangedash 427}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1080/19475705.2012.692336
+      \endverb
+    \endentry
+    \entry{Husnayaen2018}{article}{}
+      \name{author}{7}{}{%
+        {{hash=5f503763624f242224da6fbbb90c2eb4}{%
+           family={Husnayaen},
+           familyi={H\bibinitperiod}}}%
+        {{hash=8cf9d391105e572dc51ee5bbcb53d012}{%
+           family={Rimba},
+           familyi={R\bibinitperiod},
+           given={A.\bibnamedelimi Besse},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=a38301635bdc0ec7da9f02a6ee815d26}{%
+           family={Osawa},
+           familyi={O\bibinitperiod},
+           given={Takahiro},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c201b08ffe701b764a024d85fbe3cdff}{%
+           family={Parwata},
+           familyi={P\bibinitperiod},
+           given={I.\bibnamedelimi Nyoman\bibnamedelima Sudi},
+           giveni={I\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=809524b1fa1cc7ddf302b14e321dfed4}{%
+           family={As-syakur},
+           familyi={A\bibinithyphendelim s\bibinitperiod},
+           given={Abd\bibnamedelima Rahman},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=0345aa0829cad86c203b8390dd6c7136}{%
+           family={Kasim},
+           familyi={K\bibinitperiod},
+           given={Faizal},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ec2015062bb16d3fbad981908b6d2928}{%
+           family={Astarini},
+           familyi={A\bibinitperiod},
+           given={Ida\bibnamedelima Ayu},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pergamon}%
+      }
+      \strng{namehash}{bcaee7ba85d245688f5cee2aad42468d}
+      \strng{fullhash}{fd548e5db940d3eb2cd6e8b5f7c3c6a5}
+      \strng{bibnamehash}{bcaee7ba85d245688f5cee2aad42468d}
+      \strng{authorbibnamehash}{bcaee7ba85d245688f5cee2aad42468d}
+      \strng{authornamehash}{bcaee7ba85d245688f5cee2aad42468d}
+      \strng{authorfullhash}{fd548e5db940d3eb2cd6e8b5f7c3c6a5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0273-1177}
+      \field{journaltitle}{Advances in Space Research}
+      \field{number}{8}
+      \field{title}{Physical Assessment of Coastal Vulnerability Under Enhanced Land Subsidence in Semarang, {Indonesia}, Using Multi-Sensor Satellite Data}
+      \field{volume}{61}
+      \field{year}{2018}
+      \field{pages}{2159\bibrangedash 2179}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/J.ASR.2018.01.026
+      \endverb
+    \endentry
+    \entry{Sakina2025}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9fff5f6407daa3256835a256b07a4599}{%
+           family={Sakina},
+           familyi={S\bibinitperiod},
+           given={Sholihati\bibnamedelima Lathifa},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=63eaed00e5b6d1df1a8d4a3b5773c809}{%
+           family={Ningsih},
+           familyi={N\bibinitperiod},
+           given={Nining\bibnamedelima Sari},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4e2847c77a01bec5e7919833af28f854}{%
+           family={Prayogi},
+           familyi={P\bibinitperiod},
+           given={Arfigo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2095810bc439ba400b6fd7765eb88910}
+      \strng{fullhash}{2095810bc439ba400b6fd7765eb88910}
+      \strng{bibnamehash}{2095810bc439ba400b6fd7765eb88910}
+      \strng{authorbibnamehash}{2095810bc439ba400b6fd7765eb88910}
+      \strng{authornamehash}{2095810bc439ba400b6fd7765eb88910}
+      \strng{authorfullhash}{2095810bc439ba400b6fd7765eb88910}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2561-4150}
+      \field{journaltitle}{Anthropocene Coasts}
+      \field{number}{1}
+      \field{title}{Investigating Wave Characteristics in the {Java Sea} and Potential Influencing Factors: A Case Study of Coastal Flooding Along the Northern Coast of {Semarang City}, {Indonesia} ({May} 23, 2022)}
+      \field{volume}{8}
+      \field{year}{2025}
+      \field{pages}{44}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/S44218-025-00122-9
+      \endverb
+    \endentry
+    \entry{hakim2026}{article}{}
+      \name{author}{6}{}{%
+        {{hash=dfc7d4dcf676f4741b7d253abdc6f00c}{%
+           family={Hakim},
+           familyi={H\bibinitperiod},
+           given={M\bibnamedelima Irfan\bibnamedelima Al},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7f30fdbc614386cb1d1e2f9294ba5939}{%
+           family={Rofi},
+           familyi={R\bibinitperiod},
+           given={Tsalis\bibnamedelima Ainur},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1d44663b5a40eb1d00b4974e2c541e26}{%
+           family={Ferdiansyah},
+           familyi={F\bibinitperiod},
+           given={Taufik\bibnamedelima Dwi},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=83b299561d93cbffb9de335e166c81c8}{%
+           family={Alfiansyah},
+           familyi={A\bibinitperiod},
+           given={Riski\bibnamedelima Cahya},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=814572687a721263feed856af83c0f58}{%
+           family={Muhtasib},
+           familyi={M\bibinitperiod},
+           given={Abdullah\bibnamedelimb Azzam\bibnamedelima Al},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=89430895fac5486a986d6b40798c509b}{%
+           family={Harwanti},
+           familyi={H\bibinitperiod},
+           given={Nur\bibnamedelimb Achmey\bibnamedelima Selgi},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universitas Negeri Semarang}%
+      }
+      \strng{namehash}{01fe719883168beaf6dbb6142babbce0}
+      \strng{fullhash}{b602f1dd8c76b6e2947c71f3daaf5ec2}
+      \strng{bibnamehash}{01fe719883168beaf6dbb6142babbce0}
+      \strng{authorbibnamehash}{01fe719883168beaf6dbb6142babbce0}
+      \strng{authornamehash}{01fe719883168beaf6dbb6142babbce0}
+      \strng{authorfullhash}{b602f1dd8c76b6e2947c71f3daaf5ec2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistical Modeling and Data Science}
+      \field{number}{1}
+      \field{title}{Comparative Explainable Ensemble Learning for Flood Susceptibility Mapping Using {Sentinel-1}-Derived Flood Inventory and Multi-Source Geospatial Data: A Case Study of the {Semarang-Demak} Coastal Area}
+      \field{volume}{1}
+      \field{year}{2026}
+      \field{pages}{22\bibrangedash 47}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.15294/smds.v1i1.62500
+      \endverb
+    \endentry
+    \entry{meadows2024}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9929ec196e8671326a71c35bba43c01a}{%
+           family={Meadows},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=740d5152c8a47fe9a1c0f6ad18e61abf}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7eb075dae3715e7847524e095e09acfb}{%
+           family={Reinke},
+           familyi={R\bibinitperiod},
+           given={Karin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Taylor}%
+        {Francis}%
+      }
+      \strng{namehash}{decf606d3312d167cbe464006c1152fb}
+      \strng{fullhash}{decf606d3312d167cbe464006c1152fb}
+      \strng{bibnamehash}{decf606d3312d167cbe464006c1152fb}
+      \strng{authorbibnamehash}{decf606d3312d167cbe464006c1152fb}
+      \strng{authornamehash}{decf606d3312d167cbe464006c1152fb}
+      \strng{authorfullhash}{decf606d3312d167cbe464006c1152fb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1753-8947}
+      \field{journaltitle}{International Journal of Digital Earth}
+      \field{number}{1}
+      \field{title}{Vertical Accuracy Assessment of Freely Available Global {DEM}s ({FABDEM}, {Copernicus} {DEM}, {NASADEM}, {AW3D30} and {SRTM}) in Flood-Prone Environments}
+      \field{volume}{17}
+      \field{year}{2024}
+      \field{pages}{2308734}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1080/17538947.2024.2308734
+      \endverb
+    \endentry
+    \entry{Tique2026}{article}{}
+      \name{author}{6}{}{%
+        {{hash=47b9f82e0d724c774ff139b540548db5}{%
+           family={Tique},
+           familyi={T\bibinitperiod},
+           given={Wilmer\bibnamedelimb Fabian\bibnamedelima Montien},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=922fb092bb671476563d3f993b7774f7}{%
+           family={Sapena},
+           familyi={S\bibinitperiod},
+           given={Marta},
+           giveni={M\bibinitperiod}}}%
+        {{hash=71bb09652b820060a9ad4be87ec60a60}{%
+           family={Weigand},
+           familyi={W\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4795ebea3131ebc5713f80b6e9f594bd}{%
+           family={Groth},
+           familyi={G\bibinitperiod},
+           given={Sandro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ca91e6413aae3853b8ea0389a74c63d9}{%
+           family={Gei{ß}},
+           familyi={G\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=83f8976204b907d38b06e2acffa27c2b}{%
+           family={Taubenböck},
+           familyi={T\bibinitperiod},
+           given={Hannes},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4ad75c0ad37259d877e7f1ff9c9e4d88}
+      \strng{fullhash}{90c8483d5c72c645184ede6afbbbcc9a}
+      \strng{bibnamehash}{4ad75c0ad37259d877e7f1ff9c9e4d88}
+      \strng{authorbibnamehash}{4ad75c0ad37259d877e7f1ff9c9e4d88}
+      \strng{authornamehash}{4ad75c0ad37259d877e7f1ff9c9e4d88}
+      \strng{authorfullhash}{90c8483d5c72c645184ede6afbbbcc9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-0840}
+      \field{journaltitle}{Natural Hazards}
+      \field{number}{4}
+      \field{title}{A Comparative Assessment of Data-Driven Flood Susceptibility Mapping in {Nigeria}}
+      \field{volume}{122}
+      \field{year}{2026}
+      \field{pages}{1\bibrangedash 29}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1007/s11069-025-07868-y
+      \endverb
+    \endentry
+    \entry{farr2007}{article}{}
+      \name{author}{18}{}{%
+        {{hash=0fe77fc50c12e44f9ac68e6c2c06ffed}{%
+           family={Farr},
+           familyi={F\bibinitperiod},
+           given={Tom\bibnamedelima G.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=b43eefc87a0fb00ca707efb7ad901ce3}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=84fdfb6261bbfc603e47418a68a752f1}{%
+           family={Caro},
+           familyi={C\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=673d4e05e7f8c213882c37e1f00d9556}{%
+           family={Crippen},
+           familyi={C\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e43f9c74d088c5e5ea3a90afbcc3cf6b}{%
+           family={Duren},
+           familyi={D\bibinitperiod},
+           given={Riley},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d449ef125f86f23e7147cfd7d7f07090}{%
+           family={Hensley},
+           familyi={H\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2b92f25f3a2635ca0c4e1afeb46c02f1}{%
+           family={Kobrick},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df6537516eabadb0864eb4ecf9814ab7}{%
+           family={Paller},
+           familyi={P\bibinitperiod},
+           given={Mimi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df74707b0c7af5b338db3cdafe0240c1}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Ernesto},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4aecc439ae7e4c52d86697c19f2164c2}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Ladislav},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e0c753704e2d65b99f7f26f3bcef0842}{%
+           family={Seal},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=baa70583e59a2d01e31146aeca74d335}{%
+           family={Shaffer},
+           familyi={S\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=35cb4999210e4a5824c03efccce18bc4}{%
+           family={Shimada},
+           familyi={S\bibinitperiod},
+           given={Joanne},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d11be22e1c08be96a67205abe2d29484}{%
+           family={Umland},
+           familyi={U\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d657f0f0adf5e295e4598f5f314f47da}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={Marian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6a2b173c72a98e14869e62b82477bd1c}{%
+           family={Oskin},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2acf4415d75b6efaf7e2b9f7e3227770}{%
+           family={Burbank},
+           familyi={B\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f81c8db5b4c4389d52fe079d46c8b529}{%
+           family={Alsdorf},
+           familyi={A\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Geophysical Union}%
+      }
+      \strng{namehash}{9bc7c3c1eba6c951275aeae6ae8bf8c6}
+      \strng{fullhash}{73fcacf3d35f4b159ddd93c4cc3b1d6a}
+      \strng{bibnamehash}{9bc7c3c1eba6c951275aeae6ae8bf8c6}
+      \strng{authorbibnamehash}{9bc7c3c1eba6c951275aeae6ae8bf8c6}
+      \strng{authornamehash}{9bc7c3c1eba6c951275aeae6ae8bf8c6}
+      \strng{authorfullhash}{73fcacf3d35f4b159ddd93c4cc3b1d6a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{8755-1209}
+      \field{journaltitle}{Reviews of Geophysics}
+      \field{number}{2}
+      \field{title}{The Shuttle Radar Topography Mission}
+      \field{volume}{45}
+      \field{year}{2007}
+      \field{pages}{RG2004}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1029/2005RG000183
+      \endverb
+    \endentry
+    \entry{esa_glo30}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1f71b100224fb1b54ae14e751c4b40fa}{%
+           family={{European Space Agency}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{fullhash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{bibnamehash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{authorbibnamehash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{authornamehash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{authorfullhash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Dataset, Copernicus Contributing Missions}
+      \field{title}{{Copernicus} Digital Elevation Model ({DEM}) {GLO-30}}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.5270/ESA-c5d3d65
+      \endverb
+    \endentry
+    \entry{tadono2016}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=bb244632d732251dbd5efa8b20d2582c}{%
+           family={Tadono},
+           familyi={T\bibinitperiod},
+           given={Takeo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0b9cf1448a39e42c68c23c2e8fc132a6}{%
+           family={Nagai},
+           familyi={N\bibinitperiod},
+           given={Hideaki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ef30189c2e308d9db39d1cf84a9c0d5f}{%
+           family={Ishida},
+           familyi={I\bibinitperiod},
+           given={Hisashi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b1119c25b8089f00e7a157fc8c91419d}{%
+           family={Oda},
+           familyi={O\bibinitperiod},
+           given={Fumiaki},
+           giveni={F\bibinitperiod}}}%
+        {{hash=15f332d9e15a4b1420427153b06ab55d}{%
+           family={Naito},
+           familyi={N\bibinitperiod},
+           given={Suekazu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bc75453be419a9e13bf3829a98ee42c1}{%
+           family={Minakawa},
+           familyi={M\bibinitperiod},
+           given={Keiya},
+           giveni={K\bibinitperiod}}}%
+        {{hash=63deda6c7a362ca00b721bd2b30fad7a}{%
+           family={Iwamoto},
+           familyi={I\bibinitperiod},
+           given={Hisakazu},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{3722ded05171b4f2ea40fc9745c05b58}
+      \strng{fullhash}{9967e39a1c33ab7ae2cfe940f86be606}
+      \strng{bibnamehash}{3722ded05171b4f2ea40fc9745c05b58}
+      \strng{authorbibnamehash}{3722ded05171b4f2ea40fc9745c05b58}
+      \strng{authornamehash}{3722ded05171b4f2ea40fc9745c05b58}
+      \strng{authorfullhash}{9967e39a1c33ab7ae2cfe940f86be606}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences}
+      \field{title}{Generation of the {30} {M}-Mesh Global Digital Surface Model by {ALOS} {PRISM}}
+      \field{volume}{XLI-B4}
+      \field{year}{2016}
+      \field{pages}{157\bibrangedash 161}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.5194/isprs-archives-XLI-B4-157-2016
+      \endverb
+    \endentry
+    \entry{gorelick2017}{article}{}
+      \name{author}{6}{}{%
+        {{hash=ecdf9b747a50a0392d63cfcb19bab980}{%
+           family={Gorelick},
+           familyi={G\bibinitperiod},
+           given={Noel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e1d35caeb746ad98cd06b197081f8d3d}{%
+           family={Hancher},
+           familyi={H\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fa6be8707ae84aaa505f45fb1eeaf1e5}{%
+           family={Dixon},
+           familyi={D\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9c4ad5f57526bc5e2860286041301be5}{%
+           family={Ilyushchenko},
+           familyi={I\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b84c1a79465c97114921fede146c934c}{%
+           family={Thau},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=438ba6e4e04af2429f76e57a1dfe5974}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Rebecca},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{792a8bdb1913bb19ed8b0812490cbf6c}
+      \strng{fullhash}{b954749a9b709618ccf61b88c3e93f33}
+      \strng{bibnamehash}{792a8bdb1913bb19ed8b0812490cbf6c}
+      \strng{authorbibnamehash}{792a8bdb1913bb19ed8b0812490cbf6c}
+      \strng{authornamehash}{792a8bdb1913bb19ed8b0812490cbf6c}
+      \strng{authorfullhash}{b954749a9b709618ccf61b88c3e93f33}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0034-4257}
+      \field{journaltitle}{Remote Sensing of Environment}
+      \field{title}{Google {Earth} {Engine}: Planetary-Scale Geospatial Analysis for Everyone}
+      \field{volume}{202}
+      \field{year}{2017}
+      \field{pages}{18\bibrangedash 27}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.rse.2017.06.031
+      \endverb
+    \endentry
+    \entry{fereshtehpour2024}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0bd5552f74c5362b4499c859ba50aaf5}{%
+           family={Fereshtehpour},
+           familyi={F\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=51b03ffb300510f2efbd5908d8344a4a}{%
+           family={Esmaeilzadeh},
+           familyi={E\bibinitperiod},
+           given={Mostafa},
+           giveni={M\bibinitperiod}}}%
+        {{hash=233fec9506aaf848b167e3cdbb1b9156}{%
+           family={Alipour},
+           familyi={A\bibinitperiod},
+           given={Reza\bibnamedelima Saleh},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=a83399232ff0b462518ca10574b5fa9c}{%
+           family={Burian},
+           familyi={B\bibinitperiod},
+           given={Steven\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4d0ef4272db6d72d73281165560a8f44}
+      \strng{fullhash}{0ffa3b50c594e35290cf45ab72ddec72}
+      \strng{bibnamehash}{4d0ef4272db6d72d73281165560a8f44}
+      \strng{authorbibnamehash}{4d0ef4272db6d72d73281165560a8f44}
+      \strng{authornamehash}{4d0ef4272db6d72d73281165560a8f44}
+      \strng{authorfullhash}{0ffa3b50c594e35290cf45ab72ddec72}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1865-0473}
+      \field{journaltitle}{Earth Science Informatics}
+      \field{number}{2}
+      \field{title}{Impacts of {DEM} Type and Resolution on Deep Learning-Based Flood Inundation Mapping}
+      \field{volume}{17}
+      \field{year}{2024}
+      \field{pages}{1125\bibrangedash 1145}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s12145-024-01239-0
+      \endverb
+    \endentry
+    \entry{islammeng2022}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dcde968f81618f4f663734d5668a077e}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Md\bibnamedelima Tazmul},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=fa9aa294a2bc06a18f95c5ff27881af0}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Qingmin},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0586fb8cb5af282ca0d98e91164d44bd}
+      \strng{fullhash}{0586fb8cb5af282ca0d98e91164d44bd}
+      \strng{bibnamehash}{0586fb8cb5af282ca0d98e91164d44bd}
+      \strng{authorbibnamehash}{0586fb8cb5af282ca0d98e91164d44bd}
+      \strng{authornamehash}{0586fb8cb5af282ca0d98e91164d44bd}
+      \strng{authorfullhash}{0586fb8cb5af282ca0d98e91164d44bd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1569-8432}
+      \field{journaltitle}{International Journal of Applied Earth Observation and Geoinformation}
+      \field{title}{An Exploratory Study of {Sentinel-1} {SAR} for Rapid Urban Flood Mapping on {Google Earth Engine}}
+      \field{volume}{113}
+      \field{year}{2022}
+      \field{pages}{103002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jag.2022.103002
+      \endverb
+    \endentry
+    \entry{unspider2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4cab16eec8186429db07192f7f08e5c1}{%
+           family={{UN-SPIDER}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{4cab16eec8186429db07192f7f08e5c1}
+      \strng{fullhash}{4cab16eec8186429db07192f7f08e5c1}
+      \strng{bibnamehash}{4cab16eec8186429db07192f7f08e5c1}
+      \strng{authorbibnamehash}{4cab16eec8186429db07192f7f08e5c1}
+      \strng{authornamehash}{4cab16eec8186429db07192f7f08e5c1}
+      \strng{authorfullhash}{4cab16eec8186429db07192f7f08e5c1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{United Nations Platform for Space-based Information for Disaster Management and Emergency Response}
+      \field{title}{Recommended Practice: Flood Mapping Using {Sentinel-1} Data in {Google Earth Engine}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.un-spider.org/advisory-support/recommended-practices/recommended-practice-flood-mapping
+      \endverb
+      \verb{url}
+      \verb https://www.un-spider.org/advisory-support/recommended-practices/recommended-practice-flood-mapping
+      \endverb
+    \endentry
+    \entry{pekel2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=80a89573c7e95de08aa54201b87877e0}{%
+           family={Pekel},
+           familyi={P\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=69f1c453c04f282e9ad3bc566266b71a}{%
+           family={Cottam},
+           familyi={C\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ecdf9b747a50a0392d63cfcb19bab980}{%
+           family={Gorelick},
+           familyi={G\bibinitperiod},
+           given={Noel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7a20256757ef239d922031a39432ebd5}{%
+           family={Belward},
+           familyi={B\bibinitperiod},
+           given={Alan\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{979c0664df43bcc1736eca1f9058346b}
+      \strng{fullhash}{b5785db9f78a911e93b8540adf3f2003}
+      \strng{bibnamehash}{979c0664df43bcc1736eca1f9058346b}
+      \strng{authorbibnamehash}{979c0664df43bcc1736eca1f9058346b}
+      \strng{authornamehash}{979c0664df43bcc1736eca1f9058346b}
+      \strng{authorfullhash}{b5785db9f78a911e93b8540adf3f2003}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0028-0836}
+      \field{journaltitle}{Nature}
+      \field{number}{7633}
+      \field{title}{High-Resolution Mapping of Global Surface Water and Its Long-Term Changes}
+      \field{volume}{540}
+      \field{year}{2016}
+      \field{pages}{418\bibrangedash 422}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nature20584
+      \endverb
+    \endentry
+    \entry{breiman2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=132b7100417675d55d5d4d8b244f7a34}{%
+           family={Breiman},
+           familyi={B\bibinitperiod},
+           given={Leo},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{fullhash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{bibnamehash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{authorbibnamehash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{authornamehash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{authorfullhash}{132b7100417675d55d5d4d8b244f7a34}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0885-6125}
+      \field{journaltitle}{Machine Learning}
+      \field{number}{1}
+      \field{title}{Random Forests}
+      \field{volume}{45}
+      \field{year}{2001}
+      \field{pages}{5\bibrangedash 32}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1023/A:1010933404324
+      \endverb
+    \endentry
+    \entry{fatdillah2022}{article}{}
+      \name{author}{7}{}{%
+        {{hash=9ed6defa8986a8c02eb6241c1830d466}{%
+           family={Fatdillah},
+           familyi={F\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c54c6e48865822a289877b090aac58f1}{%
+           family={Rehan},
+           familyi={R\bibinitperiod},
+           given={Balqis\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=969c4789631c773e3af59eb4d09da188}{%
+           family={Rameshwaran},
+           familyi={R\bibinitperiod},
+           given={Ponnambalam},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bda1d6a986aa51b87d349326195a694c}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Victoria\bibnamedelima A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b0861c65bb991453e504d66fdc5c9579}{%
+           family={Zulkafli},
+           familyi={Z\bibinitperiod},
+           given={Zed},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d6bf821f74f7bcac969c6b0b03a4f1c5}{%
+           family={Yusuf},
+           familyi={Y\bibinitperiod},
+           given={Badronnisa},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8d1dba2db548e85824dd25a3b83eb013}{%
+           family={Sayers},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{c2d55236e4a793f46896bef37eeca2af}
+      \strng{fullhash}{d131be60bb6974a927144fe7c3c48492}
+      \strng{bibnamehash}{c2d55236e4a793f46896bef37eeca2af}
+      \strng{authorbibnamehash}{c2d55236e4a793f46896bef37eeca2af}
+      \strng{authornamehash}{c2d55236e4a793f46896bef37eeca2af}
+      \strng{authorfullhash}{d131be60bb6974a927144fe7c3c48492}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2073-4441}
+      \field{journaltitle}{Water}
+      \field{number}{14}
+      \field{title}{Spatial Estimates of Flood Damage and Risk Are Influenced by the Underpinning {DEM} Resolution: A Case Study in {Kuala Lumpur}, {Malaysia}}
+      \field{volume}{14}
+      \field{year}{2022}
+      \field{pages}{2208}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/w14142208
+      \endverb
+    \endentry
+    \entry{fikri2026}{article}{}
+      \name{author}{3}{}{%
+        {{hash=25b373a85fdcc376c8241b7400caedb7}{%
+           family={Fikri},
+           familyi={F\bibinitperiod},
+           given={Rijal\bibnamedelima Muhammad},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=84a0c5fb69a5ad4e7e2eef04a236e2be}{%
+           family={Herawati},
+           familyi={H\bibinitperiod},
+           given={Henny},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4a641f446fe041b4854bfe6ad4dcb539}{%
+           family={Pranoto},
+           familyi={P\bibinitperiod},
+           given={Wati\bibnamedelima Asriningsih},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{a9770d5b9a733f7aa5ddc5000511b28c}
+      \strng{fullhash}{a9770d5b9a733f7aa5ddc5000511b28c}
+      \strng{bibnamehash}{a9770d5b9a733f7aa5ddc5000511b28c}
+      \strng{authorbibnamehash}{a9770d5b9a733f7aa5ddc5000511b28c}
+      \strng{authornamehash}{a9770d5b9a733f7aa5ddc5000511b28c}
+      \strng{authorfullhash}{a9770d5b9a733f7aa5ddc5000511b28c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2073-4441}
+      \field{journaltitle}{Water}
+      \field{number}{10}
+      \field{title}{Influence of {DEM} Spatial Resolution on the Accuracy and Computational Efficiency of {HEC-RAS} {1D} and {2D} Flood Inundation Modelling: A Case Study of the {Cimanceuri} Basin, {Indonesia}}
+      \field{volume}{18}
+      \field{year}{2026}
+      \field{pages}{1203}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/w18101203
+      \endverb
+    \endentry
+    \entry{roberts2017}{article}{}
+      \name{author}{14}{}{%
+        {{hash=8757785039815c2ae72c0ad4e86db274}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=8e9658f7695f7b67acfc882eaeadb45f}{%
+           family={Bahn},
+           familyi={B\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+        {{hash=09e171ca6fbd23492244a680bf33d115}{%
+           family={Ciuti},
+           familyi={C\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dc81c7f9cae28796afb9c45efce6d849}{%
+           family={Boyce},
+           familyi={B\bibinitperiod},
+           given={Mark\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=22e158108d166fcb5d64aab03da6300f}{%
+           family={Elith},
+           familyi={E\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1f1a495648ba3bad5ada18ad5f02fa0f}{%
+           family={Guillera-Arroita},
+           familyi={G\bibinithyphendelim A\bibinitperiod},
+           given={Gurutzeta},
+           giveni={G\bibinitperiod}}}%
+        {{hash=749971ea84887e346c6c48401b051b32}{%
+           family={Hauenstein},
+           familyi={H\bibinitperiod},
+           given={Severin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=039c23fb4b08573d813878c388cc3b4a}{%
+           family={Lahoz-Monfort},
+           familyi={L\bibinithyphendelim M\bibinitperiod},
+           given={José\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5ee0107bf08c27fc0a3e192f04dbe6df}{%
+           family={Schröder},
+           familyi={S\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c8420a71ed1be07777ddccc3254bee18}{%
+           family={Thuiller},
+           familyi={T\bibinitperiod},
+           given={Wilfried},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1ba59c28f90db059d902fa5b3248b41c}{%
+           family={Warton},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=aeccd33e04ed4951aa8e89c1c059b554}{%
+           family={Wintle},
+           familyi={W\bibinitperiod},
+           given={Brendan\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f2023df7507c5721104bd31350623c8c}{%
+           family={Hartig},
+           familyi={H\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e58ec5a72f2b79de033f264f720ad88c}{%
+           family={Dormann},
+           familyi={D\bibinitperiod},
+           given={Carsten\bibnamedelima F.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{c0e0955684122d4025d2671d18c95203}
+      \strng{fullhash}{a4abb5c445cb2b1c726724b4683fd324}
+      \strng{bibnamehash}{c0e0955684122d4025d2671d18c95203}
+      \strng{authorbibnamehash}{c0e0955684122d4025d2671d18c95203}
+      \strng{authornamehash}{c0e0955684122d4025d2671d18c95203}
+      \strng{authorfullhash}{a4abb5c445cb2b1c726724b4683fd324}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0906-7590}
+      \field{journaltitle}{Ecography}
+      \field{number}{8}
+      \field{title}{Cross-Validation Strategies for Data with Temporal, Spatial, Hierarchical, or Phylogenetic Structure}
+      \field{volume}{40}
+      \field{year}{2017}
+      \field{pages}{913\bibrangedash 929}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/ecog.02881
+      \endverb
+    \endentry
+    \entry{ploton2020}{article}{}
+      \name{author}{13}{}{%
+        {{hash=301f5d005dbcf82359cf9b683bf6929b}{%
+           family={Ploton},
+           familyi={P\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e2db8e82cc721d21798073aa844cbae7}{%
+           family={Mortier},
+           familyi={M\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+        {{hash=44460b6346b0f4b517ec77aeb191c640}{%
+           family={Réjou-Méchain},
+           familyi={R\bibinithyphendelim M\bibinitperiod},
+           given={Maxime},
+           giveni={M\bibinitperiod}}}%
+        {{hash=67267a19ed244883b95aff55924d88f8}{%
+           family={Barbier},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=281a1f62f1c5c9046cfe1146454bafbd}{%
+           family={Picard},
+           familyi={P\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7260d6fb90f8aa6f9a742bae68e41beb}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Vivien},
+           giveni={V\bibinitperiod}}}%
+        {{hash=573cfd89d6b39683abe544fbfb65c34e}{%
+           family={Dormann},
+           familyi={D\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod}}}%
+        {{hash=74ae8adc1cb2ce06bdb0688a00d3c46d}{%
+           family={Cornu},
+           familyi={C\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e129b05a636b6962b56cbd46da664e25}{%
+           family={Viennois},
+           familyi={V\bibinitperiod},
+           given={Nadine},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b4ba07a6c45f21b2db255d5da4b1b806}{%
+           family={Bayol},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ba04f7be06cafdbe27c7190775e644fd}{%
+           family={Lyapustin},
+           familyi={L\bibinitperiod},
+           given={Alexei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0f5d630c4525b67819e0febdd15d3e61}{%
+           family={Gourlet-Fleury},
+           familyi={G\bibinithyphendelim F\bibinitperiod},
+           given={Sylvie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e7ef6535a670bc27fbd21a8c8f1a70d6}{%
+           family={Pélissier},
+           familyi={P\bibinitperiod},
+           given={Raphaël},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{9ae6380263e8d545bcf61c6affd89599}
+      \strng{fullhash}{e05ac6372bedaf9e31b5c9b20ede2f0c}
+      \strng{bibnamehash}{9ae6380263e8d545bcf61c6affd89599}
+      \strng{authorbibnamehash}{9ae6380263e8d545bcf61c6affd89599}
+      \strng{authornamehash}{9ae6380263e8d545bcf61c6affd89599}
+      \strng{authorfullhash}{e05ac6372bedaf9e31b5c9b20ede2f0c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{title}{Spatial Validation Reveals Poor Predictive Performance of Large-Scale Ecological Mapping Models}
+      \field{volume}{11}
+      \field{year}{2020}
+      \field{pages}{4540}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-020-18321-y
+      \endverb
+    \endentry
+    \entry{zanaga2021}{misc}{}
+      \name{author}{21}{}{%
+        {{hash=a3ad0019f35bd3d65d5ca1b68853a778}{%
+           family={Zanaga},
+           familyi={Z\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7216d673d9d4cc4c9b91ba0f2f10c765}{%
+           family={{Van De Kerchove}},
+           familyi={V\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f35ee2517cf7443fc056e975e7962cfc}{%
+           family={{De Keersmaecker}},
+           familyi={D\bibinitperiod},
+           given={Wanda},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f1226e03408392fa1a3f32ba43d204e0}{%
+           family={Souverijns},
+           familyi={S\bibinitperiod},
+           given={Niels},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9c2f9ad91d6086809283574c2de185b1}{%
+           family={Brockmann},
+           familyi={B\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b6422f4f139f396953ff700908521ec9}{%
+           family={Quast},
+           familyi={Q\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=530d31cb2cf1329d8ebdf8a14c47c36a}{%
+           family={Wevers},
+           familyi={W\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5ad606dd04f776acf1e97281f4e3b055}{%
+           family={Grosu},
+           familyi={G\bibinitperiod},
+           given={Alexandru},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9936ad3f2b4ecb924219f00291b49968}{%
+           family={Paccini},
+           familyi={P\bibinitperiod},
+           given={Audrey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=03defcb46469c2166260dc2cf169a7d0}{%
+           family={Vergnaud},
+           familyi={V\bibinitperiod},
+           given={Sandra},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d2caf124a66ac343e0d8160521a72ddb}{%
+           family={Cartus},
+           familyi={C\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=0c958cda81bea1bd1f0f69615e98d5e8}{%
+           family={Santoro},
+           familyi={S\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dca98d9c3ccad4b0b26d4ac078d7fb43}{%
+           family={Fritz},
+           familyi={F\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0373747ce5e2a154d4aee74dcfe97e28}{%
+           family={Georgieva},
+           familyi={G\bibinitperiod},
+           given={Ivelina},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c5930872a4135827f65a222f32fb1f30}{%
+           family={Lesiv},
+           familyi={L\bibinitperiod},
+           given={Myroslava},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6d8f2c0a6d362ef29e327fa8782c6a08}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0cae6b16f762095f8108863bcba3c255}{%
+           family={Herold},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=88f7e2f920b75a95089a3f11d0ed001c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Linlin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0b62663645ae1a9095d4a05259808dc2}{%
+           family={Tsendbazar},
+           familyi={T\bibinitperiod},
+           given={Nandin-Erdene},
+           giveni={N\bibinithyphendelim E\bibinitperiod}}}%
+        {{hash=6169481a2a8e11c72d0c9f1bb595e501}{%
+           family={Ramoino},
+           familyi={R\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=578ee81bff5354d6d6feea118e6c4a1b}{%
+           family={Arino},
+           familyi={A\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{61387255b6233119d0b1010ea0fc5ea1}
+      \strng{fullhash}{0c9178b99e31afd241b3ad231099897f}
+      \strng{bibnamehash}{61387255b6233119d0b1010ea0fc5ea1}
+      \strng{authorbibnamehash}{61387255b6233119d0b1010ea0fc5ea1}
+      \strng{authornamehash}{61387255b6233119d0b1010ea0fc5ea1}
+      \strng{authorfullhash}{0c9178b99e31afd241b3ad231099897f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{European Space Agency (ESA). Dataset released under CC~BY~4.0 licence}
+      \field{title}{{ESA} {WorldCover} 10\,m 2020 v100}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.5281/zenodo.5571936
+      \endverb
+    \endentry
+    \entry{yuwono2024}{article}{}
+      \name{author}{6}{}{%
+        {{hash=2c7590e9b7dbb41fcb24a780e7102416}{%
+           family={Yuwono},
+           familyi={Y\bibinitperiod},
+           given={Bambang\bibnamedelima Darmo},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=3f479c6d1abca393e7e68ff2da5ea589}{%
+           family={Abidin},
+           familyi={A\bibinitperiod},
+           given={Hasanuddin\bibnamedelima Z.},
+           giveni={H\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=2e2be33ec9c3d57943151f8daa798187}{%
+           family={Poerbandono},
+           familyi={P\bibinitperiod}}}%
+        {{hash=2a7b06bc806de8aab83efa8e2663c4ce}{%
+           family={Andreas},
+           familyi={A\bibinitperiod},
+           given={Heri},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b6e0d69f4a6e5862a4b21b4cb60fc2dc}{%
+           family={Pratama},
+           familyi={P\bibinitperiod},
+           given={Amal\bibnamedelimb S.\bibnamedelimi P.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=6beab6081683a554e454da051ca174d9}{%
+           family={Gradiyanto},
+           familyi={G\bibinitperiod},
+           given={Fernaldi},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e4fdd178d6446421d672723361a1c5fc}
+      \strng{fullhash}{d27d2b02eb7e55c7d405878eb38febc9}
+      \strng{bibnamehash}{e4fdd178d6446421d672723361a1c5fc}
+      \strng{authorbibnamehash}{e4fdd178d6446421d672723361a1c5fc}
+      \strng{authornamehash}{e4fdd178d6446421d672723361a1c5fc}
+      \strng{authorfullhash}{d27d2b02eb7e55c7d405878eb38febc9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0921-030X}
+      \field{journaltitle}{Natural Hazards}
+      \field{number}{6}
+      \field{title}{Mapping of Flood Hazard Induced by Land Subsidence in {Semarang City}, {Indonesia}, Using Hydraulic and Spatial Models}
+      \field{volume}{120}
+      \field{year}{2024}
+      \field{pages}{5333\bibrangedash 5368}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1007/s11069-023-06398-9
+      \endverb
+    \endentry
+    \entry{verdyansyah2025}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1ceb5867486b1893324f3be29fed08c8}{%
+           family={Verdyansyah},
+           familyi={V\bibinitperiod},
+           given={Aprizal},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c5db0f540f36bd7f5d56e861f801f73d}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Yi-Ling},
+           giveni={Y\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=62232eed3c2b13062f2135d83a48db2c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Fu-Cheng},
+           giveni={F\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=a8526f83a27372ea95a5fc2b1d184140}{%
+           family={Tsai},
+           familyi={T\bibinitperiod},
+           given={Fuan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=62d29d7255db70aebb7c78b62da682db}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tang-Huang},
+           giveni={T\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{314963ad33d492e011cd567cffc9ffa8}
+      \strng{fullhash}{48186455bed33aff31e2ba138b166f31}
+      \strng{bibnamehash}{314963ad33d492e011cd567cffc9ffa8}
+      \strng{authorbibnamehash}{314963ad33d492e011cd567cffc9ffa8}
+      \strng{authornamehash}{314963ad33d492e011cd567cffc9ffa8}
+      \strng{authorfullhash}{48186455bed33aff31e2ba138b166f31}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2071-1050}
+      \field{journaltitle}{Sustainability}
+      \field{number}{18}
+      \field{title}{Integrating {CMIP6} and Remote Sensing Datasets for Current and Future Flood Susceptibility Projections Using Machine Learning Under Climate Change Scenarios in {Demak} District for Future Sustainable Planning}
+      \field{volume}{17}
+      \field{year}{2025}
+      \field{pages}{8188}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/su17188188
+      \endverb
+    \endentry
+    \entry{yamazaki2019}{article}{}
+      \name{author}{6}{}{%
+        {{hash=96330c4a1cbb30b1a65f138bd6f1fa96}{%
+           family={Yamazaki},
+           familyi={Y\bibinitperiod},
+           given={Dai},
+           giveni={D\bibinitperiod}}}%
+        {{hash=de7089db867baeae09e0fa1d6475ed68}{%
+           family={Ikeshima},
+           familyi={I\bibinitperiod},
+           given={Daiki},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ab278de1ff09ab97cca2e3e8a42c9c4b}{%
+           family={Sosa},
+           familyi={S\bibinitperiod},
+           given={Jeison},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1c1efaa4c03b3529af2139d7307b415a}{%
+           family={Bates},
+           familyi={B\bibinitperiod},
+           given={Paul\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=42e60fc66125522f3650c2cc630969d1}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={George\bibnamedelima H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=3b81cf6b96519af1189d732850ec6fce}{%
+           family={Pavelsky},
+           familyi={P\bibinitperiod},
+           given={Tamlin},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Geophysical Union}%
+      }
+      \strng{namehash}{51cafef29eb4091ba967ddba80d15330}
+      \strng{fullhash}{4fb424ba5ca228abe4ee2e3fe718fb17}
+      \strng{bibnamehash}{51cafef29eb4091ba967ddba80d15330}
+      \strng{authorbibnamehash}{51cafef29eb4091ba967ddba80d15330}
+      \strng{authornamehash}{51cafef29eb4091ba967ddba80d15330}
+      \strng{authorfullhash}{4fb424ba5ca228abe4ee2e3fe718fb17}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0043-1397}
+      \field{journaltitle}{Water Resources Research}
+      \field{number}{6}
+      \field{title}{{MERIT} {Hydro}: A High-Resolution Global Hydrography Map Based on Latest Topography Dataset}
+      \field{volume}{55}
+      \field{year}{2019}
+      \field{pages}{5053\bibrangedash 5073}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1029/2019WR024873
+      \endverb
+    \endentry
+    \entry{funk2015}{article}{}
+      \name{author}{11}{}{%
+        {{hash=ed4def6de429f4039a38ac61ad138565}{%
+           family={Funk},
+           familyi={F\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=73e7781761147554590f789a5dc41bab}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Pete},
+           giveni={P\bibinitperiod}}}%
+        {{hash=91ae5b1f40ab9f94a8888fe25ada361d}{%
+           family={Landsfeld},
+           familyi={L\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2b0c8f914a80a9d858eb922df64d078a}{%
+           family={Pedreros},
+           familyi={P\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=188d3b4b509ae7a58f26d044c86a06b5}{%
+           family={Verdin},
+           familyi={V\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=725f4873866a08a7fbfd51bfdf0cab63}{%
+           family={Shukla},
+           familyi={S\bibinitperiod},
+           given={Shraddhanand},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ce418a3f75860fa0601547eafa6b883f}{%
+           family={Husak},
+           familyi={H\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b2eb11124de7097f103d8cc2dbff9321}{%
+           family={Rowland},
+           familyi={R\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0df2ac315fa268d29d14fef630901080}{%
+           family={Harrison},
+           familyi={H\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9d6e8fa5b9b8bc83970ef79f8cd2dda0}{%
+           family={Hoell},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8fc89955c1e32f43d58f729903af0fc7}{%
+           family={Michaelsen},
+           familyi={M\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{678935c621cb4355fbff3dbf2ce268e6}
+      \strng{fullhash}{e2dcba660f43dce9beb08e1e0a7553ba}
+      \strng{bibnamehash}{678935c621cb4355fbff3dbf2ce268e6}
+      \strng{authorbibnamehash}{678935c621cb4355fbff3dbf2ce268e6}
+      \strng{authornamehash}{678935c621cb4355fbff3dbf2ce268e6}
+      \strng{authorfullhash}{e2dcba660f43dce9beb08e1e0a7553ba}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2052-4463}
+      \field{journaltitle}{Scientific Data}
+      \field{number}{1}
+      \field{title}{The Climate Hazards Infrared Precipitation with Stations --- A New Environmental Record for Monitoring Extremes}
+      \field{volume}{2}
+      \field{year}{2015}
+      \field{pages}{150066}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/sdata.2015.66
+      \endverb
+    \endentry
+    \entry{saha2021}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{6}{}{%
+        {{hash=533c78c16e656c8a644496ab05306229}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Tamal\bibnamedelima Kanti},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1c8195d7b9f65116535eabcd9c08522f}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={Swades},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1606b7bd2800fa3c1de4ac5cbc80bb5a}{%
+           family={Talukdar},
+           familyi={T\bibinitperiod},
+           given={Swapan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cf76ed8eb2868980e595b5db818f977a}{%
+           family={Debanshi},
+           familyi={D\bibinitperiod},
+           given={Sandipta},
+           giveni={S\bibinitperiod}}}%
+        {{hash=739dba164ebc52ba0a695c74ed0b81dd}{%
+           family={Khatun},
+           familyi={K\bibinitperiod},
+           given={Rumki},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a8cb90f3be3048b45a1423904a4f9eb5}{%
+           family={Singha},
+           familyi={S\bibinitperiod},
+           given={Pankaj},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ed87b861c642a6bb59589fe93b21b6ef}
+      \strng{fullhash}{e42b6598f5b1bf0bd3981bcdf2385cc6}
+      \strng{bibnamehash}{ed87b861c642a6bb59589fe93b21b6ef}
+      \strng{authorbibnamehash}{ed87b861c642a6bb59589fe93b21b6ef}
+      \strng{authornamehash}{ed87b861c642a6bb59589fe93b21b6ef}
+      \strng{authorfullhash}{e42b6598f5b1bf0bd3981bcdf2385cc6}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0301-4797}
+      \field{journaltitle}{Journal of Environmental Management}
+      \field{title}{How Far Spatial Resolution Affects the Ensemble Machine Learning Based Flood Susceptibility Prediction in Data Sparse Region}
+      \field{volume}{297}
+      \field{year}{2021}
+      \field{pages}{113344}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jenvman.2021.113344
+      \endverb
+    \endentry
+    \entry{youden1950}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8a14c8fc620f02f72d283f2269561b6d}{%
+           family={Youden},
+           familyi={Y\bibinitperiod},
+           given={W.\bibnamedelimi J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{8a14c8fc620f02f72d283f2269561b6d}
+      \strng{fullhash}{8a14c8fc620f02f72d283f2269561b6d}
+      \strng{bibnamehash}{8a14c8fc620f02f72d283f2269561b6d}
+      \strng{authorbibnamehash}{8a14c8fc620f02f72d283f2269561b6d}
+      \strng{authornamehash}{8a14c8fc620f02f72d283f2269561b6d}
+      \strng{authorfullhash}{8a14c8fc620f02f72d283f2269561b6d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0008-543X}
+      \field{journaltitle}{Cancer}
+      \field{number}{1}
+      \field{title}{Index for Rating Diagnostic Tests}
+      \field{volume}{3}
+      \field{year}{1950}
+      \field{pages}{32\bibrangedash 35}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1002/1097-0142(1950)3:1<32::AID-CNCR2820030106>3.0.CO;2-3
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

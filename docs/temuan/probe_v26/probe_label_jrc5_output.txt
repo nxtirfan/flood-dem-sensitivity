@@ -1,0 +1,46 @@
+===== GRID default(WGS, seperti probe kernel) =====
+AOI piksel (dari histogram komb)  : 1321915
+(a) JRC ada-occ (piksel sahih)    : 63498 = 4.80% AOI
+    JRC no-data / luar pita       : 1258417 = 95.20% AOI
+(b) flood=1 & JRC ada-occ         : 10615
+(c) flood=1 & JRC no-data         : 0  <- NOL: konfirmasi N-1
+(d) flood=0 & JRC ada-occ         : 52883
+    flood=0 & JRC no-data         : 1258417
+total flood=1                    : 10615 (semua di pita JRC: 100.00%)
+(e) flood_raw masked (tidak berlabel): 1259426 = 95.27% AOI
+    flood_raw valid-true          : 48574
+    flood_raw valid-false         : 0
+sanity raw masked+true+false     : 1308000 (harus 1321915)
+
+===== GRID EPSG:32749 =====
+AOI piksel (dari histogram komb)  : 1302581
+(a) JRC ada-occ (piksel sahih)    : 62542 = 4.80% AOI
+    JRC no-data / luar pita       : 1240039 = 95.20% AOI
+(b) flood=1 & JRC ada-occ         : 10360
+(c) flood=1 & JRC no-data         : 0  <- NOL: konfirmasi N-1
+(d) flood=0 & JRC ada-occ         : 52182
+    flood=0 & JRC no-data         : 1240039
+total flood=1                    : 10360 (semua di pita JRC: 100.00%)
+(e) flood_raw masked (tidak berlabel): 1241091 = 95.28% AOI
+    flood_raw valid-true          : 47972
+    flood_raw valid-false         : 0
+sanity raw masked+true+false     : 1289063 (harus 1302581)
+
+CATATAN PENTING (dibaca ulang setelah analisis):
+- Histogram `komb` hanya memuat piksel yang bermask >0 (band komb mewarisi
+  footprint band JRC), sehingga "AOI piksel" dari histogram (1.321.915 /
+  1.302.581) BUKAN AOI penuh (1.469.555 / 1.448.210). Persentase di atas
+  relatif terhadap piksel terbuka band komb, bukan AOI penuh.
+- "total flood=1 = 10.615" di sini = flood=1 yang turut terbuka pada mask band
+  komb (diukur pada footprint yang memiliki nilai occ). Angka penuh flood=1
+  dari kernel v26 (histogram label, mask penuh) = 58.573 px dari AOI
+  1.469.555 = 3,99% AOI.
+- Konsistensi antar-probe: 63.499 vs 63.498 = selisih 1 px antar-grid karena
+  resampling nearest 30 m pada proyeksi berbeda.
+- YANG DEFINITIF: (c) = 0 pada SEMUA probe (1, 2, 5), kedua grid, kedua metode
+  (sum berbobot dan histogram): tidak ada satu piksel pun flood=1 di luar
+  pita JRC.
+- flood_raw valid-true 48.574 vs flood=1 penuh 58.573: selisih ~10 ribu =
+  piksel flood=1 yang mask band-nya 0 pada kombinasi (mengikuti jrc_ada
+  dengan sameFootprint default) - ketidakpastian kecil hanya memengaruhi
+  angka sekunder, tidak mengubah (c)=0 dan tidak mengubah fakta utama T04.

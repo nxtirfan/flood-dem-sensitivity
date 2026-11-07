@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "rasters": {
+    "prob_srtm": {
+      "status": "COMPLETED",
+      "kind": "prob",
+      "file": "rasters/prob_srtm.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T14:10:57Z",
+      "started_at_utc": "2026-11-05T14:10:57Z",
+      "finished_at_utc": "2026-11-05T14:15:15Z",
+      "sha256": "e5ac05b33beed1c78acf6aae6e508c9aee0c9b8dc5c4bad6f14e96087503e3fb",
+      "size_bytes": 5141241,
+      "n_valid": 3292156,
+      "n_nodata": 9652,
+      "min": 0.0,
+      "max": 0.9874750971794128
+    },
+    "risk_class_srtm": {
+      "status": "COMPLETED",
+      "kind": "risk",
+      "file": "rasters/risk_class_srtm.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T14:15:15Z",
+      "started_at_utc": "2026-11-05T14:15:15Z",
+      "finished_at_utc": "2026-11-05T14:19:57Z",
+      "sha256": "53bc87c78446bb27c032769ca6af5301f260d9698da2ea48d7d3710cdff2770b",
+      "size_bytes": 261039,
+      "n_valid": 3301808,
+      "n_nodata": 0,
+      "min": 1.0,
+      "max": 5.0
+    },
+    "prob_glo30": {
+      "status": "COMPLETED",
+      "kind": "prob",
+      "file": "rasters/prob_glo30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T14:19:57Z",
+      "started_at_utc": "2026-11-05T14:19:57Z",
+      "finished_at_utc": "2026-11-05T14:25:06Z",
+      "sha256": "37f884bbf96e4b8f466a4f8f07063be45e3af4bc043517a026674f5e50e6dcaf",
+      "size_bytes": 5134979,
+      "n_valid": 3292156,
+      "n_nodata": 9652,
+      "min": 0.0,
+      "max": 0.9874237775802612
+    },
+    "risk_class_glo30": {
+      "status": "COMPLETED",
+      "kind": "risk",
+      "file": "rasters/risk_class_glo30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T14:25:06Z",
+      "started_at_utc": "2026-11-05T14:25:06Z",
+      "finished_at_utc": "2026-11-05T14:30:14Z",
+      "sha256": "025c5284f95e6089df6588ad9c26c327b53484bf21f05dd753933ab381a0dd2f",
+      "size_bytes": 249745,
+      "n_valid": 3301808,
+      "n_nodata": 0,
+      "min": 1.0,
+      "max": 5.0
+    },
+    "prob_aw3d30": {
+      "status": "COMPLETED",
+      "kind": "prob",
+      "file": "rasters/prob_aw3d30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T14:30:14Z",
+      "started_at_utc": "2026-11-05T14:30:14Z",
+      "finished_at_utc": "2026-11-05T14:52:20Z",
+      "sha256": "0a4bd7b24079a7199f341177b85b03afb02fa82bf1315c889afd19e7e4fc2cf7",
+      "size_bytes": 5091735,
+      "n_valid": 3277653,
+      "n_nodata": 24155,
+      "min": 0.0,
+      "max": 0.9877970814704895
+    },
+    "risk_class_aw3d30": {
+      "status": "COMPLETED",
+      "kind": "risk",
+      "file": "rasters/risk_class_aw3d30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T14:52:20Z",
+      "started_at_utc": "2026-11-05T14:52:20Z",
+      "finished_at_utc": "2026-11-05T14:58:08Z",
+      "sha256": "0db54b38a7570992fd25633c4295db3256faf04ceaf63c99a6767e123343c0e2",
+      "size_bytes": 261601,
+      "n_valid": 3301808,
+      "n_nodata": 0,
+      "min": 1.0,
+      "max": 5.0
+    },
+    "delta_abs_srtm_vs_glo30": {
+      "status": "COMPLETED",
+      "kind": "delta",
+      "file": "rasters/delta_abs_srtm_vs_glo30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T14:58:08Z",
+      "started_at_utc": "2026-11-05T14:58:08Z",
+      "finished_at_utc": "2026-11-05T15:07:32Z",
+      "sha256": "5c0c10d09c995fcca05c3a8c99e132849d370ed5c5572539f9bc314379e9116a",
+      "size_bytes": 5283466,
+      "n_valid": 3292156,
+      "n_nodata": 9652,
+      "min": 0.0,
+      "max": 0.8699545860290527
+    },
+    "agreement_srtm_vs_glo30": {
+      "status": "COMPLETED",
+      "kind": "agreement",
+      "file": "rasters/agreement_srtm_vs_glo30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T15:07:32Z",
+      "started_at_utc": "2026-11-05T15:07:32Z",
+      "finished_at_utc": "2026-11-05T15:12:58Z",
+      "sha256": "527d5e2831b133d7a3431f1531b785793e684e4a507113cdd07713400cb9a165",
+      "size_bytes": 228914,
+      "n_valid": 3301808,
+      "n_nodata": 0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "delta_abs_srtm_vs_aw3d30": {
+      "status": "COMPLETED",
+      "kind": "delta",
+      "file": "rasters/delta_abs_srtm_vs_aw3d30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T15:12:59Z",
+      "started_at_utc": "2026-11-05T15:12:59Z",
+      "finished_at_utc": "2026-11-05T15:19:46Z",
+      "sha256": "0a748835a658485816e9471d67d9736814fd509e19c95875e7a6f8b0250cc8fc",
+      "size_bytes": 5256180,
+      "n_valid": 3277653,
+      "n_nodata": 24155,
+      "min": 0.0,
+      "max": 0.7282326221466064
+    },
+    "agreement_srtm_vs_aw3d30": {
+      "status": "COMPLETED",
+      "kind": "agreement",
+      "file": "rasters/agreement_srtm_vs_aw3d30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T15:19:46Z",
+      "started_at_utc": "2026-11-05T15:19:46Z",
+      "finished_at_utc": "2026-11-05T15:23:54Z",
+      "sha256": "ec0670d9938493733d4e6b2d569022387b16cee0f68f839f1894246e067dfeed",
+      "size_bytes": 221096,
+      "n_valid": 3301808,
+      "n_nodata": 0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "delta_abs_glo30_vs_aw3d30": {
+      "status": "COMPLETED",
+      "kind": "delta",
+      "file": "rasters/delta_abs_glo30_vs_aw3d30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T15:23:54Z",
+      "started_at_utc": "2026-11-05T15:23:54Z",
+      "finished_at_utc": "2026-11-05T15:31:21Z",
+      "sha256": "ee44d968ca616a5f9fa15914842243657ae35a48ecd7ce1aebff661736f6c59c",
+      "size_bytes": 5233380,
+      "n_valid": 3277653,
+      "n_nodata": 24155,
+      "min": 0.0,
+      "max": 0.8463022708892822
+    },
+    "agreement_glo30_vs_aw3d30": {
+      "status": "COMPLETED",
+      "kind": "agreement",
+      "file": "rasters/agreement_glo30_vs_aw3d30.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T15:31:21Z",
+      "started_at_utc": "2026-11-05T15:31:21Z",
+      "finished_at_utc": "2026-11-05T15:36:09Z",
+      "sha256": "692cb2289bd57f4d7be0a61b34a325b10c7fdbd21f7bcdd75f8092853f44c76d",
+      "size_bytes": 225128,
+      "n_valid": 3301808,
+      "n_nodata": 0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "proxy_flood_label_sentinel1": {
+      "status": "COMPLETED",
+      "kind": "label",
+      "file": "rasters/proxy_flood_label_sentinel1.tif",
+      "tile_px": 1024,
+      "pending_at_utc": "2026-11-05T15:36:09Z",
+      "started_at_utc": "2026-11-05T15:36:09Z",
+      "finished_at_utc": "2026-11-05T15:36:24Z",
+      "sha256": "aa9d842380bc35f81919bf7184716ec4dfd9955c33c50cdb9ad545f044c91f95",
+      "size_bytes": 61144,
+      "n_valid": 3301808,
+      "n_nodata": 0,
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "grid": {
+    "crs": "EPSG:32749",
+    "res": 30.0,
+    "x0": 419280.0,
+    "y1": 9258540.0,
+    "width": 2074,
+    "height": 1592
+  },
+  "validation": {
+    "checked_at_utc": "2026-11-05T15:36:30Z",
+    "checks": [
+      {
+        "check": "status_ekspor",
+        "status": "PASS",
+        "detail": "13 COMPLETED"
+      },
+      {
+        "check": "grid_identik_semua_raster",
+        "status": "PASS",
+        "detail": "13/13 raster lolos CRS/transform/ukuran/resolusi/NoData/rentang terhadap grid yang sama; extent=(419280.0, 9210780.0, 481500.0, 9258540.0)"
+      },
+      {
+        "check": "nodata_antar_DEM:prob",
+        "status": "INFO",
+        "detail": "valid per DEM=[3292156, 3292156, 3277653] | piksel beda mask vs prob_srtm: [0, 14503]"
+      },
+      {
+        "check": "nodata_antar_DEM:risk_class",
+        "status": "PASS",
+        "detail": "valid per DEM=[3301808, 3301808, 3301808] | piksel beda mask vs risk_class_srtm: [0, 0]"
+      },
+      {
+        "check": "piksel_valid_vs_hitungan_GEE",
+        "status": "INFO",
+        "detail": "raster=3292156 | GEE=1438214 | selisih relatif=+1.29e+00"
+      },
+      {
+        "check": "prob_vs_kelas:srtm",
+        "status": "FAIL",
+        "detail": "selisih di luar tepi batas kelas=1848071 | di tepi batas (presisi float32)=0"
+      },
+      {
+        "check": "prob_vs_kelas:glo30",
+        "status": "FAIL",
+        "detail": "selisih di luar tepi batas kelas=1848071 | di tepi batas (presisi float32)=0"
+      },
+      {
+        "check": "prob_vs_kelas:aw3d30",
+        "status": "FAIL",
+        "detail": "selisih di luar tepi batas kelas=1848071 | di tepi batas (presisi float32)=1"
+      },
+      {
+        "check": "delta_lokal:srtm_vs_glo30",
+        "status": "FAIL",
+        "detail": "maks |selisih| = 3.830e-03"
+      },
+      {
+        "check": "agreement_lokal:srtm_vs_glo30",
+        "status": "FAIL",
+        "detail": "piksel beda = 1848072"
+      },
+      {
+        "check": "delta_lokal:srtm_vs_aw3d30",
+        "status": "FAIL",
+        "detail": "maks |selisih| = 2.577e-03"
+      },
+      {
+        "check": "agreement_lokal:srtm_vs_aw3d30",
+        "status": "FAIL",
+        "detail": "piksel beda = 1848072"
+      },
+      {
+        "check": "delta_lokal:glo30_vs_aw3d30",
+        "status": "FAIL",
+        "detail": "maks |selisih| = 2.577e-03"
+      },
+      {
+        "check": "agreement_lokal:glo30_vs_aw3d30",
+        "status": "FAIL",
+        "detail": "piksel beda = 1848071"
+      },
+      {
+        "check": "statistik_vs_GEE:srtm vs glo30",
+        "status": "INFO",
+        "detail": "mean|dP| raster=0.02438 GEE=0.05555 | agreement raster=0.35007 GEE=0.79430"
+      },
+      {
+        "check": "transisi_vs_GEE:srtm vs glo30",
+        "status": "FAIL",
+        "detail": "total |selisih sel| / total piksel = 1.27e+00"
+      },
+      {
+        "check": "statistik_vs_GEE:srtm vs aw3d30",
+        "status": "INFO",
+        "detail": "mean|dP| raster=0.01619 GEE=0.03714 | agreement raster=0.36995 GEE=0.83967"
+      },
+      {
+        "check": "transisi_vs_GEE:srtm vs aw3d30",
+        "status": "FAIL",
+        "detail": "total |selisih sel| / total piksel = 1.27e+00"
+      },
+      {
+        "check": "statistik_vs_GEE:glo30 vs aw3d30",
+        "status": "INFO",
+        "detail": "mean|dP| raster=0.02108 GEE=0.04829 | agreement raster=0.35828 GEE=0.81310"
+      },
+      {
+        "check": "transisi_vs_GEE:glo30 vs aw3d30",
+        "status": "FAIL",
+        "detail": "total |selisih sel| / total piksel = 1.27e+00"
+      },
+      {
+        "check": "luas_vs_GEE:srtm",
+        "status": "INFO",
+        "detail": "selisih relatif total = 1.28e+00 (lokal memakai 900 m2/piksel, GEE memakai pixelArea)"
+      },
+      {
+        "check": "luas_vs_GEE:glo30",
+        "status": "INFO",
+        "detail": "selisih relatif total = 1.28e+00 (lokal memakai 900 m2/piksel, GEE memakai pixelArea)"
+      },
+      {
+        "check": "luas_vs_GEE:aw3d30",
+        "status": "INFO",
+        "detail": "selisih relatif total = 1.28e+00 (lokal memakai 900 m2/piksel, GEE memakai pixelArea)"
+      }
+    ]
+  },
+  "aoi_pixel_count_gee": 1438214,
+  "updated_at_utc": "2026-11-05T15:36:30Z"
+}

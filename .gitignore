@@ -1,0 +1,17 @@
+# Kredensial sensitif (jangan pernah commit)
+**/.credentials/
+**/gee-service-account.json
+**/kaggle.json
+
+# Materi kuliah & arsip di luar lingkup repo
+1. Contoh Proposal Metopen/
+2. Arsip Proposal Usang/
+4. BAHAN AJAR METOPEN - 24 Aug 2026/
+_backup/
+3. ARTIKEL REFERENCE - SMT 4/RPS-*.pdf
+
+# Sistem & sampah editor
+Thumbs.db
+desktop.ini
+~$*
+*.tmp

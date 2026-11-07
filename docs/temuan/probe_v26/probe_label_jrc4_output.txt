@@ -1,0 +1,18 @@
+replika updateMask(jrc): count=189345 sum=187776.5 mean=1.000000
+occ bernilai (unmask sentinel): count=1475080 sum=63499
+
+[Jalankan live berhenti di sini; ukuran r3 (mask band) dan r4 (replika count saja)
+tidak sempat diedeksekusi sebelum sesi terputus - bukan kegagalan perhitungan.]
+
+INTI BUKTI probe 4:
+- `replika = constant(1).updateMask(occurrence)`: count = 189.345 piksel terbuka,
+  sum = 187.776,5 dengan mean = 1,000000 bentrok aritmetika: sum/count = 0,9917.
+  Artinya reduceRegion.sum() di ekspresi itu TIDAK membaca nilai band constant (1)
+  sebagai 'value' murni; nilai sum dilaporkan oleh kernel v26 sebagai "JRC valid
+  187.777 (12,78%)" - yaitu ukuran BERBOBOT (Sigma mask fraksional), bukan jumlah piksel.
+- `occ bernilai` (unmask sentinel): count = 1.475.080 (di grid native JRC ~30 m
+  hampir seluruh AOI), sum = 63.499 = jumlah piksel yang benar-benar memiliki
+  nilai occ (0..100).
+- Kesimpulan metodologis: probe kernel "12,78% JRC valid" ≈ footprint/keandalan
+  band mask JRC (~12,8-12,9% AOI); nilai occ yang benar-benar terbaca hanya di
+  ~4,3% AOI. Keduanya konsisten dengan kesimpulan (c)=0.

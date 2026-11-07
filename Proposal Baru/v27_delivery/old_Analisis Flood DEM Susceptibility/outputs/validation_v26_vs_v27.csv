@@ -1,0 +1,21 @@
+komponen,berkas,status,maks_selisih_abs,maks_selisih_rel,catatan
+evaluasi_utama,model_metrics.csv,TIDAK_ADA_REFERENSI,,,Audit manual: nilai identik hingga beda 1 ulp (ambang Youden berbasis p. peta model GLO-30 ...636 menjadi ...637); akibat perbedaan lingkungan eksekusi (Colab vs Kaggle) dengan pipeline sama.
+evaluasi_utama,delta_metrics_vs_srtm.csv,TIDAK_ADA_REFERENSI,,,Audit manual: konsisten dengan model_metrics.csv v27; selisih antarproduk tidak berubah lebih dari 1 ulp.
+evaluasi_utama,spatial_cv_metrics.csv,TIDAK_ADA_REFERENSI,,,Audit manual: identik byte-level dengan kolom yang dirujuk pada naskah; bukan hasil verifikasi otomatis.
+evaluasi_utama,spatial_cv_test_predictions.csv,TIDAK_ADA_REFERENSI,,,"Audit manual: directory besar, tidak dibandingkan ujung-ke-ujung; digunakan notebook v27 sebagai input Moran OOF; identitas blok/fold diverifikasi selama pembentukan weight (label & blok seluruh titik uji cocok)."
+evaluasi_utama,spatial_cv_delta_auc_bootstrap.csv,TIDAK_ADA_REFERENSI,,,Audit manual: identik byte-level dengan versi v26.
+evaluasi_utama,spatial_cv_delta_auc_bootstrap_pixel_legacy.csv,TIDAK_ADA_REFERENSI,,,Audit manual: artefak legacy; tidak dirujuk pada naskah.
+evaluasi_utama,sample_audit.csv,TIDAK_ADA_REFERENSI,,,Audit manual: identik byte-level (2.978/kelas seed 42).
+evaluasi_utama,training_sample_features.csv,TIDAK_ADA_REFERENSI,,,Audit manual: nilai fitur identik pada 10 dp; hash md5 berbeda hanya karena prosedur penulisan angka/koma perbedaan format bukan isi. Log audit tersimpan di sesi kerja.
+multi_seed,multiseed_holdout.csv,TIDAK_ADA_REFERENSI,,,Audit manual: identik byte-level dengan kolom yang dirujuk pada naskah.
+multi_seed,multiseed_spatial_cv.csv,TIDAK_ADA_REFERENSI,,,Audit manual: identik byte-level.
+multi_seed,multiseed_summary.csv,TIDAK_ADA_REFERENSI,,,Audit manual: identik byte-level dengan kolom yang dirujuk pada naskah.
+multi_seed,multiseed_delta_auc.csv,TIDAK_ADA_REFERENSI,,,Audit manual: identik byte-level.
+multi_seed,multiseed_test_predictions.csv,TIDAK_ADA_REFERENSI,,,Audit manual: file besar; tidak dibandingkan ujung-ke-ujung; per-angka metrik pada multiseed_summary.csv identik.
+statistik_spasial_peta,sensitivity_summary.csv,TIDAK_ADA_REFERENSI,,,"Audit manual: share 0,056/0,037/0,048 & 79,42/83,95/81,31 persen cocok dengan naskah; tidak dibandingkan dengan run v26 secara otomatis."
+statistik_spasial_peta,area_per_risk_class_km2.csv,TIDAK_ADA_REFERENSI,,,"Audit manual: kelas 5 v27 = 105,1/114,1/113,5 km2; kelas 1 = 756,7/822,6/772,5 km2; dipakai untuk re-quote naskah."
+statistik_spasial_peta,transition_srtm_vs_glo30.csv,TIDAK_ADA_REFERENSI,,,Audit manual: 94.306/36.869/25.679 piksel dipakai untuk re-quote naskah.
+statistik_spasial_peta,transition_srtm_vs_aw3d30.csv,TIDAK_ADA_REFERENSI,,,Audit manual: 174.072 piksel (kelas 2) dan 103.412 piksel (kelas 5) dipakai untuk re-quote naskah.
+statistik_spasial_peta,transition_glo30_vs_aw3d30.csv,TIDAK_ADA_REFERENSI,,,Audit manual: nilai konsisten dengan naskah; tidak dirujuk secara khusus.
+statistik_spasial_peta,worldcover_sensitivity.csv,TIDAK_ADA_REFERENSI,,,"Audit manual: 9 angka re-quote (54,3/60,4/63,4/66,6/61,5/63,8/77,4/82,7/72,6 persen) dipakai untuk naskah; rentang Pembahasan diperbarui mengikuti CSV ini."
+statistik_dem_gee,dem_stats.csv,TIDAK_ADA_REFERENSI,,,Audit manual: beda 1e-13 pada beberapa nilai; angka naskah (offset dkk.) berasal dari CSV v27.

@@ -1,0 +1,39 @@
+===== GRID reduceRegion scale=30 tileScale=8, crs=default(WGS) =====
+AOI px                        : 1469555
+footprint JRC (occ ada)       : 211137 (14.37%)
+luar footprint (label n.d.)   : 1258417 (85.63%)
+occ = 0   (valid, tdk air)    : 150 (0.01%)
+occ 1..79 (valid, episodic)   : 36488 (2.48%)
+occ >= 80 (air permanen)      : 26861 (1.83%)
+replika probe kernel occ>0    : 187777 (12.78%)  <- harus 187.777 (12,78%)
+footprint+nd = 1469554 (harus 1469555)
+occ0+occpos+luar = 1321916 (harus 1469555)
+flood=1 total        : 58574
+flood=1 & footprint  : 58574
+flood=1 & luar fp    : 0  <- NOL: label=1 mustahil di luar pita JRC
+flood=0 & footprint  : 152564
+flood=0 & luar fp    : 1258417
+flood1 fp+nd = 58574 (harus 58574)
+
+===== GRID reduceRegion scale=30 tileScale=8, crs=EPSG:32749 =====
+AOI px                        : 1448210
+footprint JRC (occ ada)       : 208170 (14.37%)
+luar footprint (label n.d.)   : 1240040 (85.63%)
+occ = 0   (valid, tdk air)    : 149 (0.01%)
+occ 1..79 (valid, episodic)   : 35940 (2.48%)
+occ >= 80 (air permanen)      : 26454 (1.83%)
+replika probe kernel occ>0    : 185098 (12.78%)  <- harus 187.777 (12,78%)
+footprint+nd = 1448210 (harus 1448210)
+occ0+occpos+luar = 1302583 (harus 1448210)
+flood=1 total        : 57566
+flood=1 & footprint  : 57566
+flood=1 & luar fp    : 0  <- NOL: label=1 mustahil di luar pita JRC
+flood=0 & footprint  : 150604
+flood=0 & luar fp    : 1240040
+flood1 fp+nd = 57566 (harus 57566)
+
+Catatan pasca-diagnosis (probe 3/4): semua angka di atas adalah Sigma(value*mask)
+(pemberatan mask fraksional band JRC), BUKAN jumlah piksel mentah. Definisi count:
+- replika kernel constant(1).updateMask(occ): count=189.345 px (12,88%), sum=187.776,5
+- band mask JRC >=0.. ==1: distribusi fraksional (lihat probe 3)
+- occ bernilai: 63.499 px (4,32%) [konsisten probe 1]

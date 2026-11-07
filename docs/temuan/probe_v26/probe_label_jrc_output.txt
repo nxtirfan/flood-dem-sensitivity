@@ -1,0 +1,40 @@
+===== GRID reduceRegion scale=30 tileScale=8, crs=default(WGS) =====
+AOI px                 : 1469555
+(a) JRC valid px       : 63499  (4.32% AOI)
+    JRC no-data px     : 1258417  (85.63% AOI)
+(b) flood=1 & JRC valid: 10616  (16.7184% dari JRC valid)
+(c) flood=1 & JRC n.d. : 0  <- NOL (konfirmasi N-1)
+(d) flood=0 & JRC valid: 52884
+    flood=0 & JRC n.d. : 1258417
+(e) flood_raw masked   : 1259427 (85.70% AOI = kandidat hilang)
+    karena JRC no-data : 1258417
+    karena S1 no-data  : 0
+    karena slope n.d.  : 3306
+    flood_raw true     : 13625
+    flood_raw false    : 48574
+sanity masked+true+false = 1321626 (harus = 1469555)
+
+===== GRID reduceRegion scale=30 tileScale=8, crs=EPSG:32749 =====
+AOI px                 : 1448210
+(a) JRC valid px       : 62543  (4.32% AOI)
+    JRC no-data px     : 1240040  (85.63% AOI)
+(b) flood=1 & JRC valid: 10360  (16.5646% dari JRC valid)
+(c) flood=1 & JRC n.d. : 0  <- NOL (konfirmasi N-1)
+(d) flood=0 & JRC valid: 52183
+    flood=0 & JRC n.d. : 1240040
+(e) flood_raw masked   : 1241092 (85.70% AOI = kandidat hilang)
+    karena JRC no-data : 1240040
+    karena S1 no-data  : 0
+    karena slope n.d.  : 3709
+    flood_raw true     : 13250
+    flood_raw false    : 47973
+sanity masked+true+false = 1302315 (harus = 1448210)
+
+Catatan pasca-diagnosis (lihf probe 3/4): angka-angka "sum" di atas = Sigma(value*mask)
+pada band boolean karena reduceRegion memberatkan nilai dengan mask bawaan band
+(band 'occurrence' JRC memiliki nilai mask fraksional 0..1). JRC-valid 63.499 ok karena
+mask ~= 1 di footprint nilai. Tiga pemahaman kuantitas:
+- occ bernilai (0..100)          : 63.499 px (4,32% AOI) [WGS-30m]
+- footprint mask>0 (count)       : 189.345 px (12,88%) ; Sigma mask = 187.777 (12,78%) [angka kernel]
+- luar footprint / mask-0        : sisa ~85-95% AOI (label JRC tidak tersedia)
+Semua varian konsisten menyimpulkan (c)=0.

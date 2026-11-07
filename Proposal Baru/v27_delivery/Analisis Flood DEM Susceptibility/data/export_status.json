@@ -1,0 +1,451 @@
+{
+ "schema_version": 1,
+ "rasters": {
+  "prob_srtm": {
+   "status": "COMPLETED",
+   "kind": "prob",
+   "file": "rasters/prob_srtm.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:10:58Z",
+   "started_at_utc": "2026-11-07T17:10:58Z",
+   "finished_at_utc": "2026-11-07T17:14:24Z",
+   "sha256": "d0a50cfc25798f2a2fd0789875e8afd62ddad74b1c35399263a0d373d3022808",
+   "size_bytes": 5123520,
+   "n_valid": 1444085,
+   "n_nodata": 1857723,
+   "min": 0.00448957085609436,
+   "max": 0.9874750971794128,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "risk_class_srtm": {
+   "status": "COMPLETED",
+   "kind": "risk",
+   "file": "rasters/risk_class_srtm.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:14:24Z",
+   "started_at_utc": "2026-11-07T17:14:24Z",
+   "finished_at_utc": "2026-11-07T17:18:40Z",
+   "sha256": "ea565e77e49dbb9758d5c8ccebcb3d3d56c8704dbe9071b2c92873f98d361881",
+   "size_bytes": 262927,
+   "n_valid": 1444085,
+   "n_nodata": 1857723,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "prob_glo30": {
+   "status": "COMPLETED",
+   "kind": "prob",
+   "file": "rasters/prob_glo30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:18:40Z",
+   "started_at_utc": "2026-11-07T17:18:40Z",
+   "finished_at_utc": "2026-11-07T17:22:22Z",
+   "sha256": "0edf41183e51fa8e1574d83a3a3fcb99e6bbe04602dfe9a546a7bf17dc76b47f",
+   "size_bytes": 5118251,
+   "n_valid": 1444085,
+   "n_nodata": 1857723,
+   "min": 0.00362153141759336,
+   "max": 0.9874237775802612,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "risk_class_glo30": {
+   "status": "COMPLETED",
+   "kind": "risk",
+   "file": "rasters/risk_class_glo30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:22:22Z",
+   "started_at_utc": "2026-11-07T17:22:22Z",
+   "finished_at_utc": "2026-11-07T17:25:10Z",
+   "sha256": "2f68e1c134280fb17f9aa24d26ffbd77ea5855d97103474ac90e0d84df0a7d40",
+   "size_bytes": 251625,
+   "n_valid": 1444085,
+   "n_nodata": 1857723,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "prob_aw3d30": {
+   "status": "COMPLETED",
+   "kind": "prob",
+   "file": "rasters/prob_aw3d30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:25:10Z",
+   "started_at_utc": "2026-11-07T17:25:10Z",
+   "finished_at_utc": "2026-11-07T17:30:03Z",
+   "sha256": "6546338773664f384574e86dafd4e0e7eda5499f9faf920444084737c665bff9",
+   "size_bytes": 5074879,
+   "n_valid": 1429582,
+   "n_nodata": 1872226,
+   "min": 0.004384054336696863,
+   "max": 0.9877970814704895,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "risk_class_aw3d30": {
+   "status": "COMPLETED",
+   "kind": "risk",
+   "file": "rasters/risk_class_aw3d30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:30:03Z",
+   "started_at_utc": "2026-11-07T17:30:03Z",
+   "finished_at_utc": "2026-11-07T17:33:10Z",
+   "sha256": "9771dac554909cb7ca3384cf9dacab5bc26dc65d61429558e0d3cdd4f436fe92",
+   "size_bytes": 264971,
+   "n_valid": 1429582,
+   "n_nodata": 1872226,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "delta_abs_srtm_vs_glo30": {
+   "status": "COMPLETED",
+   "kind": "delta",
+   "file": "rasters/delta_abs_srtm_vs_glo30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:33:10Z",
+   "started_at_utc": "2026-11-07T17:33:10Z",
+   "finished_at_utc": "2026-11-07T17:37:33Z",
+   "sha256": "225214de6d04dc1028467e1f192d89174e12b356b0abba5d577e0c3272d36450",
+   "size_bytes": 5196910,
+   "n_valid": 1444085,
+   "n_nodata": 1857723,
+   "min": 1.5366822481155396e-08,
+   "max": 0.8699545860290527,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "agreement_srtm_vs_glo30": {
+   "status": "COMPLETED",
+   "kind": "agreement",
+   "file": "rasters/agreement_srtm_vs_glo30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:37:33Z",
+   "started_at_utc": "2026-11-07T17:37:33Z",
+   "finished_at_utc": "2026-11-07T17:41:18Z",
+   "sha256": "20eb813cace972b371441d1fd283de585c287049202f25f56fed55b88cf322f5",
+   "size_bytes": 230193,
+   "n_valid": 1444085,
+   "n_nodata": 1857723,
+   "min": 0.0,
+   "max": 1.0,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "delta_abs_srtm_vs_aw3d30": {
+   "status": "COMPLETED",
+   "kind": "delta",
+   "file": "rasters/delta_abs_srtm_vs_aw3d30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:41:18Z",
+   "started_at_utc": "2026-11-07T17:41:18Z",
+   "finished_at_utc": "2026-11-07T17:44:51Z",
+   "sha256": "82ec65c455f684903ea3274add5a0a380be775af39a08db4f65e08ae189516b3",
+   "size_bytes": 5118963,
+   "n_valid": 1429582,
+   "n_nodata": 1872226,
+   "min": 0.0,
+   "max": 0.7282326221466064,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "agreement_srtm_vs_aw3d30": {
+   "status": "COMPLETED",
+   "kind": "agreement",
+   "file": "rasters/agreement_srtm_vs_aw3d30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:44:51Z",
+   "started_at_utc": "2026-11-07T17:44:51Z",
+   "finished_at_utc": "2026-11-07T17:48:49Z",
+   "sha256": "5b0705fc9f22e89f6c76962e3ec7a94d920e9593679c44d492300edd88694658",
+   "size_bytes": 222909,
+   "n_valid": 1429582,
+   "n_nodata": 1872226,
+   "min": 0.0,
+   "max": 1.0,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "delta_abs_glo30_vs_aw3d30": {
+   "status": "COMPLETED",
+   "kind": "delta",
+   "file": "rasters/delta_abs_glo30_vs_aw3d30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:48:49Z",
+   "started_at_utc": "2026-11-07T17:48:49Z",
+   "finished_at_utc": "2026-11-07T17:52:22Z",
+   "sha256": "508a32797c8b7e5a51772360ed74708dda6f949499cecf0a50223b11748f6857",
+   "size_bytes": 5143417,
+   "n_valid": 1429582,
+   "n_nodata": 1872226,
+   "min": 1.30385160446167e-08,
+   "max": 0.8463022708892822,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "agreement_glo30_vs_aw3d30": {
+   "status": "COMPLETED",
+   "kind": "agreement",
+   "file": "rasters/agreement_glo30_vs_aw3d30.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:52:22Z",
+   "started_at_utc": "2026-11-07T17:52:22Z",
+   "finished_at_utc": "2026-11-07T17:56:04Z",
+   "sha256": "d7ec08742da38649c53d4ababbfbbd33cd8ae8cf14b082f32ef5107dd9bfeba8",
+   "size_bytes": 226737,
+   "n_valid": 1429582,
+   "n_nodata": 1872226,
+   "min": 0.0,
+   "max": 1.0,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  },
+  "proxy_flood_label_sentinel1": {
+   "status": "COMPLETED",
+   "kind": "label",
+   "file": "rasters/proxy_flood_label_sentinel1.tif",
+   "tile_px": 1024,
+   "pending_at_utc": "2026-11-07T17:56:04Z",
+   "started_at_utc": "2026-11-07T17:56:04Z",
+   "finished_at_utc": "2026-11-07T17:56:13Z",
+   "sha256": "45f090943babba6a54dd08010b82ae7900a56a40850670c4a4a6acfa05e69774",
+   "size_bytes": 80795,
+   "n_valid": 1444085,
+   "n_nodata": 1857723,
+   "min": 0.0,
+   "max": 1.0,
+   "masked_locally_at_utc": "2026-11-07T21:36:31Z"
+  }
+ },
+ "grid": {
+  "crs": "EPSG:32749",
+  "res": 30.0,
+  "x0": 419280.0,
+  "y1": 9258540.0,
+  "width": 2074,
+  "height": 1592
+ },
+ "validation": {
+  "checked_at_utc": "2026-11-07T21:36:31Z",
+  "checks": [
+   {
+    "check": "status_ekspor",
+    "status": "PASS",
+    "detail": "13/13 COMPLETED (status lokal diperbarui via surgery T10)"
+   },
+   {
+    "check": "grid_identik_semua_raster",
+    "status": "PASS",
+    "detail": "1 kombinasi shape/transform/crs ( harus 1 )"
+   },
+   {
+    "check": "nodata_antar_DEM:prob",
+    "status": "INFO",
+    "detail": "valid per DEM=[1444085, 1444085, 1429582] | piksel beda mask vs prob_srtm: [0, 0, 14503]"
+   },
+   {
+    "check": "nodata_antar_DEM:risk_class",
+    "status": "INFO",
+    "detail": "valid per DEM=[1444085, 1444085, 1429582] | piksel beda mask vs risk_class_srtm: [0, 0, 14503]"
+   },
+   {
+    "check": "piksel_valid_vs_hitungan_GEE",
+    "status": "INFO",
+    "detail": "raster=1444085 | GEE=1438214 | selisih relatif=+4.08e-03"
+   },
+   {
+    "check": "valid_vs_aoi:agreement_glo30_vs_aw3d30",
+    "status": "PASS",
+    "detail": "raster=1429582 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=-6.00e-03"
+   },
+   {
+    "check": "valid_vs_aoi:agreement_srtm_vs_aw3d30",
+    "status": "PASS",
+    "detail": "raster=1429582 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=-6.00e-03"
+   },
+   {
+    "check": "valid_vs_aoi:agreement_srtm_vs_glo30",
+    "status": "PASS",
+    "detail": "raster=1444085 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=+4.08e-03"
+   },
+   {
+    "check": "valid_vs_aoi:delta_abs_glo30_vs_aw3d30",
+    "status": "PASS",
+    "detail": "raster=1429582 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=-6.00e-03"
+   },
+   {
+    "check": "valid_vs_aoi:delta_abs_srtm_vs_aw3d30",
+    "status": "PASS",
+    "detail": "raster=1429582 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=-6.00e-03"
+   },
+   {
+    "check": "valid_vs_aoi:delta_abs_srtm_vs_glo30",
+    "status": "PASS",
+    "detail": "raster=1444085 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=+4.08e-03"
+   },
+   {
+    "check": "valid_vs_aoi:prob_aw3d30",
+    "status": "PASS",
+    "detail": "raster=1429582 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=-6.00e-03"
+   },
+   {
+    "check": "valid_vs_aoi:prob_glo30",
+    "status": "PASS",
+    "detail": "raster=1444085 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=+4.08e-03"
+   },
+   {
+    "check": "valid_vs_aoi:prob_srtm",
+    "status": "PASS",
+    "detail": "raster=1444085 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=+4.08e-03"
+   },
+   {
+    "check": "valid_vs_aoi:proxy_flood_label_sentinel1",
+    "status": "PASS",
+    "detail": "raster=1444085 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=+4.08e-03"
+   },
+   {
+    "check": "valid_vs_aoi:risk_class_aw3d30",
+    "status": "PASS",
+    "detail": "raster=1429582 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=-6.00e-03"
+   },
+   {
+    "check": "valid_vs_aoi:risk_class_glo30",
+    "status": "PASS",
+    "detail": "raster=1444085 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=+4.08e-03"
+   },
+   {
+    "check": "valid_vs_aoi:risk_class_srtm",
+    "status": "PASS",
+    "detail": "raster=1444085 | hitungan piksel AOI (GEE)=1438214 | selisih relatif=+4.08e-03"
+   },
+   {
+    "check": "mask_kelas_subs_prob:srtm",
+    "status": "PASS",
+    "detail": "piksel beda mask probabilitas vs kelas = 0"
+   },
+   {
+    "check": "mask_kelas_subs_prob:glo30",
+    "status": "PASS",
+    "detail": "piksel beda mask probabilitas vs kelas = 0"
+   },
+   {
+    "check": "mask_kelas_subs_prob:aw3d30",
+    "status": "PASS",
+    "detail": "piksel beda mask probabilitas vs kelas = 0"
+   },
+   {
+    "check": "mask_subs_irisan:delta_abs_srtm_vs_glo30",
+    "status": "PASS",
+    "detail": "piksel beda mask vs irisan probabilitas = 0"
+   },
+   {
+    "check": "mask_subs_irisan:agreement_srtm_vs_glo30",
+    "status": "PASS",
+    "detail": "piksel beda mask vs irisan probabilitas = 0"
+   },
+   {
+    "check": "mask_subs_irisan:delta_abs_srtm_vs_aw3d30",
+    "status": "PASS",
+    "detail": "piksel beda mask vs irisan probabilitas = 0"
+   },
+   {
+    "check": "mask_subs_irisan:agreement_srtm_vs_aw3d30",
+    "status": "PASS",
+    "detail": "piksel beda mask vs irisan probabilitas = 0"
+   },
+   {
+    "check": "mask_subs_irisan:delta_abs_glo30_vs_aw3d30",
+    "status": "PASS",
+    "detail": "piksel beda mask vs irisan probabilitas = 0"
+   },
+   {
+    "check": "mask_subs_irisan:agreement_glo30_vs_aw3d30",
+    "status": "PASS",
+    "detail": "piksel beda mask vs irisan probabilitas = 0"
+   },
+   {
+    "check": "prob_vs_kelas:srtm",
+    "status": "PASS",
+    "detail": "piksel beda klasifikasi = 0"
+   },
+   {
+    "check": "prob_vs_kelas:glo30",
+    "status": "PASS",
+    "detail": "piksel beda klasifikasi = 0"
+   },
+   {
+    "check": "prob_vs_kelas:aw3d30",
+    "status": "PASS",
+    "detail": "selisih di luar tepi batas kelas=0 | di tepi batas (presisi float32)=1"
+   },
+   {
+    "check": "delta_lokal:srtm_vs_glo30",
+    "status": "PASS",
+    "detail": "maks |selisih| = 3.830e-03"
+   },
+   {
+    "check": "agreement_lokal:srtm_vs_glo30",
+    "status": "PASS",
+    "detail": "piksel beda = 1"
+   },
+   {
+    "check": "delta_lokal:srtm_vs_aw3d30",
+    "status": "PASS",
+    "detail": "maks |selisih| = 2.577e-03"
+   },
+   {
+    "check": "agreement_lokal:srtm_vs_aw3d30",
+    "status": "PASS",
+    "detail": "piksel beda = 1"
+   },
+   {
+    "check": "delta_lokal:glo30_vs_aw3d30",
+    "status": "PASS",
+    "detail": "maks |selisih| = 2.577e-03"
+   },
+   {
+    "check": "agreement_lokal:glo30_vs_aw3d30",
+    "status": "PASS",
+    "detail": "piksel beda = 0"
+   },
+   {
+    "check": "statistik_vs_GEE:srtm vs glo30",
+    "status": "PASS",
+    "detail": "mean|dP| raster=0.05557 GEE=0.05558 | agreement raster=0.79373 GEE=0.79358"
+   },
+   {
+    "check": "transisi_vs_GEE:srtm vs glo30",
+    "status": "INFO",
+    "detail": "total |selisih sel| / total piksel = 1.41e-02"
+   },
+   {
+    "check": "statistik_vs_GEE:srtm vs aw3d30",
+    "status": "PASS",
+    "detail": "mean|dP| raster=0.03712 GEE=0.03713 | agreement raster=0.84278 GEE=0.84270"
+   },
+   {
+    "check": "transisi_vs_GEE:srtm vs aw3d30",
+    "status": "INFO",
+    "detail": "total |selisih sel| / total piksel = 1.41e-02"
+   },
+   {
+    "check": "statistik_vs_GEE:glo30 vs aw3d30",
+    "status": "PASS",
+    "detail": "mean|dP| raster=0.04832 GEE=0.04833 | agreement raster=0.81522 GEE=0.81516"
+   },
+   {
+    "check": "transisi_vs_GEE:glo30 vs aw3d30",
+    "status": "INFO",
+    "detail": "total |selisih sel| / total piksel = 1.41e-02"
+   },
+   {
+    "check": "luas_vs_GEE:srtm",
+    "status": "PASS",
+    "detail": "rel maks = 1.91e-04"
+   },
+   {
+    "check": "luas_vs_GEE:glo30",
+    "status": "PASS",
+    "detail": "rel maks = 1.19e-04"
+   },
+   {
+    "check": "luas_vs_GEE:aw3d30",
+    "status": "PASS",
+    "detail": "rel maks = 1.07e-04"
+   }
+  ]
+ },
+ "aoi_pixel_count_gee": 1438214,
+ "updated_at_utc": "2026-11-07T21:36:31Z",
+ "note_surgery": "v27.1/T10 lokal: 13 raster diberi mask AOI persis semantik patch cell 53+59 (mask = zona valid risk_class terkait; nilai di dalam mask tidak berubah; -9999 di luar mask). Deterministik, setara rerun berpatch. Original di data/rasters_backup_unmasked."
+}

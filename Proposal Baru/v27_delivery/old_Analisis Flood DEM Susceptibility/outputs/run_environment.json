@@ -1,0 +1,18 @@
+{
+  "run_mode": "PREPARE_MAPS",
+  "recorded_at_utc": "2026-11-05T13:30:29Z",
+  "python": "3.13.16",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "environment": "colab",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.16.3",
+    "pyarrow": "23.0.1",
+    "rasterio": "1.5.2",
+    "matplotlib": "3.10.0",
+    "earthengine-api": "1.7.39",
+    "geemap": "0.38.9"
+  }
+}
