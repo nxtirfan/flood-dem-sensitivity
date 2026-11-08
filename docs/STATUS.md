@@ -230,3 +230,7 @@
 - Tidak ada hasil/data/notebook/model/seed diubah atau eksperimen dijalankan; 300 berkas zona beku dan bibliografi tetap identik. Token angka, rumus, sitasi, referensi, dan struktur naskah tidak berubah.
 - PDF 50 halaman, 0 undefined, 5 overfull warisan dan 1 warning inputenc yang juga muncul pada baseline T12. ZIP sumber direbuild/diuji. Detail dan batas pemeriksaan: `docs/temuan/T13-revisi-wording.md`.
 - Lanjut konsultasi Dr. Iqbal memakai topik T12 dan PDF T13, kemudian putuskan artikel SMDS; beberapa halaman daftar isi bergeser.
+
+## Update 2026-11-08 - T14 titik koma prosa
+
+Sembilan belas titik koma pada prosa dipisah menjadi kalimat yang lebih alami; titik koma yang membantu rincian tetap dipertahankan. Naskah tidak dipangkas demi jumlah halaman. PDF tetap 50 halaman, 0 undefined, 5 overfull warisan dan 1 warning inputenc baseline. Angka/rumus/rujukan dan 301 hash zona beku/bibliografi tetap. Laporan: `docs/temuan/T14-tanda-baca.md`.

@@ -449,7 +449,7 @@ label kelas~1 menyatakan piksel yang terdeteksi banjir oleh pipeline
 proksi, sedangkan label kelas~0 menyatakan piksel yang tidak diidentifikasi
 sebagai banjir oleh pipeline yang sama, termasuk di luar area yang
 mendukung pembentukan label positif melalui mask JRC. Label kelas~0 bukan
-bukti bahwa lokasi tersebut tidak berbanjir; besaran \textit{false negative}
+bukti bahwa lokasi tersebut tidak berbanjir. Besaran \textit{false negative}
 tidak diketahui dalam eksperimen ini. Implikasi batas dukungan label
 dibahas pada Subbab~\ref{ssec:pembahasan}. Istilah non-banjir pada
 pelaporan sampel dan piksel selanjutnya merujuk pada kelas~0 menurut
@@ -465,7 +465,7 @@ sekitar $5{,}6$ cm) pada satu lintasan misi STS-99 tahun 2000
 \cite{farr2007}. Sinyal pita-C berinteraksi dengan kanopi vegetasi dan
 struktur bangunan, sehingga tinggi yang terukur lebih representatif bagi
 permukaan atas (kanopi serta atap bangunan) daripada permukaan tanah tanpa
-vegetasi (\textit{bare-earth}); dengan demikian, SRTM mempunyai
+vegetasi (\textit{bare-earth}). Dengan demikian, SRTM mempunyai
 karakteristik \textit{Digital Surface Model} (DSM).
 Acuan vertikal yang menyertai SRTM adalah EGM96. Produk ini telah banyak
 digunakan sebagai sumber topografi dalam penelitian
@@ -492,7 +492,7 @@ merekam citra pankromatik pada tiga arah pandang (maju, tengah, mundur) pada
 satu lintasan sehingga elevasi dapat direkonstruksi secara fotogrametrik,
 bukan dari interferometri radar. Karena berbasis citra optik, kawasan yang
 tertutupi awan berkelanjutan berpotensi menyisakan piksel tanpa nilai
-(\textit{void}); alur kerja penelitian memanfaatkan peta \textit{void mask}
+(\textit{void}). Alur kerja penelitian memanfaatkan peta \textit{void mask}
 resmi produk ini agar sumber nilai untuk setiap piksel, termasuk piksel
 hasil pengisian (\textit{fill}), terdokumentasi. Tinggi yang dilaporkan
 adalah tinggi ortometrik terhadap model geoid EGM96. Seperti kedua produk radar
@@ -932,7 +932,7 @@ menghasilkan artefak pada inventori banjir, misalnya artefak geometris
 radar pita-C (\textit{layover} dan \textit{foreshortening}) pada area
 berlereng curam, bukan membatasi domain pesisir.
 Karena acuan lereng berasal dari SRTM, label ini tidak sepenuhnya independen
-terhadap karakteristik satu produk perlakuan; implikasi hal tersebut
+terhadap karakteristik satu produk perlakuan. Implikasi hal tersebut
 dipertimbangkan dalam pembahasan pada Subbab~4.8.
 
 \subsection{Pembentukan Prediktor}
@@ -958,7 +958,7 @@ sampai $360^{\circ}$ sehingga mengandung diskontinuitas melingkar pada batas
 $0^{\circ}$/$360^{\circ}$. Untuk menghindari kesalahan interpretasi nilai
 sudut oleh model, \textit{aspect} direpresentasikan melalui dekomposisi
 sinus dan kosinusnya, serta satu indikator biner yang menandai piksel dengan
-arah lereng terdefinisi; pada daerah datar, arah lereng tidak terdefinisi
+arah lereng terdefinisi. Pada daerah datar, arah lereng tidak terdefinisi
 sehingga kasus tersebut dipisahkan secara eksplisit oleh indikator. Kelima fitur tersebut
 diulang identik untuk masing-masing produk elevasi yang diuji, sehingga jumlah
 prediktor yang diturunkan dari DEM sama pada ketiga konfigurasi.
@@ -1326,11 +1326,11 @@ tersebut merupakan rerata selisih elevasi pada piksel yang valid pada
 kedua produk yang dibandingkan, bukan pengurangan dua rerata wilayah
 dengan cakupan valid yang dapat berbeda. Tidak dilakukan transformasi
 koreksi vertikal. SRTM dan ALOS AW3D30 sama-sama memakai model geoid EGM96
-sebagai acuan tinggi; karena itu, selisih keduanya tidak dapat dijelaskan
+sebagai acuan tinggi. Karena itu, selisih keduanya tidak dapat dijelaskan
 oleh perbedaan model geoid. Copernicus DEM GLO-30 memakai EGM2008.
 Selisih antarproduk dapat mencerminkan perbedaan karakteristik pengukuran
-dan, pada pasangan yang berbeda model geoid, perbedaan acuan tinggi;
-kontribusi masing-masing belum dipisahkan dalam penelitian ini.
+dan, pada pasangan yang berbeda model geoid, perbedaan acuan tinggi.
+Kontribusi masing-masing belum dipisahkan dalam penelitian ini.
 Sementara itu, rata-rata
 kemiringan lereng (\textit{slope}) yang dihasilkan oleh masing-masing produk
 adalah $3{,}03^{\circ}$ pada SRTM, $2{,}46^{\circ}$ pada Copernicus DEM GLO-30,
@@ -1446,7 +1446,7 @@ optimistis akibat autokorelasi spasial \cite{roberts2017}, kemampuan
 generalisasi spasial model diuji lebih lanjut menggunakan validasi silang
 spasial 4-\textit{fold} (\textit{4-fold spatial cross-validation}). Pada skema
 ini, wilayah kajian dibagi ke dalam 16 blok berbasis kuantil bujur dan
-lintang; setiap \textit{fold} melatih model pada 12 blok dan menguji kinerja
+lintang. Setiap \textit{fold} melatih model pada 12 blok dan menguji kinerja
 prediksi probabilitas pada 4 blok yang dipisahkan. Hasil validasi silang
 spasial disajikan pada Tabel~\ref{tab:spatial-cv}.
 
@@ -1522,7 +1522,7 @@ lahan mengikuti kelas ESA WorldCover yang benar-benar hadir pada sampel
 masing-masing \textit{seed}: kelas~20 (semak belukar) hadir pada sampel
 \textit{seed}~100, 2024, dan 7 sehingga jumlah input efektif membesar menjadi
 25 pada \textit{seed} tersebut, sedangkan sampel utama serta \textit{seed}~42
-dan 99 memakai 24 prediktor; kontras antarproduk dalam satu \textit{seed}
+dan 99 memakai 24 prediktor. Kontras antarproduk dalam satu \textit{seed}
 tetap dihitung berpasangan sehingga pembandingan antarproduk tidak terganggu
 perbedaan ini.
 
@@ -1549,8 +1549,8 @@ sebesar $0{,}802$, lebih rendah dibandingkan nilai acuan sebesar $0{,}852$
 (selisih sekitar $0{,}05$), diikuti oleh Copernicus DEM GLO-30 sebesar
 $0{,}795$ dan ALOS AW3D30 sebesar $0{,}792$. Hasil ini menunjukkan bahwa alur
 pemodelan mampu mendekati tingkat kinerja acuan secara kasar, namun urutan
-peringkat pada pengujian pembanding ini tidak sama dengan eksperimen utama;
-urutan peringkat antarproduk karenanya bergantung pada himpunan sampel yang
+peringkat pada pengujian pembanding ini tidak sama dengan eksperimen utama.
+Urutan peringkat antarproduk karenanya bergantung pada himpunan sampel yang
 dipakai, temuan yang memperkuat keterbatasan pada Subbab~4.8 mengenai
 sensitivitas hasil terhadap desain sampel. Di samping itu, perbandingan
 dengan eksperimen awal pada domain terbatas di sekitar perairan kembali
@@ -1608,7 +1608,7 @@ kelas yang sama (elemen diagonal), seperti pada kelas~2 sebanyak
 174.072~piksel dan pada kelas~5 sebanyak 91.194~piksel. Angka matriks
 tersebut berasal dari reduksi server Google Earth Engine, sedangkan
 Moran's I peta dihitung dari raster ter-ekspor. Jumlah piksel pada kedua
-analisis tidak identik; perbedaan registrasi grid dan kriteria piksel valid
+analisis tidak identik. Perbedaan registrasi grid dan kriteria piksel valid
 perlu diperhatikan, tetapi kontribusinya terhadap selisih tersebut belum
 dipisahkan. Persentase dan luas dibaca menurut domain masing-masing tabel,
 bukan dengan mengasumsikan penyebut yang identik antaranalisis.
@@ -1737,8 +1737,8 @@ diskontinuitas di batas \textit{fold} dapat ikut memengaruhi nilai $I$.
 
 Moran's I dihitung pula pada raster probabilitas kerawanan dari model Google
 Earth Engine. Bobot spasial menggunakan \textit{queen contiguity} delapan
-tetangga yang distandardisasi per baris pada grid yang sama untuk ketiga DEM;
-piksel valid tanpa tetangga valid tidak disertakan. Hasil disajikan pada
+tetangga yang distandardisasi per baris pada grid yang sama untuk ketiga DEM.
+Piksel valid tanpa tetangga valid tidak disertakan. Hasil disajikan pada
 Tabel~\ref{tab:moran-raster}.
 
 \begin{table}[ht]
@@ -1842,7 +1842,7 @@ untuk menetapkan satu produk elevasi sebagai pilihan terbaik di seluruh
 wilayah atau kejadian banjir lain.
 
 Eksperimen mencakup satu periode kejadian banjir pada satu wilayah kajian dan
-menggunakan satu \textit{seed} utama untuk pembuatan peta; kestabilan metrik
+menggunakan satu \textit{seed} utama untuk pembuatan peta. Kestabilan metrik
 telah diuji pada lima \textit{seed}. Karena itu, hasil ini belum menggambarkan
 perilaku model pada kejadian banjir atau wilayah lain.
 
@@ -1853,7 +1853,7 @@ definisi pada Subbab~2.2 dan prosedur pada
 Subbab~\ref{ssec:flood-inventory}: label kelas~1 menyatakan piksel yang terdeteksi
 banjir oleh pipeline proksi, sedangkan label kelas~0 menyatakan piksel yang
 tidak diidentifikasi banjir oleh pipeline yang sama dan bukan bukti lokasi
-tersebut tidak berbanjir; besaran \textit{false negative} pada kelas~0 tidak
+tersebut tidak berbanjir. Besaran \textit{false negative} pada kelas~0 tidak
 terkuantifikasi dalam eksperimen ini. Label juga tidak sepenuhnya
 independen terhadap salah satu produk perlakuan karena penyaringan kemiringan
 lereng menggunakan SRTM, sementara penyaringan perairan permanen memanfaatkan
@@ -1862,8 +1862,8 @@ sekitar 12,8\%--14,4\% wilayah kajian dan nilai \textit{occurrence} terbaca
 pada sekitar 4,3\% wilayah kajian), sehingga label positif hanya dapat
 terbentuk di dalam area dukungan tersebut, sedangkan kandidat kelas~0
 mencakup area di dalam dan di luarnya. Kecocokan label hasil ekstraksi
-ulang dilaporkan sebesar 70\% terhadap 1.870 titik penelitian acuan;
-perbedaan ini belum dapat diatribusikan hanya pada pembaruan arsip
+ulang dilaporkan sebesar 70\% terhadap 1.870 titik penelitian acuan.
+Perbedaan ini belum dapat diatribusikan hanya pada pembaruan arsip
 Sentinel-1. Karena himpunan label yang sama diterapkan identik
 pada ketiga konfigurasi, kesetaraan perlakuan antarproduk elevasi tetap
 terjaga, namun kesetaraan pengolahan tersebut tidak menghilangkan seluruh
@@ -1902,11 +1902,11 @@ diuraikan pada Subbab~5.2.
 Analisis diagnostik autokorelasi spasial membawa keterbatasan yang
 perlu dicatat. \textit{Spatial cross-validation} memakai 16 blok bersebelahan
 tanpa zona penyangga, sehingga titik di tepi blok dapat berdekatan dengan
-data latih; kebocoran berkurang tetapi tidak dapat dinyatakan hilang. Global
+data latih. Kebocoran berkurang tetapi tidak dapat dinyatakan hilang. Global
 Moran's I adalah analisis diagnostik: hasilnya tidak membuktikan ada atau
 tidaknya \textit{spatial leakage}, dan hasil yang tidak signifikan tidak
 menunjukkan ketiadaan autokorelasi. Nilai Moran's I juga bergantung pada
-definisi bobot spasial; uji kepekaan dilakukan untuk $k=5$, $8$, dan $12$,
+definisi bobot spasial. Uji kepekaan dilakukan untuk $k=5$, $8$, dan $12$,
 tetapi definisi lain (misalnya pita jarak) tidak diuji.
 
 Probabilitas OOF tiap \textit{fold} berasal dari model berbeda, dan Moran's I
@@ -1935,7 +1935,7 @@ keempat pertanyaan rumusan masalah pada Subbab~1.2:
 ke dalam parameter topografi yang dihitung dari masing-masing produk:
 perbedaan antarproduk dilaporkan secara deskriptif dan spasial pada elevasi
 serta kemiringan lereng, termasuk nilai median elevasi dan offset vertikal
-antarproduk (Subbab~4.1); arah lereng masuk sebagai prediktor melalui
+antarproduk (Subbab~4.1). Arah lereng masuk sebagai prediktor melalui
 dekomposisi sinus--kosinus beserta indikator validitasnya, tanpa ringkasan
 numerik lintasproduk yang dilaporkan tersendiri.
 \item Ketiga peta probabilitas kerawanan banjir dihasilkan menggunakan sampel,
@@ -1949,7 +1949,7 @@ ketiganya serupa dengan variasi terbatas pada kelas risiko sangat tinggi
 tetapi konsisten: keunggulan Copernicus DEM GLO-30 terhadap ALOS AW3D30 dan
 terhadap SRTM konsisten pada sampel ulang blok (Subbab~4.4), sedangkan
 selang kepercayaan untuk pasangan SRTM dan ALOS AW3D30 masih memuat nol
-sehingga peringkat keduanya belum dapat dipisahkan; autokorelasi spasial
+sehingga peringkat keduanya belum dapat dipisahkan. Autokorelasi spasial
 diperhitungkan melalui validasi silang spasial dan \textit{bootstrap} pada
 tingkat blok (Subbab~3.8). Diagnostik autokorelasi spasial menguatkan rancangan
 tersebut: Moran's I residual OOF bernilai positif dan signifikan pada ketiga

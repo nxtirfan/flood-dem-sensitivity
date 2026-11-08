@@ -119,6 +119,8 @@ Output: 3 peta probabilitas + perbandingan metrik (accuracy/precision/recall/F1/
 
 | 2026-11-08 | **T13 wording Bab I–V selesai**: seleksi perapian terhadap naskah T12, perjelas bahwa kelas WorldCover 20 tidak muncul pada sampel utama (bukan kategori acuan yang sengaja dibuang), dan bedakan sumber statistik raster GEE/titik OOF; tanpa perubahan angka/data/model/eksperimen. PDF 50 hlm, 0 undefined, 5 overfull warisan dan 1 warning inputenc baseline; ZIP diuji. Laporan `docs/temuan/T13-revisi-wording.md`. |
 
+| 2026-11-08 | **T14:** 19 titik koma prosa ditinjau dan dipisah menjadi kalimat; rincian dan isi/angka tidak dipangkas. PDF 50 halaman, 0 undefined, 5 overfull warisan; 301 hash beku/bib identik. Laporan `docs/temuan/T14-tanda-baca.md`. Panjang naskah dikonsultasikan dengan dosen sesuai format mata kuliah. |
+
 ---
 
 ## 4. Struktur Folder (aktual)

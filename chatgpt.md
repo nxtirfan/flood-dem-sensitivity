@@ -2,6 +2,10 @@
 
 Tanggal: 8 November 2026. Aturan editor: baca `AGENTS.md` terlebih dahulu.
 
+## Update T14 — tanda baca prosa
+
+Sebanyak 19 titik koma pada prosa diganti dengan pemisahan kalimat; tanda baca pada rincian tetap dipertahankan. PDF tetap 50 halaman; tidak ada perubahan hasil atau pemangkasan isi. Lihat `docs/temuan/T14-tanda-baca.md`. Panjang naskah dan kebutuhan Bab IV–V dikonfirmasi saat konsultasi.
+
 ## Update T13 — wording Bab I–V selesai
 
 Pengguna menyetujui perapian bahasa pasca-T12. Rincian dan verifikasi ada di `docs/temuan/T13-revisi-wording.md`. Naskah dan PDF terkini telah diperbarui tanpa rerun atau perubahan angka/data/model; draf pra-audit tidak diterapkan mentah. Kelas WorldCover 20 tidak muncul pada sampel utama, bukan kategori acuan yang sengaja dibuang. Statistik spasial raster berasal dari peta GEE; statistik titik OOF dan metrik berasal dari evaluasi scikit-learn.

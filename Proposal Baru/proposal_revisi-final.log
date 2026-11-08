@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.11.8)  8 NOV 2026 07:18
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.11.8)  8 NOV 2026 07:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1721,6 +1721,12 @@ Underfull \hbox (badness 1112) in paragraph at lines 1495--1528
 r-ingkat
  []
 
+
+Underfull \hbox (badness 2012) in paragraph at lines 1495--1528
+\T1/lmr/m/n/12 ESA World-Cover yang benar-benar hadir pada sam-pel masing-masin
+g
+ []
+
 [32] [33]
 Underfull \hbox (badness 1769) in paragraph at lines 1589--1615
 \T1/lmr/m/n/12 pada Coper-ni-cus DEM GLO-30, dan $\OT1/lmr/m/n/12 95[]9[][]$ \T
@@ -1832,12 +1838,6 @@ n karena
  []
 
 [39] [40] [41]
-Underfull \hbox (badness 1005) in paragraph at lines 1934--1941
-\T1/lmr/m/n/12 dan off-set ver-tikal an-tarpro-duk (Sub-bab 4.1); arah lereng m
-a-suk
- []
-
-
 Underfull \hbox (badness 1394) in paragraph at lines 1948--1962
 \T1/lmr/m/n/12 tetapi kon-sis-ten: ke-ung-gu-lan Coper-ni-cus DEM GLO-30 ter-ha
 dap
