@@ -1,0 +1,13 @@
+item,local_version,manifest_version
+python,3.12.3,3.13.16
+numpy,2.5.4,2.4.6
+pandas,3.1.1,2.2.3
+scipy,1.18.1,1.16.3
+scikit-learn,1.9.1,1.6.1
+rasterio,1.5.2,1.5.2
+matplotlib,3.11.2,3.10.0
+pyarrow,not-installed,23.0.1
+earthengine-api,not-installed,1.7.39
+geemap,not-installed,0.38.9
+libpysal,4.15.1,
+esda,2.10.0,

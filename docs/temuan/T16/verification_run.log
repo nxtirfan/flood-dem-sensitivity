@@ -1,0 +1,16 @@
+{
+  "manifest_checks": 45,
+  "manifest_mismatches": 10,
+  "source_checks": 388,
+  "source_changed": 0
+}
+manifest.maps prob_srtm matches_backup= True
+manifest.maps prob_glo30 matches_backup= True
+manifest.maps prob_aw3d30 matches_backup= True
+manifest.maps delta_abs_srtm_vs_glo30 matches_backup= True
+manifest.maps agreement_srtm_vs_glo30 matches_backup= True
+manifest.maps delta_abs_srtm_vs_aw3d30 matches_backup= True
+manifest.maps agreement_srtm_vs_aw3d30 matches_backup= True
+manifest.maps delta_abs_glo30_vs_aw3d30 matches_backup= True
+manifest.maps agreement_glo30_vs_aw3d30 matches_backup= True
+manifest.maps proxy_flood_label_sentinel1 matches_backup= True

@@ -1,0 +1,4 @@
+dem,method,n,isolated,I
+srtm,float64 queen row-standardized; islands excluded,1444085,0,0.9577138908272715
+glo30,float64 queen row-standardized; islands excluded,1444085,0,0.9530758015453072
+aw3d30,float64 queen row-standardized; islands excluded,1429580,2,0.9544217225150826

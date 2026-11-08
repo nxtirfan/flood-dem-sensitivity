@@ -1,0 +1,2 @@
+evidence_path,notebook_cell16_execution_count,cached_selected_names,cached_warning_or_fallback_marker,manifest_roi_mode,manifest_rectangle_config,manifest_maps_timestamp,interpretation_limit
+canonical notebook cell 16 cached output; manifest data/manifest.json,10,"Wilayah administratif terpilih: ['Demak', 'Kota Semarang']",no fallback warning recorded,SEMDEMAK_ONLY,"[109.95, -7.45, 111.05, -6.65]",2026-11-07T17:56:21Z,cached cell records primary query success for that execution; manifest has no selected feature names or polygon; rectangle is only configured alternative

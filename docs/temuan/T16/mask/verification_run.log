@@ -1,0 +1,9 @@
+raster inventory=36; active=13; backup=10; old=13
+active grids unique: 1
+domain srtm 1444085 1299.6765
+domain glo30 1444085 1299.6765
+domain aw3d30 1429582 1286.6238
+agreement srtm glo30 1444085 79.37330558796747
+agreement srtm aw3d30 1429582 84.27743214450098
+agreement glo30 aw3d30 1429582 81.52180147763472
+geometry vector/archive candidates: 0 ; embedded GeoJSON candidates: 0 ; Parquet schemas reviewed: 12 ; notebook refs: 220
