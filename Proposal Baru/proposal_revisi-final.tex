@@ -345,12 +345,11 @@ relevan untuk pengembangan alur kerja berbasis data terbuka dan Google Earth
 Engine karena ketiga produk elevasi dapat digunakan dalam lingkungan
 pengolahan yang sama \cite{gorelick2017}.
 
-Hal tersebut memiliki implikasi praktis yang langsung menyangkut pengambilan
-keputusan: peta \textit{flood susceptibility} merupakan dasar penentuan
-area prioritas mitigasi, sehingga pergantian sumber elevasi berpotensi
-mengubah daftar area yang ditandai berisiko tinggi. Hasil penelitian ini
-memberikan ukuran seberapa besar perubahan tersebut, serta menjadi
-pertimbangan pemilihan produk elevasi bagi praktisi yang bekerja dengan
+Perbedaan peta \textit{flood susceptibility} berpotensi memengaruhi
+identifikasi wilayah kerawanan dan penentuan prioritas wilayah untuk kajian
+mitigasi lebih lanjut. Penelitian ini mengukur sensitivitas hasil pemetaan
+terhadap sumber elevasi, bukan membuktikan perubahan keputusan mitigasi.
+Hasilnya dapat menjadi bahan pertimbangan bagi praktisi yang bekerja dengan
 data terbuka \cite{fereshtehpour2024}.
 
 \subsection{Manfaat Penelitian}
@@ -1049,7 +1048,7 @@ Pengambilan sampel dilakukan terstratifikasi sebanyak 2.978 titik per kelas
 kemudian data dibagi 75\% latih dan 25\% uji dan diperlakukan identik pada
 ketiga perlakuan. Estimasi ketahanan hasil terhadap efek autokorelasi
 spasial dan pilihan \textit{seed} dilaporkan melalui pengecekan dengan
-validasi silang spasial dan bootstrap blok pada Subbab~3.8.
+validasi silang spasial dan \textit{block bootstrap} pada Subbab~3.8.
 
 \subsection{Evaluasi Model}
 
@@ -1084,7 +1083,7 @@ bergiliran sebagai blok uji; model dilatih ulang pada blok pelatihan dan
 dievaluasi pada blok uji yang dipisahkan spasial; hasil dilaporkan sebagai
 rata-rata metrik lintas \textit{fold} yang dihitung dari probabilitas
 prediksi pada piksel uji;
-\item \textbf{bootstrap blok}: selisih ROC-AUC antarproduk diresampling
+\item \textbf{block bootstrap}: selisih ROC-AUC antarproduk diresampling
 1.000 kali dengan pengembalian pada 16 blok yang sama; setiap pasangan
 produk dievaluasi pada sampel ulang blok yang identik sehingga kesalahan
 sampling dihitung berpasangan; interval kepercayaan 95\% diambil dari
@@ -1206,7 +1205,7 @@ tingkat.
 Tingkat pertama mengukur perubahan metrik kinerja model, yaitu perubahan
 ROC-AUC, accuracy, precision, recall, dan F1-score antarperlakuan. Selisih
 ROC-AUC antarproduk dilaporkan bersama interval kepercayaan hasil
-\textit{bootstrap} blok pada Subbab~3.8 agar perubahan dapat dinilai
+\textit{block bootstrap} pada Subbab~3.8 agar perubahan dapat dinilai
 terhadap ketidakpastian estimasi.
 
 \subsubsection{Sensitivitas spasial}
@@ -1370,16 +1369,21 @@ elevasi pada titik banjir tergolong kecil (median $|\Delta\text{slope}|$
 berkisar antara $0{,}85^{\circ}$ hingga $1{,}24^{\circ}$) dan korelasi
 antarproduk juga rendah (koefisien Spearman tidak melebihi $|0{,}07|$).
 Sementara itu, sebagian besar titik banjir berada di bawah $5^{\circ}$ pada
-ketiga produk (98,99\%, 99,97\%, dan 98,76\%). Kondisi tersebut sejalan dengan
-kriteria penyaringan lereng di bawah $5^{\circ}$ yang digunakan untuk
-mengurangi kemungkinan masuknya piksel dengan karakteristik lereng yang
-berpotensi menghasilkan artefak pada inventori banjir, seperti artefak
-geometris radar pita-C (\textit{layover} dan \textit{foreshortening}) pada
-area berlereng curam di bagian selatan wilayah kajian, tanpa memangkas
-domain genangan di kawasan pesisir. Karena acuan penyaringan menggunakan
-lereng dari SRTM, label tidak sepenuhnya independen terhadap karakteristik
-salah satu produk perlakuan. Desain ini tetap diterapkan identik pada ketiga
-eksperimen, dan implikasinya dibahas pada Subbab~4.8.
+ketiga produk (98,99\%, 99,97\%, dan 98,76\%). Namun, filter label SRTM
+$<5^{\circ}$ belum sepenuhnya konsisten dengan slope hasil ekstraksi.
+Pada sampel beku, 30 dari 2.978 titik berlabel banjir memiliki prediktor
+slope SRTM sedikitnya $5^{\circ}$, dengan maksimum $11{,}48^{\circ}$ tersebut.
+Kode filter label tidak menetapkan reproyeksi eksplisit, sedangkan slope
+prediktor dihitung setelah DEM direproyeksi ke EPSG:32749 pada resolusi 30~m.
+Kedua jalur memakai aset SRTM yang sama, tetapi nilai slope filter pada
+koordinat sampel dan mask perantara tidak tersedia untuk pemeriksaan
+berpasangan. Penyebab ketidaksesuaian ini belum dapat dipastikan dari
+artefak yang tersedia; perbedaan grid belum dapat dinyatakan sebagai
+penyebab yang terbukti. Konsistensi filter dan hasil ekstraksi masih
+memerlukan konfirmasi sebelum dokumen dinyatakan final. Karena acuan
+penyaringan memakai SRTM, label juga tidak sepenuhnya independen terhadap
+salah satu produk perlakuan, meskipun label diterapkan identik pada ketiga
+eksperimen (Subbab~4.8).
 
 \subsection{Hasil Pemodelan Random Forest}
 
@@ -1610,8 +1614,11 @@ tersebut berasal dari reduksi server Google Earth Engine, sedangkan
 Moran's I peta dihitung dari raster ter-ekspor. Jumlah piksel pada kedua
 analisis tidak identik. Perbedaan registrasi grid dan kriteria piksel valid
 perlu diperhatikan, tetapi kontribusinya terhadap selisih tersebut belum
-dipisahkan. Persentase dan luas dibaca menurut domain masing-masing tabel,
-bukan dengan mengasumsikan penyebut yang identik antaranalisis.
+dipisahkan. Luas kelas dan persentase kesesuaian pada tabel Subbab~4.5
+merujuk pada reduksi GEE, bukan hitungan ulang raster lokal pasca-mask.
+Nilainya sedikit berbeda pada kedua sumber tersebut. Karena itu, domain
+masing-masing sumber harus dibedakan dan penyebut antaranalisis tidak
+diasumsikan identik.
 
 \subsection{Sensitivitas Berdasarkan Tutupan Lahan}
 
@@ -1739,7 +1746,15 @@ Moran's I dihitung pula pada raster probabilitas kerawanan dari model Google
 Earth Engine. Bobot spasial menggunakan \textit{queen contiguity} delapan
 tetangga yang distandardisasi per baris pada grid yang sama untuk ketiga DEM.
 Piksel valid tanpa tetangga valid tidak disertakan. Hasil disajikan pada
-Tabel~\ref{tab:moran-raster}.
+Tabel~\ref{tab:moran-raster}. Angka ini merujuk pada CSV aktif pasca-perbaikan
+mask lokal T10, bukan output tersimpan notebook yang masih memuat hasil
+pra-mask. Ketiga raster memakai EPSG:32749, resolusi 30~m, dimensi
+$2074\times1592$, dan transformasi affine yang sama. Pemeriksaan raster
+menunjukkan kesamaan mask probabilitas dan kelas pada setiap DEM serta
+nilai NoData $-9999$ pada sel termask. Namun, mask tersebut belum dapat
+dicocokkan secara independen dengan batas geografis AOI karena geometri
+AOI tidak tersimpan dalam paket lokal. Ketepatan batas mask terhadap AOI
+masih memerlukan konfirmasi.
 
 \begin{table}[ht]
 \centering
@@ -1942,19 +1957,23 @@ numerik lintasproduk yang dilaporkan tersendiri.
 label, dan konfigurasi pemodelan yang dipertahankan sama, dengan lima
 prediktor turunan DEM yang disesuaikan menurut produk elevasi yang digunakan.
 Perbedaan hasil antarpeta kemudian dianalisis sebagai sensitivitas terhadap
-pergantian sumber elevasi dalam kerangka eksperimen terkontrol. Pola spasial
-ketiganya serupa dengan variasi terbatas pada kelas risiko sangat tinggi
+pergantian sumber elevasi dalam kerangka eksperimen terkontrol. Ketiga peta
+menunjukkan tingkat kesesuaian kelas sebesar 79,4\% hingga 84,3\%.
+Meskipun sebagian besar piksel memiliki kelas kerawanan yang sama,
+pergantian sumber elevasi tetap menghasilkan perubahan distribusi spasial,
+terutama pada kelas kerawanan ekstrem, yaitu sangat rendah dan sangat tinggi
 (Subbab~4.3 dan Subbab~4.5).
 \item Pergantian sumber elevasi menghasilkan perbedaan kinerja yang kecil
 tetapi konsisten: keunggulan Copernicus DEM GLO-30 terhadap ALOS AW3D30 dan
 terhadap SRTM konsisten pada sampel ulang blok (Subbab~4.4), sedangkan
 selang kepercayaan untuk pasangan SRTM dan ALOS AW3D30 masih memuat nol
-sehingga peringkat keduanya belum dapat dipisahkan. Autokorelasi spasial
-diperhitungkan melalui validasi silang spasial dan \textit{bootstrap} pada
-tingkat blok (Subbab~3.8). Diagnostik autokorelasi spasial menguatkan rancangan
-tersebut: Moran's I residual OOF bernilai positif dan signifikan pada ketiga
-DEM (0,355 sampai 0,377), sehingga amatan galat tidak bebas antarlokasi dan
-\textit{block bootstrap} tetap menjadi analisis utama perbandingan antarproduk.
+sehingga peringkat keduanya belum dapat dipisahkan. Risiko ketergantungan
+spasial diperhatikan melalui validasi silang spasial dan \textit{block bootstrap}
+(Subbab~3.8). Namun, Moran's I residual OOF masih bernilai positif dan
+signifikan pada ketiga DEM (0,355 sampai 0,377). Dengan demikian, rancangan
+evaluasi ini belum dapat dianggap sepenuhnya menghilangkan ketergantungan
+spasial. Prosedur \textit{block bootstrap} tetap menjadi analisis utama perbandingan
+antarproduk.
 Autokorelasi positif pada probabilitas OOF (0,877 sampai 0,886) dan pada label
 acuan (0,677) menunjukkan struktur spasial data yang sebagian serap model,
 dengan rancangan 16 blok mengurangi risiko kebocoran spasial meskipun belum

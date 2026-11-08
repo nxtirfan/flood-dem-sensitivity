@@ -234,3 +234,11 @@
 ## Update 2026-11-08 - T14 titik koma prosa
 
 Sembilan belas titik koma pada prosa dipisah menjadi kalimat yang lebih alami; titik koma yang membantu rincian tetap dipertahankan. Naskah tidak dipangkas demi jumlah halaman. PDF tetap 50 halaman, 0 undefined, 5 overfull warisan dan 1 warning inputenc baseline. Angka/rumus/rujukan dan 301 hash zona beku/bibliografi tetap. Laporan: `docs/temuan/T14-tanda-baca.md`.
+
+## Update 2026-11-08 - T15 finalisasi terarah; status belum final
+
+- Istilah metode diseragamkan menjadi block bootstrap; kesimpulan mengakui agreement 79,4–84,3%, perubahan kelas ekstrem, dan residual OOF yang tetap berautokorelasi. Implikasi Bab I dibatasi pada potensi identifikasi/prioritas wilayah.
+- Pemeriksaan read-only 13 raster: hash cocok, EPSG:32749/30 m/2074×1592/affine identik, NoData −9999, mask probabilitas/kelas identik dan klasifikasi sesuai nilai probabilitas. Angka Moran CSV pasca-mask cocok naskah, tetapi cache notebook masih pra-mask. Angka area/agreement GEE sedikit berbeda dari raster lokal dan sumbernya dibedakan, tidak dicampur.
+- Konflik filter slope <5° belum terjelaskan: 30/2.978 titik positif memiliki slope_srtm ≥5°, max 11,483837° sesuai laporan. Jalur grid filter dan prediktor berbeda, tetapi sebab belum terbukti. Geometri AOI independen tidak tersedia; batas geografis mask belum terverifikasi.
+- PDF 51 hlm, 0 undefined, 5 overfull warisan dan 1 warning inputenc baseline. Data/model/angka tabel tidak diubah dan tidak ada eksperimen. 301 hash beku/bibliografi cocok. Laporan sebelum–sesudah, verifikasi raster dan isu terbuka: `docs/temuan/T15-finalisasi-terarah.md`.
+- **Belum dapat dinyatakan final:** konfirmasi konflik slope dan ketepatan mask terhadap geometri AOI sebelum klaim final; pekerjaan yang memerlukan ekstraksi/eksperimen baru perlu persetujuan terpisah.

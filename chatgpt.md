@@ -1,4 +1,16 @@
-﻿# Handoff pasca-T12 — round-2 selesai, persiapan konsultasi
+﻿# Handoff T15 — finalisasi terarah, status belum final
+
+Tanggal 8 November 2026. Baca AGENTS.md dan `docs/temuan/T15-finalisasi-terarah.md` untuk ringkasan awal, setiap perubahan sebelum–sesudah, halaman, verifikasi raster, dan investigasi slope.
+
+**Prioritas terbuka:** konflik slope filter <5° vs max11,48° (30/2.978 titik positif ≥5°) belum diketahui penyebabnya; filter dan prediktor memakai jalur grid berbeda tetapi kausalitas belum terbukti. Mask file konsisten dengan NoData/kelas, tetapi belum terverifikasi terhadap geometri AOI independen yang tidak tersedia lokal. Jangan menyatakan dokumen final.
+
+Istilah block bootstrap telah diseragamkan; kesimpulan menyebut agreement79,4–84,3% dan autokorelasi residual yang tetap ada; implikasi mitigasi dibatasi pada potensi. Angka Moran aktif berasal dari CSV pasca-mask lokal T10, bukan cache notebook pra-mask. Luas/agreement dari tabel GEE dan hitungan raster lokal berbeda sedikit dan kini dijelaskan sebagai sumber berbeda. Tidak ada data, notebook, model, label, seed atau angka tabel eksperimen diubah. Tidak ada rerun. PDF51 halaman,0 undefined,5 overfull warisan,1 warning inputenc baseline; ZIP direbuild.
+
+Catatan T12–T14 di bawah bersifat riwayat; angka dan ketentuan lama tidak mengalahkan batas T15.
+
+---
+
+# Handoff pasca-T12 — round-2 selesai, persiapan konsultasi
 
 Tanggal: 8 November 2026. Aturan editor: baca `AGENTS.md` terlebih dahulu.
 
