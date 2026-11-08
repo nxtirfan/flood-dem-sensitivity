@@ -1,144 +1,121 @@
-﻿# Handoff debat ke ChatGPT (isu label JRC)
+﻿# Handoff lanjutan ke ChatGPT-6 (pasca-T11: verifikasi koreksi + persiapan konsultasi dosen)
 
-> Cara pakai: salin seluruh isi berkas ini sebagai satu pesan ke ChatGPT.
-> ChatGPT tidak punya akses berkas proyek; semua fakta penting sudah dikutip
-> di dalam teks. Peran yang diminta: pengkritik metodologi yang kasar dan
-> jujur (adversarial), bukan penyanjung posisi penulis.
-> Tanggal: 2 Nov 2026. Penulis: M Irfan Al Hakim, proposal metopen UNNES.
-> Naskah acuan: proposal Bab I sampai V, PDF 42 halaman; dokumen audit T04.
+> Cara pakai: salin seluruh berkas ini sebagai satu pesan ke ChatGPT-6,
+> lalu tempel/dokumen-kan PDF proposal versi terbaru (50 halaman, 8 Nov 2026).
+> ChatGPT tidak punya akses berkas/ artefak data proyek; semua fakta penting
+> sudah disarikan di dalam teks. Peran yang diminta: pembaca kritis
+> (proofreader + konsultan strategi konsultasi), BUKAN penyanjung.
+> Jangan mengusulkan rerun/eksperimen baru — itu diagnosis untuk agen lain.
 
-## 1. Desain ringkas
+## 1. Status dokumen
 
-- Topik: sensitivitas DEM (SRTM, Copernicus GLO-30, ALOS AW3D30, kisaran
-  30 m) untuk peta kerawanan banjir Random Forest di Google Earth Engine;
-  pesisir Semarang Demak; satu kejadian Sentinel-1 Maret 2024.
-- Prediktor 24 kolom: 5 per-DEM (elevasi, slope, aspect sin, aspect cos,
-  validitas) + 11 non-DEM (HAND, area hulu, lebar sungai, jarak sungai,
-  jarak air permanen JRC, CHIRPS 7 hari, CHIRPS 30 hari, indeks Sentinel-2)
-  + 8 dummy WorldCover. Prediktor non-DEM identik untuk ketiga DEM.
-- Sampling: stratifiedSample 2978 piksel per kelas, seed 42, split 75:25.
-  Sampel identik untuk ketiga DEM.
-- Dua model: sklearn RF 400 pohon untuk evaluasi; smileRandomForest 300
-  pohon untuk peta di GEE.
-- Kriteria label: rasio VH lebih dari 1,25; VH pasca di bawah -18 dB; bukan
-  air permanen JRC; slope di bawah 5 derajat; konektivitas minimal 8 piksel.
-- Evaluasi: spatial CV 4-fold pada 16 blok; bootstrap blok 16 blok 1.000
-  kali; multi-seed 5 seed.
-- Dua run: v24 run utama (statistik deskriptif dan peta); v26 replikasi kode
-  identik (bootstrap dan multiseed). Kedua run diberi label terpisah di
-  naskah.
+- Naskah: `proposal_revisi-final.tex`, PDF 50 halaman, 0 warning undefined,
+  7 overfull legacy (<15pt). Semua revisi paket sebelumnya (T05–T10 +
+  instruksimu A–K) sudah digabung. Versi ini adalah versi pasca-T11.
+- T11 = eksekusi koreksi berdasarkan auditmu (6 TINGGI + 8 SEDANG + LOW).
+  Semua koreksi bersifat **teks/klaim/bibliografi SAJA**: tidak ada angka
+  hasil, sampel, seed, model, CSV, raster yang diubah.
 
-## 2. Angka utama
+## 2. Daftar koreksi T11 yang seharusnya sudah ada di naskah
 
-- Holdout AUC: SRTM 0,9318; GLO-30 0,9404; AW3D30 0,9360.
-- Spatial CV pooled OOF: SRTM 0,9032; GLO-30 0,9174; AW3D30 0,9080.
-- Rerata ROC-AUC sampel ulang blok (v26): SRTM 0,894; GLO-30 0,910; AW3D30
-  0,899.
-- Multi-seed holdout: 0,939 (SD 0,014); 0,947 (SD 0,010); 0,940 (SD 0,012).
-- Multi-seed spatial CV: 0,869 (SD 0,017); 0,889 (SD 0,013); 0,877
-  (SD 0,017).
-- Bootstrap blok: GLO-30 minus AW3D30 = +0,0108 dengan selang +0,0041
-  hingga +0,0198. SRTM minus GLO-30 = -0,0155 dengan selang -0,0250 hingga
-  -0,0072. Keduanya tidak memuat nol. SRTM minus AW3D30 = -0,0047 dengan
-  selang -0,0096 hingga +0,0013; memuat nol; dilaporkan marginal.
-- Bootstrap piksel: GLO-30 minus SRTM = 0,0141 dengan selang 0,0109 hingga
-  0,0173; selang lebih sempit.
-- Peta: persetujuan kelas SRTM-AW3D30 = 83,95 persen; SRTM-GLO-30 = 79,42
-  persen; AW3D30-GLO-30 = 81,30 persen. Luas kelas sangat tinggi = 105,2;
-  114,2; 113,4 km persegi.
-- Run bridging v23: AUC SRTM = 0,802 dibanding baseline = 0,852; label
-  cocok sekitar 70 persen.
+1. **Datum AW3D30 = EGM96** (bukan EGM2008). Seharusnya terkoreksi di:
+   - 2.3.3: ada satu kalimat propositi bahwa tinggi dilaporkan ortometrik
+     terhadap model geoid EGM96.
+   - 3.6 (tabel produk): kolom datum/dasar vertikal mendaftar
+     "EGM96 (SRTM), EGM2008 (Copernicus DEM GLO-30), EGM96 (ALOS AW3D30)".
+   - 4.1 (paragraf offset): kalimat reinterpretasi seharusnya menyatakan
+     gabungan perbedaan acuan vertikal antarproduk **plus** perbedaan
+     karakteristik pengukuran; **karena SRTM dan ALOS AW3D30 memakai model
+     geoid yang sama (EGM96), selisih kedua produk tidak boleh disandarkan
+     ke perbedaan datum geoid**; offset +0,39 m dipertahankan.
+   - 4.8 (keterbatasan): poin datum kini berbunyi
+     "(EGM96 pada SRTM dan ALOS AW3D30 dibandingkan EGM2008 pada GLO-30)".
+2. **Pemisahan pipeline GEE vs sklearn (3.7)**: ada satu kalimat baru yang
+   menyatakan dua implementasi tidak dipandang sebagai satu model yang sama;
+   kesetaraan antar jalur tidak dituntut. Tidak menggantikan penjelasan
+   300 vs 400 pohon.
+3. **Definisi label kelas-0 (2.2)**: kelas 1 = terdeteksi banjir oleh
+   pipeline proksi; kelas 0 = TIDAK diidentifikasi oleh pipeline yang
+   sama — dan bukan bukti lokasi tidak berbanjir (termasuk piksel tanpa acuan S1 /
+   tak terakuisisi / di luar dukungan JRC). Selain itu: keterbatasan
+   4.8 mengulang konsekuensi makna label ini secara eksplisit.
+4. **Klaim urutan multiseed (4.4)**: sebelumnya "urutan SRTM>AW3D30
+   konsisten 5/5 seed" — DISELESAIKAN jadi: GLO-30 tertinggi konsisten
+   5/5 seed; pasangan SRTM–AW3D30 BERBALIK TIPIS pada holdout seed 42 & 100,
+   selisih ≤ 0,0006; bukan klaim monotonik.
+5. **Catatan skema fitur antar-seed (4.4)**: satu kalimat yang states
+   bahwa `lc_20` hadir sebagai kolom dummy pada sampel seed 100/2024/7
+   (25 input) tetapi tidak pada seed utama & 42/99 (24 input), sehingga
+   perbandingan antar-seed valid di dalam pasangan seed masing-masing.
+6. **Caveat bootstrap (3.8)**: satu kalimat bahwa 1.000 resample adalah
+   jumlah sampel ulang pada 16 blok, bukan 1.000 unit data spasial
+   independen.
+7. **Kritik Tique (2.8 & 2.10)** ditulis ulang faktual: Tique = rancangan
+   banyak faktor (penelitian berbeda); penelitian ini = perlakuan tunggal
+   satu-faktor variasi sumber elevasi. Tidak lagi menyebut Tique "tidak
+   terkontrol".
+8. **Meadows (2.1)** dilunakkan: keunggulan produk mengikuti kondisi
+   lingkungan dan metrik, bukan klaim "tidak ada satu produk terbaik yang
+   otomatis menang".
+9. **Simpulan aspect (5.1 item 1)**: disesuaikan dengan statistik DEM
+   yang tersedia (elevasi & slope); tidak lagi menyebut perbedaan
+   "arah lereng" sebagai hasil yang didokumentasikan — aspect masuk
+   hanya sebagai input dekomposisi.
+10. **Abidin (bib)**: metadata diperbarui ke Crossref — GNHR **4(3):
+    226–240, 2013**, daring 3 Jul 2012; 5 penulis (Abidin, Andreas,
+    Gumilar, Sidiq, Fukuda); tidak lagi memakai volume 6(5–7) 401–427
+    atau daftar penulis 6 orang; key sitasi tetap `abidin2015`.
+11. **tadono2016 (bib)**: pages 157–161 → **157–162**.
+12. **Catatan domain transisi (4.5)**: satu kalimat bahwa nilai matriks
+    transisi dihitung pada reduksi server GEE dengan registrasi grid yang
+    sedikit berbeda dari grid raster ter-ekspor; persentase dan luas
+    dilaporkan pada domain masing-masing tabel.
+13. Sisipan penyesuaian kalimat lain yang perlu mengikuti definisi label baru (2.2).
 
-## 3. Fakta label pita JRC (hasil audit T04)
+## 3. Angka final yang menjadi acuan (CSV v27-T10, tidak berubah)
 
-- Kode sel 12: permanent_water = band JRC occurrence lebih dari atau sama
-  dengan 80. flood_raw = s1_ratio.gt(1.25).And(after_pol_db.lt(-18))
-  .And(permanent_water.Not()).And(slope_for_label.lt(5)). flood_label =
-  flood_raw.selfMask().connectedPixelCount(100, True).gte(8).unmask(0).
-- Mask band occurrence JRC bersifat fraksional dari 0 sampai 1, bukan biner.
-- Ukuran pita: footprint 189.345 piksel = 12,88 persen AOI; nilai occ yang
-  benar-benar terbaca = 63.499 piksel = 4,32 persen. Angka 12,78 persen pada
-  log kernel = jumlah berbobot, bukan hitungan piksel.
-- flood=1 = 58.574 piksel; semuanya berada di dalam pita. flood=1 di area
-  JRC no-data = 0, teruji pada 4 jalur hitungan dan 2 grid.
-- flood=0 = 1.410.981 piksel; tersebar di seluruh AOI; di dalam pita
-  152.564 piksel; di luar pita 1.258.417 piksel.
-- flood_raw dimask = 1.259.427 piksel = 85,70 persen AOI; 99,92 persen karena
-  JRC no-data; sisanya slope no-data di tepi ROI; kontribusi Sentinel-1 nol.
-- flood_label akhir mengisi 0/1 penuh di seluruh AOI karena unmask(0)
-  dipanggil setelah filter konektivitas. Hanya kelas-1 yang terkunci dalam
-  pita; kelas-0 berdomain penuh dengan negatif in-pita 152.564 piksel.
-- Menambah permanent_water.unmask(0) sebelum Not() membuat piksel luar pita
-  diperlakukan bukan-air-permanen; kandidat banjir bisa lahir di luar pita;
-  inventory berubah; rerun penuh wajib dan seluruh angka Bab IV dihitung
-  ulang (catatan T04 E-2).
+- Holdout AUC: SRTM 0,9497 (seed 42); spatial-CV pooled proba ~0,90xx
+  (0,9032/0,9174/0,9080), rerata per-fold ~0,70→0,87-0,89 pasca fix-sabuk.
+- Moran peta raster (re-quote terbaru): **0,957714 / 0,953076 / 0,954415**
+  (n = 1.444.085 / 1.444.085 / 1.429.582 piksel; p = 0,001).
+- Matriks transisi: 94.306 / 36.869 / 25.679 piksel (srtm→glo30) dan
+  174.072 / 91.194 piksel (srtm→aw3d30, diagonal kelas 2 & 5).
+- WorldCover per kelas & rentang, sensitivitas spasial 79–84%, luas
+  kelas 5: 100,6 / 109,6 / 95,9 km² (kini ALOS paling sempit).
+- Bootstrap blok v26: GLO-30 minus AW3D30 = +0,0108 [+0,0041, +0,0198];
+  GLO-30 minus SRTM = +0,0155 [+0,0072, +0,0250]; SRTM–AW3D30 selang
+  masih memuat 0 (marginal).
+- Multi-seed holdout: 0,939 / 0,947 / 0,940 (SD 0,014 / 0,010 / 0,012).
 
-## 4. Isu reviewer dan keputusan yang menunggu
+## 4. Tugas kamu (round 2)
 
-- Reviewer menilai pembentukan label memakai mask JRC sehingga kelas=1
-  hanya lahir di dalam pita sekitar 13 persen AOI, sedangkan kelas=0
-  tersebar di seluruh AOI.
-- Reviewer menuduh permanent_water.Not() memerlukan unmask(0) sebelum
-  diterapkan pada pembentukan label.
-- Dua opsi reviewer: (1) perbaiki label lalu jalankan ulang seluruh
-  eksperimen utama; (2) pertahankan hasil dan batasi klaim. Reviewer tidak
-  menganjurkan opsi 2 hanya demi cepat selesai. Saat ini keputusan
-  menunggu; naskah sudah memuat kalimat keterbatasan.
+Kamu menerima PDF terbaru. Baca ulang dokumen dengan peran:
+(A) proofreader mutakhir, (B) audit konsistensi narasi, (C) persiapan
+konsultasi.
 
-## 5. Yang sudah ada di naskah saat ini
+A. **Verifikasi Tuntas T11**: pastikan 13 item pada daftar pada Bagian 2 benar-benar
+   telah dieksekusi di PDF terbaru. Untuk tiap item, kutip baris/frasa
+   asli dan beri OK / PARTIAL / MISS.
+B. **Cari efek samping koreksi**: nomor Subbab/cross-reference salah
+   (nomor bisa bergeser), kalimat sisipan yang memicu paragraf patah
+   atau double-spacing, duplikasi definisi label antara 2.2 dan 4.8,
+   sitasi yang kini tidak konsisten (abidin2015 → GNHR 4(3); tadono →
+   157–162), dan klaim historis yang tersisa menggunakan interpretasi
+   lama (EGM2008 untuk ALOS, "urutan konsisten 5/5 seed", "arah lereng").
+C. **Verifikasi redaksi** offset 4.1: evaluasi seberapa jelas alasan
+   "selisih SRTM - ALOS AW3D30 tidak bisa disandarkan ke beda datum"
+   bagi pembaca non-geodesi; bila masih kabur, usulkan 1 revisi kalimat.
+D. **Persiapan konsultasi Dr. Iqbal**: dari seluruh naskah, usulkan
+   **5 topik pembicaraan-kunci teratas** untuk mengumpulkan input dosen,
+   urut dari yang paling strategis. Tiap topik beri: isu singkat (1 kalimat),
+   maksud/ekspektasi (1 kalimat), dan halaman acuan.
+E. **Ketiada-kepastian yang masih boleh dipertanyakan**: daftar asersi
+   dalam naskah yang secara logikanya TIDAK memaksa eksperimen baru,
+   tapi masih berupa kelemahan redaksi bisa usulkan satu kalimat
+   penggantinya lebih jujur tanpa memungut eksperimen baru.
 
-- Subbab 4.7 memuat kalimat keterbatasan: label hanya terbentuk di dalam
-  pita, dan prediksi di luar pita dibaca sebagai ekstrapolasi spasial.
-- Daftar klaim yang tidak boleh dinyatakan: tidak ada kalibrasi banjir di
-  luar pita; luas absolut kelas sangat tinggi bukan luas genangan fisik
-  penuh; inventory tidak mewakili seluruh genangan kejadian; tidak
-  menyatakan produk terbaik universal.
-- Label sumber run: bootstrap dan multiseed berasal dari v26; statistik
-  deskriptif dan spasial berasal dari v24; klausa kecuali analisis
-  pembanding memisahkan bridging v23.
-- Bootstrap blok dan bootstrap piksel diterangkan terpisah di subbab 4.4.
-- Bab V Kesimpulan merangkum jawaban berbasis hasil atas keempat rumusan
-  masalah (rujukan Subbab 4.2 hingga 4.6).
-
-## 6. Dua probe murah sebelum komit rerun (posisi penulis)
-
-- Probe-1: hitung flood_raw bernilai TRUE di luar pita bila
-  permanent_water.unmask(0) ditambahkan sebelum Not(). Bila hasil mendekati
-  nol, rerun tidak akan mengubah apapun. Bila hasil banyak dan berpola,
-  rerun mengubah inventory secara substansial.
-- Probe-2: latih ulang dengan kelas-0 dibatasi di dalam pita (pool
-  152.564) lalu bandingkan ranking DEM. Bila ranking bertahan, asimetri
-  domain tidak mengubah ranking. Bila ranking berubah, rerun menjadi
-  mendesak.
-
-## 7. Pertanyaan untuk ChatGPT (jawab tegas dengan alasan)
-
-1. Apakah kombinasi kelas=1 terkunci dalam pita sekitar 13 persen plus
-   kelas=0 seluruh AOI 100 persen merupakan konfound berarti, dengan
-   mempertimbangkan 152.564 piksel kelas=0 juga berada di dalam pita? Atau
-   negatif in-pita justru hard negatives yang memperkuat validitas
-   internal?
-2. Bila label diperluas dengan unmask(0): di luar pita, keputusan bukan air
-   permanen menjadi asumsi, bukan observasi. Apakah trade-off cakupan
-   versus kualitas label lebih baik dibanding mempertahankan domain label?
-3. Apakah kesimpulan komparatif DEM (peringkat GLO-30 di atas AW3D30 di
-   atas SRTM; perbedaan kecil tetapi konsisten pada 5 dari 5 seed) tahan
-   terhadap asimetri domain label, mengingat label sama bagi ketiga
-   konfigurasi (konfound common-mode)? Kapan konfound common-mode tetap
-   bisa merusak ranking relatif DEM?
-4. Apakah kalimat keterbatasan subbab 4.7 sudah cukup, atau perlu klausul
-   tambahan di Bab 3 atau 4.7 untuk menutup risiko validitas model
-   keseluruhan?
-5. Bila rerun dilakukan: apakah arah perubahan metrik dapat diprediksi?
-   Bagaimana implikasinya bagi ranking DEM dan luas kelas risiko?
-6. Dengan premis (a) ini proposal metopen, bukan skripsi final; (b) rerun
-   mengubah seluruh angka Bab IV; (c) hasil rerun tidak pasti menaikkan
-   kualitas: mana yang Anda pilih, opsi 1 atau opsi 2? Sebutkan alasan.
-
-## 8. Catatan pelengkap
-
-- Probe-1 hanya memerlukan reduceRegion kecil di GEE; kuota proyek
-  nonkomersial masih memungkinkan.
-- Probe-2 memerlukan satu ekspor data pelatihan kecil dari GEE.
-- Bila Anda membutuhkan informasi tambahan untuk berdebat, minta penulis
-  melengkapi bagian tertentu.
+Format keluaran: Tabel per temuan (lokasi/halaman, kutipan, tipu: TINGGI /
+SEDANG / KECIL, usulan revisi konkretnya). Bila kamu tidak yakin dari pro
+asonya (misal jika detail persis data buat sesuatu), tandai
+**[GATED - perlu cek artefak]** dan jangan mengarang angka atau angka.
+Jangan mengusulkan rerun.
