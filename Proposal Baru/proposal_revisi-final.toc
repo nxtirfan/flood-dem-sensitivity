@@ -36,7 +36,7 @@
 \contentsline {subsubsection}{\numberline {3.8.1}Diagnostik Autokorelasi Spasial}{21}{subsubsection.3.8.1}%
 \contentsline {subsection}{\numberline {3.9}Analisis Sensitivitas}{23}{subsection.3.9}%
 \contentsline {subsubsection}{\numberline {3.9.1}Sensitivitas performa}{23}{subsubsection.3.9.1}%
-\contentsline {subsubsection}{\numberline {3.9.2}Sensitivitas spasial}{23}{subsubsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.2}Sensitivitas spasial}{24}{subsubsection.3.9.2}%
 \contentsline {subsection}{\numberline {3.10}Stratifikasi Berdasarkan Tutupan Lahan}{24}{subsection.3.10}%
 \contentsline {subsection}{\numberline {3.11}Tahapan Penelitian}{24}{subsection.3.11}%
 \contentsline {section}{\numberline {IV}Hasil dan Pembahasan}{27}{section.4}%
@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {4.3}Hasil Pemodelan Random Forest}{29}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Perbandingan Performa}{30}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Analisis Sensitivitas Spasial}{33}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Sensitivitas Berdasarkan Tutupan Lahan}{34}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.6}Sensitivitas Berdasarkan Tutupan Lahan}{35}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}Analisis Autokorelasi Spasial}{35}{subsection.4.7}%
 \contentsline {subsubsection}{\numberline {4.7.1}Autokorelasi Spasial pada Titik Sampel}{36}{subsubsection.4.7.1}%
 \contentsline {subsubsection}{\numberline {4.7.2}Autokorelasi Spasial pada Peta Probabilitas}{37}{subsubsection.4.7.2}%

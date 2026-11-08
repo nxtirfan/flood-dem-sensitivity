@@ -215,3 +215,11 @@
   struktur figures/; sweep PDF: klaim lama=0, 226-240=1, 157-162=1. Laporan `docs/temuan/T11-audit-astra.md`.
 - Offset AW3D30 +0,39 m dipertahankan (rectifikasi audit: bukan 0,74); APPLY_VERTICAL_OFFSET tetap FALSE;
   seluruh angka hasil tidak berubah sedikit pun.
+
+## Update 2026-11-08 - T12 verifikasi round-2 dan persiapan konsultasi
+
+- Tugas A–E pada handoff pasca-T11 selesai; tabel 13 koreksi, temuan per tingkat, redaksi offset, dan lima topik konsultasi ada di `docs/temuan/T12-round-2.md`.
+- Teks diperjelas: dua jalur GEE/sklearn (17/24 input, seluruh sampel versus pemisahan evaluasi), makna kelas 0 dan dukungan positif JRC, RM/tujuan elevasi-slope, atribusi Meadows, offset, domain tabel dan kontras sampel yang bukan estimasi kausal. Angka hasil tidak diubah.
+- Tidak ada eksperimen; 300 berkas zona beku tetap identik SHA256, serta semua rentang matematika inline lama pada TEX tidak berubah. Bibliografi/key sitasi T11 dipertahankan.
+- PDF dibangun ulang 50 halaman, 0 undefined, 7 overfull warisan yang sama; 1 warning inputenc yang juga muncul pada build baseline dengan XeLaTeX sandbox ini. Tidak mengklaim 0 warning. ZIP dibangun ulang dengan struktur `figures/` dan diperiksa terhadap sumber saat ini.
+- Tahap berikut: konsultasi Dr. Iqbal menggunakan lima topik berhalaman pada laporan T12, kemudian keputusan artikel SMDS. Angka pembanding historis tetap berstatus perlu ketertelusuran arsip; tidak ada klaim baru tentang ground truth, mask eksak, atau estimator identik.
