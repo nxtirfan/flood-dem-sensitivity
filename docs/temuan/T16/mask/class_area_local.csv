@@ -1,0 +1,16 @@
+dem,class,pixels,pixel_area_m2,planar_area_km2,domain_pixels,domain_area_km2,denominator
+srtm,1,840848,900,756.7632,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+srtm,2,258869,900,232.9821,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+srtm,3,126639,900,113.9751,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+srtm,4,105903,900,95.31269999999999,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+srtm,5,111826,900,100.6434,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+glo30,1,913931,900,822.5378999999999,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+glo30,2,210965,900,189.86849999999998,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+glo30,3,109350,900,98.41499999999999,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+glo30,4,88090,900,79.28099999999999,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+glo30,5,121749,900,109.5741,1444085,1299.6765,pixels valid and class in 1..5 in this DEM raster
+aw3d30,1,858195,900,772.3755,1429582,1286.6238,pixels valid and class in 1..5 in this DEM raster
+aw3d30,2,246726,900,222.05339999999998,1429582,1286.6238,pixels valid and class in 1..5 in this DEM raster
+aw3d30,3,120115,900,108.1035,1429582,1286.6238,pixels valid and class in 1..5 in this DEM raster
+aw3d30,4,97917,900,88.1253,1429582,1286.6238,pixels valid and class in 1..5 in this DEM raster
+aw3d30,5,106629,900,95.9661,1429582,1286.6238,pixels valid and class in 1..5 in this DEM raster
