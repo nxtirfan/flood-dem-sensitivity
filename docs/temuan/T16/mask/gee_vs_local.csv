@@ -1,0 +1,95 @@
+table,status,gee_csv_sha256,output_csv_sha256,tables_value_equal,metric,dem,class,gee_csv_value,local_raster_planar_km2,gee_minus_local_km2,gee_csv_domain_semantics,from_class,to_class,local_shared_mask_pixels,gee_minus_local_pixels
+area_per_risk_class_km2.csv,GEE table equals local output CSV,fa3fc1c6de6f59b24c5c21cf6cfad0f8bc23196c795081010c5532929d259d11,fa3fc1c6de6f59b24c5c21cf6cfad0f8bc23196c795081010c5532929d259d11,True,,,,,,,,,,,
+area_per_risk_class_km2.csv,,,,,area,srtm,1.0,756.7060819999473,756.7632,-0.057118000052696516,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,glo30,1.0,822.6361942338739,822.5378999999999,0.09829423387395764,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,aw3d30,1.0,772.4581073629,772.3755,0.08260736290003479,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,srtm,2.0,233.12656077220794,232.9821,0.1444607722079354,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,glo30,2.0,189.85310419197071,189.86849999999998,-0.01539580802926821,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,aw3d30,2.0,222.05901760418823,222.05339999999998,0.0056176041882451955,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,srtm,3.0,114.08475603230411,113.9751,0.10965603230411602,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,glo30,3.0,98.47007206564582,98.41499999999999,0.055072065645831,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,aw3d30,3.0,108.18440280307377,108.1035,0.08090280307376929,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,srtm,4.0,95.34366142075936,95.31269999999999,0.030961420759368252,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,glo30,4.0,79.24673571880362,79.28099999999999,-0.03426428119637137,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,aw3d30,4.0,88.16289530942456,88.1253,0.03759530942456024,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,srtm,5.0,100.57811908304896,100.6434,-0.0652809169510391,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,glo30,5.0,109.63307309797341,109.5741,0.05897309797340711,as exported; source reduction code must define pixel weighting/geometry,,,,
+area_per_risk_class_km2.csv,,,,,area,aw3d30,5.0,95.92862853981478,95.9661,-0.03747146018521619,as exported; source reduction code must define pixel weighting/geometry,,,,
+transition_srtm_vs_glo30.csv,GEE table equals local output CSV,d08d4d3f44c905a26e008531664498164e0519d96252c0dc15040cc71c587f78,d08d4d3f44c905a26e008531664498164e0519d96252c0dc15040cc71c587f78,True,,,,,,,,,,,
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,814556.0,,,,1.0,1.0,803308.0,11248.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,36869.0,,,,1.0,2.0,36352.0,517.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,1179.0,,,,1.0,3.0,1158.0,21.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,31.0,,,,1.0,4.0,30.0,1.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,0.0,,,,1.0,5.0,0.0,0.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,94306.0,,,,2.0,1.0,92879.0,1427.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,135973.0,,,,2.0,2.0,134144.0,1829.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,30911.0,,,,2.0,3.0,30434.0,477.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,1324.0,,,,2.0,4.0,1310.0,14.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,102.0,,,,2.0,5.0,102.0,0.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,15617.0,,,,3.0,1.0,15349.0,268.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,34371.0,,,,3.0,2.0,33885.0,486.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,58761.0,,,,3.0,3.0,57920.0,841.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,18898.0,,,,3.0,4.0,18632.0,266.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,866.0,,,,3.0,5.0,853.0,13.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,2150.0,,,,4.0,1.0,2122.0,28.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,5828.0,,,,4.0,2.0,5769.0,59.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,17707.0,,,,4.0,3.0,17502.0,205.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,56032.0,,,,4.0,4.0,55281.0,751.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,25679.0,,,,4.0,5.0,25229.0,450.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,279.0,,,,5.0,1.0,273.0,6.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,824.0,,,,5.0,2.0,815.0,9.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,2363.0,,,,5.0,3.0,2336.0,27.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,12980.0,,,,5.0,4.0,12837.0,143.0
+transition_srtm_vs_glo30.csv,,,,,transition_pixels,,,96852.0,,,,5.0,5.0,95565.0,1287.0
+transition_srtm_vs_aw3d30.csv,GEE table equals local output CSV,e158b3c5e01d1de39d410571a71a88595faec0c373389228e400cca54194af3b,e158b3c5e01d1de39d410571a71a88595faec0c373389228e400cca54194af3b,True,,,,,,,,,,,
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,809653.0,,,,1.0,1.0,798426.0,11227.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,41168.0,,,,1.0,2.0,40624.0,544.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,772.0,,,,1.0,3.0,762.0,10.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,5.0,,,,1.0,4.0,5.0,0.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,0.0,,,,1.0,5.0,0.0,0.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,57076.0,,,,2.0,1.0,56178.0,898.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,174072.0,,,,2.0,2.0,171699.0,2373.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,28428.0,,,,2.0,3.0,27989.0,439.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,494.0,,,,2.0,4.0,486.0,8.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,77.0,,,,2.0,5.0,77.0,0.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,3403.0,,,,3.0,1.0,3347.0,56.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,32722.0,,,,3.0,2.0,32241.0,481.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,76293.0,,,,3.0,3.0,75187.0,1106.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,14458.0,,,,3.0,4.0,14244.0,214.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,318.0,,,,3.0,5.0,318.0,0.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,236.0,,,,4.0,1.0,233.0,3.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,1987.0,,,,4.0,2.0,1966.0,21.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,15457.0,,,,4.0,3.0,15273.0,184.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,70503.0,,,,4.0,4.0,69497.0,1006.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,16472.0,,,,4.0,5.0,16228.0,244.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,12.0,,,,5.0,1.0,11.0,1.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,197.0,,,,5.0,2.0,196.0,1.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,914.0,,,,5.0,3.0,904.0,10.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,13849.0,,,,5.0,4.0,13685.0,164.0
+transition_srtm_vs_aw3d30.csv,,,,,transition_pixels,,,91194.0,,,,5.0,5.0,90006.0,1188.0
+transition_glo30_vs_aw3d30.csv,GEE table equals local output CSV,09fcf6540ae2f91412895357a9e5d46f15d71224f261add82fd854a948ca0f88,09fcf6540ae2f91412895357a9e5d46f15d71224f261add82fd854a948ca0f88,True,,,,,,,,,,,
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,834509.0,,,,1.0,1.0,822828.0,11681.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,81305.0,,,,1.0,2.0,80178.0,1127.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,8468.0,,,,1.0,3.0,8327.0,141.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,852.0,,,,1.0,4.0,837.0,15.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,103.0,,,,1.0,5.0,101.0,2.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,34843.0,,,,2.0,1.0,34355.0,488.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,138407.0,,,,2.0,2.0,136566.0,1841.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,33681.0,,,,2.0,3.0,33195.0,486.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,4785.0,,,,2.0,4.0,4723.0,62.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,493.0,,,,2.0,5.0,486.0,7.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,987.0,,,,3.0,1.0,970.0,17.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,29161.0,,,,3.0,2.0,28719.0,442.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,60698.0,,,,3.0,3.0,59838.0,860.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,16952.0,,,,3.0,4.0,16733.0,219.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,1908.0,,,,3.0,5.0,1895.0,13.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,39.0,,,,4.0,1.0,39.0,0.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,1203.0,,,,4.0,2.0,1192.0,11.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,18135.0,,,,4.0,3.0,17893.0,242.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,55188.0,,,,4.0,4.0,54446.0,742.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,12564.0,,,,4.0,5.0,12404.0,160.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,3.0,,,,5.0,1.0,3.0,0.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,71.0,,,,5.0,2.0,71.0,0.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,884.0,,,,5.0,3.0,862.0,22.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,21531.0,,,,5.0,4.0,21178.0,353.0
+transition_glo30_vs_aw3d30.csv,,,,,transition_pixels,,,92993.0,,,,5.0,5.0,91743.0,1250.0
