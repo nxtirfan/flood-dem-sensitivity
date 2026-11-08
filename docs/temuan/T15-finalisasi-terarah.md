@@ -143,7 +143,7 @@ Kutipan mempertahankan notasi LaTeX sumber. Penambahan angka 79,4–84,3% pada s
 > $<5^{\circ}$ belum sepenuhnya konsisten dengan slope hasil ekstraksi.
 > Pada sampel beku, 30 dari 2.978 titik berlabel banjir memiliki prediktor
 > slope SRTM sedikitnya $5^{\circ}$, dengan maksimum $11{,}48^{\circ}$ tersebut.
-> Filter label dihitung dari SRTM sebelum reproyeksi eksplisit, sedangkan slope
+> Kode filter label tidak menetapkan reproyeksi eksplisit, sedangkan slope
 > prediktor dihitung setelah DEM direproyeksi ke EPSG:32749 pada resolusi 30~m.
 > Kedua jalur memakai aset SRTM yang sama, tetapi nilai slope filter pada
 > koordinat sampel dan mask perantara tidak tersedia untuk pemeriksaan
