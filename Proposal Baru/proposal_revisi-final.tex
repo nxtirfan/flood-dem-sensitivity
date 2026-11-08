@@ -241,8 +241,9 @@ pada lingkungan yang
 berkaitan dengan banjir \cite{meadows2024}. Hasilnya menunjukkan bahwa
 karakteristik tutupan lahan dan kemiringan berhubungan dengan kesalahan
 elevasi, sehingga performa suatu produk elevasi dapat berbeda menurut kondisi
-lingkungan. Penelitian tersebut juga menegaskan bahwa tidak terdapat satu
-produk yang secara otomatis menjadi pilihan terbaik untuk seluruh kondisi.
+lingkungan. Penelitian tersebut menekankan bahwa keunggulan produk lebih
+mengikuti kondisi lingkungan serta metrik yang dinilai, sehingga tidak
+satu pun produk menempati posisi terbaik pada seluruh konteks penilaian.
 
 Pengaruh pemilihan data elevasi terhadap analisis banjir juga telah
 ditunjukkan dalam penelitian lain. Tique dkk.\ \cite{Tique2026}, misalnya,
@@ -253,13 +254,12 @@ menggunakan empat DEM, beberapa metode hidrologi, serta tiga model
 metode hidrologi dapat menghasilkan perbedaan performa pemetaan.
 
 Penelitian tersebut menunjukkan bahwa pilihan DEM dapat menjadi sumber
-variasi dalam \textit{flood susceptibility mapping}. Namun, karena penelitian
-tersebut sekaligus mengubah DEM, metode hidrologi, dan model \textit{machine
-learning}, pengaruh masing-masing komponen tidak sepenuhnya terisolasi.
-Penelitian ini mengambil gagasan tersebut tetapi menggunakan desain
-eksperimen yang lebih terkontrol. Sumber elevasi menjadi perlakuan utama,
-sedangkan Random Forest, \textit{flood inventory}, wilayah penelitian, serta
-prediktor non-elevasi dipertahankan sama.
+variasi dalam \textit{flood susceptibility mapping}. Rancangan penelitian
+tersebut memvariasikan sejumlah komponen sekaligus, sehingga fokus
+penelitiannya berbeda dari penelitian ini. Penelitian ini mengambil gagasan
+tersebut dengan menyederhanakan perlakuan: sumber elevasi menjadi perlakuan
+utama, sedangkan Random Forest, \textit{flood inventory}, wilayah penelitian,
+serta prediktor non-elevasi dipertahankan sama.
 
 Tiga produk elevasi yang digunakan adalah SRTM, Copernicus DEM GLO-30, dan
 ALOS AW3D30 (\textit{ALOS World 3D} resolusi 30 meter, dari satelit
@@ -455,7 +455,14 @@ badan riset Komisi Eropa) Global Surface Water \cite{pekel2016}.
 
 Perlu ditekankan bahwa \textit{flood inventory} Sentinel-1 dalam penelitian
 ini merupakan label referensi pemodelan, bukan \textit{ground truth}
-lapangan yang sepenuhnya independen.
+lapangan yang sepenuhnya independen. Dengan struktur pelabelan tersebut,
+label kelas~1 menyatakan piksel yang terdeteksi banjir oleh pipeline
+proksi, sedangkan label kelas~0 menyatakan piksel yang tidak diidentifikasi
+sebagai banjir oleh pipeline yang sama --- di antaranya karena tidak
+terakuisisi citra Sentinel-1 atau berada di luar dukungan pengamatan
+banjir historis JRC --- dan bukan bukti bahwa lokasi tersebut tidak
+berbanjir; besaran \textit{false negative} pada kelas~0 tidak diketahui
+dalam eksperimen ini dan dibedah sebagai keterbatasan pada Subbab~4.8.
 
 \subsection{Produk Elevasi Global}
 
@@ -496,7 +503,8 @@ bukan dari interferometri radar. Karena berbasis citra optik, kawasan yang
 tertutupi awan berkelanjutan berpotensi menyisakan piksel tanpa nilai
 (\textit{void}); alur kerja penelitian memanfaatkan peta \textit{void mask}
 resmi produk ini agar sumber nilai untuk setiap piksel, termasuk piksel
-hasil pengisian (\textit{fill}), terdokumentasi. Seperti kedua produk radar
+hasil pengisian (\textit{fill}), terdokumentasi. Tinggi yang dilaporkan
+adalah tinggi ortometrik terhadap model geoid EGM96. Seperti kedua produk radar
 di atas, tinggi yang diukur merupakan permukaan atas, bukan
 \textit{bare-earth}.
 
@@ -669,16 +677,16 @@ Studi Tique dkk.\ (2026) \cite{Tique2026} & Multi-DEM + ML \textit{flood suscept
 Studi Tique dkk.\ \cite{Tique2026} secara eksplisit membandingkan empat DEM,
 beberapa metode hidrologi, dan tiga model \textit{machine learning} pada
 pemetaan \textit{flood susceptibility}. Hasilnya menunjukkan bahwa variasi
-pilihan DEM maupun metode hidrologi memengaruhi hasil pemetaan, sehingga
-desain yang mengubah sejumlah komponen sekaligus menyulitkan penelusuran
-sumber perubahan hasil.
+pilihan DEM maupun metode hidrologi memengaruhi hasil pemetaan.
 
-Namun, perbedaan pada gilirannya memperlihatkan posisi penelitian ini dengan
-lebih jelas: penelitian
-Tique dkk.\ mengubah \textbf{DEM + metode hidrologi + model ML}, sedangkan
-penelitian ini mempertahankan model dan komponen lain secara tetap agar
-perubahan output lebih langsung dikaitkan dengan \textbf{sumber elevasi}.
-Perbedaan tersebut menjadi dasar kebaruan penelitian ini.
+Perbedaan rancangan tersebut memperlihatkan posisi penelitian ini secara
+faktual: penelitian
+Tique dkk.\ mengombinasikan \textbf{perubahan DEM, metode hidrologi, dan
+model ML} dalam satu rancangan pembandingan, sedangkan penelitian ini
+memutar satu faktor saja --- sumber elevasi --- dengan komponen lain
+dipertahankan tetap, sehingga keterkaitan perubahan keluaran dengan
+pergantian sumber elevasi terbaca secara langsung. Orientasi perlakuan
+tunggal pada satu faktor menjadi ciri rancangan penelitian ini.
 
 \subsection{Kerangka Teori}
 
@@ -972,8 +980,9 @@ prediktor yang diturunkan dari DEM sama pada ketiga konfigurasi.
 
 Ketiga produk DEM diproses menggunakan prosedur yang sama, termasuk
 penyelarasan grid, clipping wilayah penelitian, serta dokumentasi perbedaan
-acuan vertikal (EGM96 pada SRTM versus EGM2008 pada Copernicus dan ALOS;
-keduanya merupakan \textit{Earth Gravitational Model})
+acuan vertikal (EGM96 pada SRTM, EGM2008 pada Copernicus
+DEM GLO-30, dan EGM96 pada ALOS AW3D30; ketiganya menyatakan tinggi
+ortometrik terhadap model geoid \textit{Earth Gravitational Model})
 yang kritis pada dataran pesisir rendah.
 
 \subsubsection{Prediktor non-elevasi dan dummy tutupan lahan}
@@ -1042,7 +1051,13 @@ evaluasi metrik dilakukan pada implementasi Random Forest scikit-learn
 dengan 400 pohon, jumlah minimum sampel pada simpul daun
 (\textit{minimum samples leaf}) 2,
 pemberatan kelas \textit{balanced} (\texttt{class\_weight}), dan
-\textit{random state} yang disamakan antarperlakuan. Pengambilan sampel
+\textit{random state} yang disamakan antarperlakuan. Kedua implementasi
+ini tidak dipandang sebagai satu model yang sama: hanya sumber elevasi dan
+input yang dibersamaan, sedangkan metrik pada scikit-learn dilaporkan
+sebagai evaluasi kinerja berbasis sampel dan peta serta statistik spasial
+dibawa keluar dari model GEE; perbandingan antarproduk tetap terkendali di
+dalam masing-masing jalur, sementara kesetaraan antar kedua jalur tidak
+dituntut. Pengambilan sampel
 dilakukan terstratifikasi sebanyak 2.978 titik per kelas
 (\textit{seed}~42) mengikuti jumlah populasi berlabel pada kedua kelas,
 kemudian data dibagi 75\% latih dan 25\% uji dan diperlakukan identik pada
@@ -1087,7 +1102,9 @@ prediksi pada piksel uji;
 1.000 kali dengan pengembalian pada 16 blok yang sama; setiap pasangan
 produk dievaluasi pada sampel ulang blok yang identik sehingga kesalahan
 sampling dihitung berpasangan; interval kepercayaan 95\% diambil dari
-distribusi selisih pada sampel ulang blok;
+distribusi selisih pada sampel ulang blok. Sebaran sampel ulang ini mengukur
+ketidakpastian selisih atas rangkaian 16 blok yang sama dan bukan berarti
+1.000 unit data independen;
 \item \textbf{pengujian multi-\textit{seed}}: lima nilai \textit{seed}
 (42, 100, 2024, 7, dan 99) diulang dari tahap sampling hingga evaluasi,
 termasuk ekstraksi fitur dan pembagian data, untuk memeriksa konsistensi
@@ -1318,9 +1335,12 @@ SRTM, $39{,}06$~m untuk Copernicus DEM GLO-30, dan $41{,}36$~m untuk ALOS
 AW3D30, dengan nilai median masing-masing sebesar $8{,}50$~m, $4{,}94$~m, dan
 $8{,}53$~m. Selisih (\textit{offset}) vertikal rata-rata terhadap SRTM adalah
 $-1{,}56$~m pada Copernicus DEM GLO-30 dan $+0{,}39$~m pada ALOS AW3D30. Nilai
-tersebut dilaporkan tanpa transformasi koreksi vertikal untuk
-mendokumentasikan perbedaan datum geoid bawaan antara EGM96 pada SRTM dan
-EGM2008 pada Copernicus DEM GLO-30 serta ALOS AW3D30. Sementara itu, rata-rata
+tersebut dilaporkan tanpa transformasi koreksi vertikal, sehingga merupakan
+gabungan perbedaan acuan vertikal bawaan antarproduk (EGM96 untuk SRTM dan
+ALOS AW3D30, EGM2008 untuk Copernicus DEM GLO-30) serta perbedaan
+karakteristik pengukuran masing-masing produk; karena SRTM dan ALOS AW3D30
+memakai model geoid yang sama, selisih kedua produk tersebut tidak dapat
+disandarkan pada perbedaan datum geoid. Sementara itu, rata-rata
 kemiringan lereng (\textit{slope}) yang dihasilkan oleh masing-masing produk
 adalah $3{,}03^{\circ}$ pada SRTM, $2{,}46^{\circ}$ pada Copernicus DEM GLO-30,
 dan $3{,}13^{\circ}$ pada ALOS AW3D30.
@@ -1490,9 +1510,12 @@ diulang secara menyeluruh. Pengujian multi-\textit{seed} beserta analisis
 \textit{block bootstrap} tersebut dijalankan pada alur pemodelan yang sama
 dengan analisis lainnya, kecuali analisis pembanding yang memakai sampel dan
 pembagian data penelitian acuan. Hasil pada Tabel~\ref{tab:multiseed} memperlihatkan bahwa
-urutan kinerja Copernicus DEM GLO-30 $>$ ALOS AW3D30 $>$ SRTM bertahan secara
-konsisten pada kelima nilai \textit{seed}, baik pada evaluasi \textit{holdout}
-maupun validasi silang spasial. Pada validasi silang spasial, kinerja ALOS
+Copernicus DEM GLO-30 menempati peringkat tertinggi secara konsisten pada
+kelima nilai \textit{seed}, baik pada evaluasi \textit{holdout} maupun validasi
+silang spasial. Urutan lengkap dengan ALOS AW3D30 di atas SRTM berlaku pada
+validasi silang spasial, tetapi pada dua dari lima evaluasi \textit{holdout}
+(\textit{seed}~42 dan 100) SRTM mencatatkan AUC sedikit lebih tinggi daripada
+ALOS AW3D30 dengan selisih tidak lebih dari $0{,}0006$. Pada validasi silang spasial, kinerja ALOS
 AW3D30 tercatat di atas SRTM pada kelima \textit{seed}
 ($\Delta\text{AUC}_{\text{SRTM}-\text{AW3D30}} = -0{,}0079 \pm 0{,}0034$),
 sedangkan pada evaluasi \textit{holdout} keduanya menunjukkan kinerja yang
@@ -1503,7 +1526,14 @@ dipakai. Secara keseluruhan, selisih performa antarproduk elevasi tetap
 kecil dan stabil lintas \textit{seed}, dengan nilai
 $\Delta\text{AUC}_{\text{GLO-30}-\text{AW3D30}} = +0{,}0070 \pm 0{,}0027$ dan
 $\Delta\text{AUC}_{\text{SRTM}-\text{GLO-30}} = -0{,}0082 \pm 0{,}0048$ pada
-skema \textit{holdout}.
+skema \textit{holdout}. Sebagai catatan skema fitur, representasi dummy tutupan
+lahan mengikuti kelas ESA WorldCover yang benar-benar hadir pada sampel
+masing-masing \textit{seed}: kelas~20 (semak belukar) hadir pada sampel
+\textit{seed}~100, 2024, dan 7 sehingga jumlah input efektif membesar menjadi
+25 pada \textit{seed} tersebut, sedangkan sampel utama serta \textit{seed}~42
+dan 99 memakai 24 prediktor; kontras antarproduk dalam satu \textit{seed}
+tetap dihitung berpasangan sehingga pembandingan antarproduk tidak terganggu
+perbedaan ini.
 
 \begin{table}[ht]
 \centering
@@ -1586,7 +1616,12 @@ perpindahan piksel terbesar terjadi dari kelas~2 ke kelas~1 sebanyak
 transisi dari kelas~4 ke kelas~5 sebanyak 25.679~piksel. Sebaliknya,
 perbandingan antara SRTM dan ALOS AW3D30 lebih didominasi oleh kesesuaian pada
 kelas yang sama (elemen diagonal), seperti pada kelas~2 sebanyak
-174.072~piksel dan pada kelas~5 sebanyak 91.194~piksel.
+174.072~piksel dan pada kelas~5 sebanyak 91.194~piksel. Angka matriks
+tersebut dihitung pada reduksi server Google Earth Engine dengan kelimpahan
+piksel berbeda sedikit dari jumlah piksel valid pada raster peta ter-ekspor
+akibat perbedaan registrasi grid reduksi dan grid ekspor; persentase dan
+luas pada laporan ini dihitung pada domain masing-masing tabel, bukan pada
+domain yang diharapkan identik antar tabel.
 
 \subsection{Sensitivitas Berdasarkan Tutupan Lahan}
 
@@ -1766,9 +1801,9 @@ aspek karakteristik parameter topografi (Rumusan Masalah~1), SRTM, Copernicus
 DEM GLO-30, dan ALOS AW3D30 menghasilkan representasi bentang lahan makro yang
 sejalan pada wilayah pesisir Semarang--Demak, namun memiliki perbedaan
 sistematis pada elevasi median di dataran rendah pesisir serta variasi
-kemiringan lereng lokal akibat perbedaan karakteristik sensor dan datum
-vertikal bawaan (EGM96 pada SRTM dibandingkan EGM2008 pada Copernicus DEM
-GLO-30 dan ALOS AW3D30). Kedua, dari aspek pemodelan \textit{flood
+kemiringan lereng lokal akibat perbedaan karakteristik sensor dan acuan
+vertikal bawaan (EGM96 pada SRTM dan ALOS AW3D30 dibandingkan EGM2008 pada
+Copernicus DEM GLO-30). Kedua, dari aspek pemodelan \textit{flood
 susceptibility} berbasis Random Forest (Rumusan Masalah~2), ketiga sumber
 produk elevasi mampu menghasilkan peta kerawanan banjir dengan daya
 diskriminasi yang tinggi, baik pada skema evaluasi \textit{holdout} acak
@@ -1829,7 +1864,12 @@ perilaku model pada kejadian banjir lain atau wilayah tersebut.
 
 Dari sisi konstruksi label, \textit{flood inventory} Sentinel-1 yang digunakan
 merupakan label proksi pengamatan, bukan data pengamatan lapangan
-(\textit{ground truth}) yang independen. Label juga tidak sepenuhnya
+(\textit{ground truth}) yang independen. Konsekuensinya sejalan dengan
+definisi pada Subbab~3.5: label kelas~1 menyatakan piksel yang terdeteksi
+banjir oleh pipeline proksi, sedangkan label kelas~0 menyatakan piksel yang
+tidak diidentifikasi banjir oleh pipeline yang sama dan bukan bukti lokasi
+tersebut tidak berbanjir; besaran \textit{false negative} pada kelas~0 tidak
+terkuantifikasi dalam eksperimen ini. Label juga tidak sepenuhnya
 independen terhadap salah satu produk perlakuan karena penyaringan kemiringan
 lereng menggunakan SRTM, sementara penyaringan perairan permanen memanfaatkan
 pita JRC Global Surface Water yang cakupannya terbatas (masker mencakup
@@ -1901,10 +1941,12 @@ keempat pertanyaan rumusan masalah pada Subbab~1.2:
 
 \begin{enumerate}
 \item Karakteristik SRTM, Copernicus DEM GLO-30, dan ALOS AW3D30 terbawa
-ke dalam parameter topografi yang dihitung dari masing-masing produk: elevasi,
-kemiringan lereng, dan arah lereng menunjukkan perbedaan secara deskriptif
-dan spasial, termasuk nilai median elevasi dan offset vertikal antarproduk
-(Subbab~4.2).
+ke dalam parameter topografi yang dihitung dari masing-masing produk:
+perbedaan antarproduk dilaporkan secara deskriptif dan spasial pada elevasi
+serta kemiringan lereng, termasuk nilai median elevasi dan offset vertikal
+antarproduk (Subbab~4.1); arah lereng masuk sebagai prediktor melalui
+dekomposisi sinus--kosinus beserta indikator validitasnya, tanpa ringkasan
+numerik lintasproduk yang dilaporkan tersendiri.
 \item Ketiga peta probabilitas kerawanan banjir dihasilkan menggunakan sampel,
 label, dan konfigurasi pemodelan yang dipertahankan sama, dengan lima
 prediktor turunan DEM yang disesuaikan menurut produk elevasi yang digunakan.

@@ -58,7 +58,7 @@
       \endverb
     \endentry
     \entry{abidin2015}{article}{}
-      \name{author}{6}{}{%
+      \name{author}{5}{}{%
         {{hash=3f479c6d1abca393e7e68ff2da5ea589}{%
            family={Abidin},
            familyi={A\bibinitperiod},
@@ -74,44 +74,40 @@
            familyi={G\bibinitperiod},
            given={Irwan},
            giveni={I\bibinitperiod}}}%
+        {{hash=9b351585ff76bed4c615f09a99d7e361}{%
+           family={Sidiq},
+           familyi={S\bibinitperiod},
+           given={Teguh\bibnamedelima Purnama},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
         {{hash=fb8e7e9e3f0c6b4eabb6363c1f45f5b7}{%
            family={Fukuda},
            familyi={F\bibinitperiod},
            given={Yoichi},
            giveni={Y\bibinitperiod}}}%
-        {{hash=165270b6565b64f120f031ac01e476a7}{%
-           family={Pohan},
-           familyi={P\bibinitperiod},
-           given={Yoga\bibnamedelima Edi},
-           giveni={Y\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=be61b566984bea75c8d445bdda2e6941}{%
-           family={Deguchi},
-           familyi={D\bibinitperiod},
-           given={Torao},
-           giveni={T\bibinitperiod}}}%
       }
       \list{publisher}{2}{%
         {Taylor}%
         {Francis}%
       }
       \strng{namehash}{672c0b6bfbfd89749e7bacf82402a607}
-      \strng{fullhash}{eeb1969e16ddeb98f5b64d4e2a6e9ce9}
+      \strng{fullhash}{4cc50e38b2492190eb1347fc316d2be0}
       \strng{bibnamehash}{672c0b6bfbfd89749e7bacf82402a607}
       \strng{authorbibnamehash}{672c0b6bfbfd89749e7bacf82402a607}
       \strng{authornamehash}{672c0b6bfbfd89749e7bacf82402a607}
-      \strng{authorfullhash}{eeb1969e16ddeb98f5b64d4e2a6e9ce9}
+      \strng{authorfullhash}{4cc50e38b2492190eb1347fc316d2be0}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1947-5705}
       \field{journaltitle}{Geomatics, Natural Hazards and Risk}
-      \field{number}{5--7}
+      \field{note}{Daring 3 Juli 2012}
+      \field{number}{3}
       \field{title}{Land Subsidence in Coastal City of {Semarang} ({Indonesia}): Characteristics, Impacts and Causes}
-      \field{volume}{6}
-      \field{year}{2012}
-      \field{pages}{401\bibrangedash 427}
-      \range{pages}{27}
+      \field{volume}{4}
+      \field{year}{2013}
+      \field{pages}{226\bibrangedash 240}
+      \range{pages}{15}
       \verb{doi}
       \verb 10.1080/19475705.2012.692336
       \endverb
@@ -572,8 +568,8 @@
       \field{title}{Generation of the {30} {M}-Mesh Global Digital Surface Model by {ALOS} {PRISM}}
       \field{volume}{XLI-B4}
       \field{year}{2016}
-      \field{pages}{157\bibrangedash 161}
-      \range{pages}{5}
+      \field{pages}{157\bibrangedash 162}
+      \range{pages}{6}
       \verb{doi}
       \verb 10.5194/isprs-archives-XLI-B4-157-2016
       \endverb

@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.3}Produk Elevasi Global}{7}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}SRTM}{7}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Copernicus DEM GLO-30}{7}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}ALOS AW3D30}{7}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3}ALOS AW3D30}{8}{subsubsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.4}Parameter Topografi sebagai Prediktor}{8}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Random Forest untuk Flood Susceptibility}{9}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Sensitivitas Sumber Elevasi dalam Pemodelan Banjir}{9}{subsection.2.6}%
@@ -22,34 +22,34 @@
 \contentsline {subsection}{\numberline {2.8}Penelitian Terdahulu}{11}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}Kerangka Teori}{12}{subsection.2.9}%
 \contentsline {subsection}{\numberline {2.10}Kerangka Berpikir}{12}{subsection.2.10}%
-\contentsline {section}{\numberline {III}Metode Penelitian}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Pendekatan dan Desain Penelitian}{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Wilayah Penelitian}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Data dan Sumber Data}{15}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Perangkat Penelitian}{15}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Pembentukan Flood Inventory}{15}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Pembentukan Prediktor}{16}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}DEM-derived predictors}{16}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}Prediktor non-elevasi dan dummy tutupan lahan}{17}{subsubsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.7}Eksperimen Random Forest Terkontrol}{18}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Evaluasi Model}{19}{subsection.3.8}%
-\contentsline {subsubsection}{\numberline {3.8.1}Diagnostik Autokorelasi Spasial}{20}{subsubsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.9}Analisis Sensitivitas}{22}{subsection.3.9}%
-\contentsline {subsubsection}{\numberline {3.9.1}Sensitivitas performa}{22}{subsubsection.3.9.1}%
-\contentsline {subsubsection}{\numberline {3.9.2}Sensitivitas spasial}{22}{subsubsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.10}Stratifikasi Berdasarkan Tutupan Lahan}{23}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Tahapan Penelitian}{23}{subsection.3.11}%
-\contentsline {section}{\numberline {IV}Hasil dan Pembahasan}{26}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Hasil Karakteristik Produk Elevasi}{26}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Hasil Flood Inventory}{27}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Hasil Pemodelan Random Forest}{28}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Perbandingan Performa}{29}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Analisis Sensitivitas Spasial}{32}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Sensitivitas Berdasarkan Tutupan Lahan}{33}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Analisis Autokorelasi Spasial}{34}{subsection.4.7}%
-\contentsline {subsubsection}{\numberline {4.7.1}Autokorelasi Spasial pada Titik Sampel}{34}{subsubsection.4.7.1}%
-\contentsline {subsubsection}{\numberline {4.7.2}Autokorelasi Spasial pada Peta Probabilitas}{36}{subsubsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.8}Pembahasan}{37}{subsection.4.8}%
-\contentsline {section}{\numberline {V}Kesimpulan dan Saran}{41}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Kesimpulan}{41}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Saran}{42}{subsection.5.2}%
+\contentsline {section}{\numberline {III}Metode Penelitian}{15}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Pendekatan dan Desain Penelitian}{15}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Wilayah Penelitian}{16}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Data dan Sumber Data}{16}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Perangkat Penelitian}{16}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Pembentukan Flood Inventory}{16}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Pembentukan Prediktor}{17}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}DEM-derived predictors}{17}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Prediktor non-elevasi dan dummy tutupan lahan}{18}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}Eksperimen Random Forest Terkontrol}{19}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Evaluasi Model}{20}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Diagnostik Autokorelasi Spasial}{21}{subsubsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.9}Analisis Sensitivitas}{23}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}Sensitivitas performa}{23}{subsubsection.3.9.1}%
+\contentsline {subsubsection}{\numberline {3.9.2}Sensitivitas spasial}{23}{subsubsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.10}Stratifikasi Berdasarkan Tutupan Lahan}{24}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Tahapan Penelitian}{24}{subsection.3.11}%
+\contentsline {section}{\numberline {IV}Hasil dan Pembahasan}{27}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Hasil Karakteristik Produk Elevasi}{27}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Hasil Flood Inventory}{28}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Hasil Pemodelan Random Forest}{29}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Perbandingan Performa}{30}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Analisis Sensitivitas Spasial}{33}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Sensitivitas Berdasarkan Tutupan Lahan}{34}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Analisis Autokorelasi Spasial}{35}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Autokorelasi Spasial pada Titik Sampel}{36}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Autokorelasi Spasial pada Peta Probabilitas}{37}{subsubsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.8}Pembahasan}{38}{subsection.4.8}%
+\contentsline {section}{\numberline {V}Kesimpulan dan Saran}{42}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Kesimpulan}{42}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Saran}{43}{subsection.5.2}%

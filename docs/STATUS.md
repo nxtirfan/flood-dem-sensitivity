@@ -193,3 +193,25 @@
   zip 2.340.228 B.
 - **Semua titik T10 SELESAI.** Rerun Colab tidak lagi wajib. Sisa proyek: konsultasi
   Dr. Iqbal (naskah 49 hlm siap), git init + push privat, keputusan artikel SMDS (T02).
+
+## Update 8 Nov 2026 - T11: audit GPT-Astra diverifikasi & koreksi teks dieksekusi (tanpa rerun)
+
+- Audit eksternal (laporan `.hoplite/artifacts/audit-final.md` di sisi user): 6 TINGGI + 8 SEDANG + RENDAH.
+  Semua temuan TINGGI diverifikasi agen ke artefak: (1) datum AW3D30 = EGM96 (JAXA PD v4.1 + katalog GEE) -
+  naskah salah 4 titik + klausul; (2) dual-pipeline GEE/sklearn - konfirmasi cell 15/35; (3) label kelas-0
+  terkurung JRC - konfirmasi; (4) urutan 5/5 seed salah - multiseed_holdout.csv: SRTM > AW3D30 tipis pada
+  seed 42 & 100 (GLO-30 tetap 5/5); (5) kritik Tique tak tertopang - ditahan; (6) simpulan aspect tanpa
+  bukti - dem_stats.csv hanya elevasi+slope.
+- Temuan SEDANG terverifikasi: skema fitur berubah antar-seed (lc_20 hadir di seed 100/2024/7 -> 25 input;
+  main + seed 42/99 = 24) dicek langsung ke data beku; bootstrap blok diberi caveat; catatan domain transisi;
+  Abidin ditulis ulang ke metadata Crossref (GNHR 4(3): 226-240, 2013, daring 2012, 5 penulis, + T.P. Sidiq);
+  tadono2016 pages 157-162; Meadows dilunakkan.
+- Naskah dieksekusi (hanya teks): 2.2 label definisi kelas 0/1; 2.3.3 + EGM96; 3.6 datum; 3.7 kalimat
+  pemisahan dua pipeline; 3.8 bootstrap unit caveat; 4.1 reinterpretasi offset (EGM96 SRTM+ALOS, EGM2008
+  GLO-30; selisih SRTM-AW3D30 bukan datum); 4.4 klaim multiseed direvisi + catatan skema fitur; 4.5
+  catatan domain; 4.8 keterbatasan label; 5.1 item 1 (elevasi+slope, aspect sebagai input); 2.1 Meadows
+  dilunakkan; 2.8 & 2.10 Tique faktual.
+- Build: **PDF 50 hlm**, 0 undefined/0 warning, overfull 7 warisan; biber ulang; ZIP 2.344.058 B dengan
+  struktur figures/; sweep PDF: klaim lama=0, 226-240=1, 157-162=1. Laporan `docs/temuan/T11-audit-astra.md`.
+- Offset AW3D30 +0,39 m dipertahankan (rectifikasi audit: bukan 0,74); APPLY_VERTICAL_OFFSET tetap FALSE;
+  seluruh angka hasil tidak berubah sedikit pun.

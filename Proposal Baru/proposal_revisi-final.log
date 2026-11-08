@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.10.18)  8 NOV 2026 06:16
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.10.18)  8 NOV 2026 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1227,27 +1227,39 @@ Overfull \hbox (8.17734pt too wide) in paragraph at lines 215--225
 [1
 
 ]
-Underfull \hbox (badness 4181) in paragraph at lines 234--246
+Underfull \hbox (badness 4181) in paragraph at lines 234--247
 \T1/lmr/m/n/12 meng-hasilkan rep-re-sen-tasi per-mukaan yang iden-tik. Mead-ows
  dkk.
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 234--246
+Underfull \hbox (badness 4144) in paragraph at lines 234--247
 \T1/lmr/m/n/12 mem-band-ingkan lima pro-duk \T1/lmr/m/it/12 Dig-i-tal El-e-va-t
 ion Model \T1/lmr/m/n/12 (DEM) global
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 247--254
+Underfull \hbox (badness 3128) in paragraph at lines 248--255
 \T1/lmr/m/n/12 per-bandin-gan be-ber-apa DEM dan metode hidrologi dalam pemetaa
 n
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 255--263
-\T1/lmr/m/n/12 Peneli-tian ini mengam-bil gagasan terse-but tetapi meng-gu-naka
-n de-sain
+Underfull \hbox (badness 3354) in paragraph at lines 256--263
+\T1/lmr/m/n/12 terse-but mem-vari-asikan se-jum-lah kom-po-nen sekali-gus, se-h
+ingga fokus
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 256--263
+\T1/lmr/m/n/12 terse-but den-gan menyeder-hanakan per-lakuan: sum-ber el-evasi 
+men-jadi
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 256--263
+\T1/lmr/m/n/12 per-lakuan utama, sedan-gkan Ran-dom For-est, \T1/lmr/m/it/12 fl
+ood in-ven-tory\T1/lmr/m/n/12 , wilayah
  []
 
 [2]
@@ -1355,558 +1367,554 @@ Underfull \hbox (badness 1264) in paragraph at lines 442--448
 [6
 
 ] [7]
-Underfull \hbox (badness 2197) in paragraph at lines 533--537
+Underfull \hbox (badness 2197) in paragraph at lines 541--545
 []\T1/lmr/m/n/12 Karena peneli-tian ini bertu-juan men-guji sum-ber el-evasi, s
 e-tiap
  []
 
 [8]
-Underfull \hbox (badness 1028) in paragraph at lines 549--554
+Underfull \hbox (badness 1028) in paragraph at lines 557--562
 \T1/lmr/m/n/12 se-jum-lah \T1/lmr/m/it/12 de-ci-sion tree \T1/lmr/m/n/12 dan me
 ng-gabungkan hasil-nya un-tuk mem-per-oleh
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 555--560
+Underfull \hbox (badness 2409) in paragraph at lines 563--568
 []\T1/lmr/m/n/12 Dalam peneli-tian se-belum-nya [[]5[]], Ran-dom For-est meng-h
 asilkan
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 555--560
+Underfull \hbox (badness 2894) in paragraph at lines 563--568
 \T1/lmr/m/n/12 ROC-AUC (\T1/lmr/m/it/12 Area Un-der the Re-ceiver Op-er-at-ing 
 Char-ac-ter-is-tic \T1/lmr/m/n/12 curve),
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 566--575
+Underfull \hbox (badness 3312) in paragraph at lines 574--583
 []\T1/lmr/m/n/12 Secara mekanis-tik, se-tiap \T1/lmr/m/it/12 de-ci-sion tree \T
 1/lmr/m/n/12 diban-gun pada sam-pel
  []
 
 
-Underfull \hbox (badness 1721) in paragraph at lines 578--585
+Underfull \hbox (badness 1721) in paragraph at lines 586--593
 \T1/lmr/m/n/12 karak-ter-is-tik galat yang berbeda dan bahwa pen-garuh terse-bu
 t da-pat
  []
 
-
-Underfull \hbox (badness 1194) in paragraph at lines 586--590
+[9]
+Underfull \hbox (badness 1194) in paragraph at lines 594--598
 \T1/lmr/m/n/12 da-pat menyulitkan in-ter-pre-tasi men-ge-nai fak-tor mana yang 
 sebe-narnya
  []
 
-[9]
-Underfull \hbox (badness 2846) in paragraph at lines 607--609
+
+Underfull \hbox (badness 2846) in paragraph at lines 615--617
 []\T1/lmr/m/n/12 Perbedaan ketiga out-put ke-mu-dian di-gu-nakan un-tuk men-guk
 ur
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 610--620
+Underfull \hbox (badness 1158) in paragraph at lines 618--628
 []\T1/lmr/m/n/12 Pengukuran sen-si-tiv-i-tas terse-but me-nun-tut kehati-hatian
  eval-u-asi.
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 610--620
+Underfull \hbox (badness 1331) in paragraph at lines 618--628
 \T1/lmr/m/n/12 Titik sam-pel yang sal-ing berdekatan dalam ru-ang ge-ografis ce
 n-derung
  []
 
-
-Overfull \hbox (6.453pt too wide) in paragraph at lines 662--662
+[10]
+Overfull \hbox (6.453pt too wide) in paragraph at lines 670--670
 \T1/lmr/m/n/12 karak-ter-is-tik/resolusi 
  []
 
-[10] [11]
+[11]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 752.
+(Font)              <10.95> on input line 760.
 
-Underfull \hbox (badness 2126) in paragraph at lines 776--783
+Underfull \hbox (badness 2126) in paragraph at lines 784--791
 \T1/lmr/m/n/12 el-evasi un-tuk lima predik-tor tu-runan DEM se-ba-gai fak-tor p
 er-lakuan,
  []
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 793--797
+[12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 801--805
 \T1/lmr/m/n/12 Penelitian ini meng-gu-nakan pen-dekatan kuan-ti-tatif den-gan d
 e-sain
  []
 
 
-Overfull \hbox (8.67044pt too wide) in paragraph at lines 807--813
+Overfull \hbox (8.67044pt too wide) in paragraph at lines 815--821
 \T1/lmr/m/n/12 prose-dur pre-pro-cess-ing, prose-dur sam-pling, dan prose-dur e
 val-u-asi diper-ta-hankan
  []
 
-[14
+[15
 
 ]
-Overfull \hbox (1.59898pt too wide) in paragraph at lines 873--873
+Overfull \hbox (1.59898pt too wide) in paragraph at lines 881--881
 \T1/lmr/m/n/10.95 GRD/IW 
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-73.
+81.
 (D:\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (2.9516pt too wide) in paragraph at lines 873--874
+Overfull \hbox (2.9516pt too wide) in paragraph at lines 881--882
 []|\T1/lmr/m/n/10.95 Pembentukan 
  []
 
 
-Overfull \hbox (2.46983pt too wide) in paragraph at lines 878--878
+Overfull \hbox (2.46983pt too wide) in paragraph at lines 886--886
 \T1/lmtt/m/n/10.95 GlobalSurfaceWater|  
  []
 
 
-Overfull \hbox (2.77917pt too wide) in paragraph at lines 879--879
+Overfull \hbox (2.77917pt too wide) in paragraph at lines 887--887
 []|\T1/lmr/m/n/10.95 mm/hari|  
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 889--893
+Underfull \hbox (badness 1221) in paragraph at lines 897--901
 \T1/lmr/m/n/12 For-est da-pat di-lakukan meng-gu-nakan lingkun-gan Python/Googl
 e Co-lab
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 901--902
+Underfull \hbox (badness 1132) in paragraph at lines 909--910
 \T1/lmr/m/n/12 Flood in-ven-tory diben-tuk meng-gu-nakan citra Sentinel-1 SAR. 
 Taha-pan
  []
 
-[15]
-Underfull \hbox (badness 3168) in paragraph at lines 921--923
+[16]
+Underfull \hbox (badness 3168) in paragraph at lines 929--931
 []\T1/lmr/m/n/12 komposit me-dian po-lar-isasi VH un-tuk pe-ri-ode pra-kejadian
  (25
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 932--935
+Underfull \hbox (badness 1648) in paragraph at lines 940--943
 []\T1/lmr/m/n/12 Label diben-tuk satu kali dari citra dan pa-ram-e-ter yang sam
 a,
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 936--944
+Underfull \hbox (badness 1168) in paragraph at lines 944--952
 \T1/lmr/m/n/12 meng-hasilkan arte-fak pada in-ven-tori ban-jir, mis-al-nya arte
 -fak ge-ometris
  []
 
-[16]
-Underfull \hbox (badness 1383) in paragraph at lines 963--972
+[17]
+Underfull \hbox (badness 1383) in paragraph at lines 971--980
 \T1/lmr/m/n/12 di-rep-re-sen-tasikan melalui dekom-po-sisi si-nus dan kos-i-nus
 -nya, serta satu
  []
 
-
-Underfull \hbox (badness 1048) in paragraph at lines 973--978
-\T1/lmr/m/n/12 perbe-daan acuan ver-tikal (EGM96 pada SRTM ver-sus EGM2008 pada
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 1025--1028
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1037
 []\T1/lmr/m/n/12 Copernicus GLO-30 $\OMS/lmsy/m/n/12 !$ \T1/lmr/m/n/12 DEM-deri
 ved pre-dic-tors $\OMS/lmsy/m/n/12 !$
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 1025--1028
+Underfull \hbox (badness 1418) in paragraph at lines 1034--1037
 \T1/lmr/m/n/12 predik-tor non-elevasi yang sama $\OMS/lmsy/m/n/12 !$ \T1/lmr/m/
 n/12 Ran-dom For-est $\OMS/lmsy/m/n/12 !$
  []
 
 
-Underfull \hbox (badness 3029) in paragraph at lines 1033--1037
+Underfull \hbox (badness 3029) in paragraph at lines 1042--1046
 \T1/lmr/m/n/12 la-bel tidak men-jadi sum-ber vari-asi an-tarper-lakuan. Demikia
 n pula
  []
 
-[18]
-Underfull \hbox (badness 2894) in paragraph at lines 1055--1064
+
+Underfull \hbox (badness 1681) in paragraph at lines 1047--1067
+\T1/lmr/m/n/12 sedan-gkan metrik pada scikit-learn di-la-porkan se-ba-gai eval-
+u-asi kin-erja
+ []
+
+[19]
+Underfull \hbox (badness 2894) in paragraph at lines 1070--1079
 \T1/lmr/m/n/12 ROC-AUC (\T1/lmr/m/it/12 Area Un-der the Re-ceiver Op-er-at-ing 
 Char-ac-ter-is-tic \T1/lmr/m/n/12 curve),
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 1065--1072
+Underfull \hbox (badness 3942) in paragraph at lines 1080--1087
 \T1/lmr/m/n/12 meng-gu-nakan in-deks Youden [[]27[]] pada kurva ROC, yaitu $\OM
 L/lmm/m/it/12 J\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 t\OT1/lmr/m/n/12 ) =
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 1073--1078
+Underfull \hbox (badness 2582) in paragraph at lines 1088--1093
 []\T1/lmr/m/n/12 Karena titik sam-pel yang berdekatan cen-derung memi-liki ni-l
 ai
  []
 
-
-Underfull \hbox (badness 1297) in paragraph at lines 1086--1091
+[20]
+Underfull \hbox (badness 1297) in paragraph at lines 1101--1108
 \T1/lmr/m/n/12 pro-duk dieval-u-asi pada sam-pel ulang blok yang iden-tik se-hi
 ngga
  []
 
-[19]
-Underfull \hbox (badness 1496) in paragraph at lines 1099--1106
+
+Underfull \hbox (badness 1496) in paragraph at lines 1116--1123
 \T1/lmr/m/n/12 Data ke-ja-dian ban-jir bersi-fat spasial, se-hingga ni-lai pada
  lokasi yang
  []
 
-[20] [21]
-Underfull \hbox (badness 1990) in paragraph at lines 1187--1195
+[21] [22]
+Underfull \hbox (badness 1990) in paragraph at lines 1204--1212
 []\T1/lmr/m/n/12 Moran's I adalah anal-i-sis di-ag-nos-tik pen-dukung. Statis-t
 ik ini
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 1187--1195
+Underfull \hbox (badness 3302) in paragraph at lines 1204--1212
 \T1/lmr/m/n/12 menggam-barkan struk-tur spasial prob-a-bil-i-tas dan galat, tet
 api tidak
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 1187--1195
+Underfull \hbox (badness 4647) in paragraph at lines 1204--1212
 \T1/lmr/m/n/12 menghi-langkan \T1/lmr/m/it/12 spa-tial leak-age \T1/lmr/m/n/12 
 dan tidak mem-buk-tikan ke-ti-adaan-nya.
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 1203--1208
+Underfull \hbox (badness 2245) in paragraph at lines 1220--1225
 \T1/lmr/m/n/12 ROC-AUC an-tarpro-duk di-la-porkan bersama in-ter-val keper-caya
 an hasil
  []
 
-
-Underfull \hbox (badness 2165) in paragraph at lines 1232--1236
+[23]
+Underfull \hbox (badness 2165) in paragraph at lines 1249--1253
 \T1/lmr/m/n/12 ke-las tu-tu-pan la-han [[]21[]]. Ke-mu-dian pe-ruba-han \T1/lmr
 /m/it/12 sus-cep-ti-bil-ity \T1/lmr/m/n/12 ak-i-bat
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 1262--1262
+
+Underfull \hbox (badness 10000) in paragraph at lines 1279--1279
 []|\T1/lmr/m/n/12 Peta \T1/lmr/m/it/12 flood sus-cep-ti-bil-ity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1263--1263
+Underfull \hbox (badness 10000) in paragraph at lines 1280--1280
 []|\T1/lmr/m/n/12 Peta \T1/lmr/m/it/12 flood sus-cep-ti-bil-ity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1264--1264
+Underfull \hbox (badness 10000) in paragraph at lines 1281--1281
 []|\T1/lmr/m/n/12 Peta \T1/lmr/m/it/12 flood sus-cep-ti-bil-ity
  []
 
-[23] [24] [25]
-Underfull \hbox (badness 2126) in paragraph at lines 1310--1327
+[24] [25] [26]
+Underfull \hbox (badness 2126) in paragraph at lines 1327--1347
 \T1/lmr/m/n/12 Analisis statis-tik deskrip-tif pada grid res-o-lusi 30 me-ter m
 e-nun-jukkan
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 1310--1327
+Underfull \hbox (badness 1365) in paragraph at lines 1327--1347
 \T1/lmr/m/n/12 yang serupa un-tuk wilayah ka-jian, yaitu dataran ren-dah pe-sis
 ir pada
  []
 
-[26
+[27
 
 ]
-Underfull \hbox (badness 2368) in paragraph at lines 1330--1347
+Underfull \hbox (badness 2368) in paragraph at lines 1350--1367
 \T1/lmr/m/n/12 pe-ri-ode pra-kejadian (25 Februari--12 Maret 2024) dan pasca-ke
 jadian
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 1330--1347
+Underfull \hbox (badness 1242) in paragraph at lines 1350--1367
 \OMS/lmsy/m/n/12 ^^U \OT1/lmr/m/n/12 80%$\T1/lmr/m/n/12 ), memi-liki kemiringan
  lereng ku-rang dari $\OT1/lmr/m/n/12 5[]$\T1/lmr/m/n/12 , serta memenuhi
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1330--1347
+Underfull \hbox (badness 1014) in paragraph at lines 1350--1367
 \T1/lmr/m/n/12 ini mengikuti ran-can-gan pada peneli-tian acuan [[]5[]], yang m
 eng-hasilkan
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 1348--1372
+Underfull \hbox (badness 1057) in paragraph at lines 1368--1392
 \T1/lmr/m/n/12 mak-si-mum $\OT1/lmr/m/n/12 11[]48[]$\T1/lmr/m/n/12 ), sedan-gka
 n pada Coper-ni-cus DEM GLO-30 ter-catat
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 1348--1372
+Underfull \hbox (badness 1253) in paragraph at lines 1368--1392
 \T1/lmr/m/n/12 tidak sepenuh-nya in-de-pen-den ter-hadap karak-ter-is-tik salah
  satu pro-duk
  []
 
-[27]
-Underfull \hbox (badness 6220) in paragraph at lines 1375--1396
+[28]
+Underfull \hbox (badness 6220) in paragraph at lines 1395--1416
 \T1/lmr/m/n/12 Pemodelan spasial un-tuk meng-hasilkan tiga peta prob-a-bil-i-ta
 s \T1/lmr/m/it/12 flood
  []
 
 File: figures/fig_prob_maps.png Graphic file (type bmp)
 <figures/fig_prob_maps.png>
+[29]
 File: figures/fig_roc.png Graphic file (type bmp)
 <figures/fig_roc.png>
 
-Underfull \hbox (badness 2573) in paragraph at lines 1428--1441
+Underfull \hbox (badness 2573) in paragraph at lines 1448--1461
 \T1/lmr/m/n/12 spasial [[]19[]], ke-mam-puan gen-er-al-isasi spasial model di-u
 ji lebih lan-jut
  []
 
-[28]
-Underfull \hbox (badness 1237) in paragraph at lines 1457--1483
+
+Underfull \hbox (badness 1237) in paragraph at lines 1477--1503
 \T1/lmr/m/n/12 adalah $\OT1/lmr/m/n/12 ^^A[][] = \OMS/lmsy/m/n/12 ^^@\OT1/lmr/m
 /n/12 0[]0155$ \T1/lmr/m/n/12 den-gan se-lang keper-cayaan 95%
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 1457--1483
+Underfull \hbox (badness 1533) in paragraph at lines 1477--1503
 \OT1/lmr/m/n/12 [\OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 0[]0250;  \OMS/lmsy/m/n/12
  ^^@\OT1/lmr/m/n/12 0[]0072]$\T1/lmr/m/n/12 , sedan-gkan selisih an-tara Coper-
 ni-cus DEM GLO-30
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 1457--1483
+Underfull \hbox (badness 2970) in paragraph at lines 1477--1503
 \T1/lmr/m/n/12 bersi-fat de-pen-den, se-hingga se-lang yang lebih sem-pit terse
 -but tidak
  []
 
-[29] [30]
-Underfull \hbox (badness 1112) in paragraph at lines 1484--1507
+[30] [31]
+Underfull \hbox (badness 1112) in paragraph at lines 1504--1537
 \T1/lmr/m/n/12 skema eval-u-asi ini me-nun-jukkan bahwa ketepatan pemisa-han pe
 r-ingkat
  []
 
-[31]
-Underfull \hbox (badness 1460) in paragraph at lines 1543--1554
+[32]
+Underfull \hbox (badness 1460) in paragraph at lines 1573--1584
 \T1/lmr/bx/n/12 tingkat kemiri-pan spasial tert-inggi, sedan-gkan pasan-gan yan
 g
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 1570--1590
+Underfull \hbox (badness 1769) in paragraph at lines 1600--1625
 \T1/lmr/m/n/12 pada Coper-ni-cus DEM GLO-30, dan $\OT1/lmr/m/n/12 95[]9[][]$ \T
 1/lmr/m/n/12 pada ALOS AW3D30.
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 1570--1590
+Underfull \hbox (badness 1527) in paragraph at lines 1600--1625
 \T1/lmr/m/n/12 Se-men-tara itu, luas wilayah pada ke-las 1 (ker-awanan san-gat 
 ren-dah)
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 1570--1590
+Underfull \hbox (badness 1776) in paragraph at lines 1600--1625
 \T1/lmr/m/n/12 DEM GLO-30, dan $\OT1/lmr/m/n/12 772[]5[][]$ \T1/lmr/m/n/12 pada
  ALOS AW3D30. Pola terse-but
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 1570--1590
+Underfull \hbox (badness 1590) in paragraph at lines 1600--1625
 \T1/lmr/m/n/12 yang mendekati SRTM pada ke-las ker-awanan ren-dah tetapi men-ca
 tat
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 1570--1590
+Underfull \hbox (badness 1490) in paragraph at lines 1600--1625
 \T1/lmr/m/n/12 menuju Coper-ni-cus DEM GLO-30, per-pin-da-han pik-sel terbe-sar
  ter-jadi
  []
 
-[32]
-Underfull \hbox (badness 3343) in paragraph at lines 1593--1617
+[33]
+Underfull \hbox (badness 3343) in paragraph at lines 1628--1652
 \T1/lmr/m/n/12 Hasil strat-i-fikasi meng-gu-nakan peta tu-tu-pan la-han ESA Wor
 ld-Cover
  []
 
+[34]
 File: figures/fig_agreement.png Graphic file (type bmp)
 <figures/fig_agreement.png>
-[33]
-Underfull \hbox (badness 1371) in paragraph at lines 1627--1631
+
+Underfull \hbox (badness 1371) in paragraph at lines 1662--1666
 \T1/lmr/m/n/12 Analisis di-ag-nos-tik au-toko-re-lasi spasial di-lakukan sesuai
  prose-dur pada
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 1634--1637
+Underfull \hbox (badness 2368) in paragraph at lines 1669--1672
 \T1/lmr/m/n/12 prob-a-bil-i-tas OOF, dan resid-ual OOF un-tuk ketiga kon-fig-ur
 asi DEM,
  []
 
-[34] [35]
-Underfull \hbox (badness 1237) in paragraph at lines 1742--1747
+[35] [36] [37]
+Underfull \hbox (badness 1237) in paragraph at lines 1777--1782
 \T1/lmr/m/n/12 yang berdekatan cen-derung memi-liki ni-lai prob-a-bil-i-tas ker
 -awanan yang
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 1763--1777
+Underfull \hbox (badness 1939) in paragraph at lines 1798--1812
 \T1/lmr/m/n/12 SRTM, Coper-ni-cus DEM GLO-30, dan ALOS AW3D30 meng-hasilkan
  []
 
 
-Underfull \hbox (badness 3199) in paragraph at lines 1763--1777
+Underfull \hbox (badness 3199) in paragraph at lines 1798--1812
 \T1/lmr/m/n/12 rep-re-sen-tasi ben-tang la-han makro yang se-jalan pada wilayah
  pe-sisir
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 1763--1777
+Underfull \hbox (badness 3118) in paragraph at lines 1798--1812
 \T1/lmr/m/n/12 Semarang--Demak, na-mun memi-liki perbe-daan sis-tem-a-tis pada 
 el-evasi
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 1763--1777
+Underfull \hbox (badness 1057) in paragraph at lines 1798--1812
 \T1/lmr/m/n/12 me-dian di dataran ren-dah pe-sisir serta vari-asi kemiringan le
 reng lokal
  []
 
-[36]
-Underfull \hbox (badness 2343) in paragraph at lines 1778--1808
+
+Underfull \hbox (badness 2343) in paragraph at lines 1813--1843
 []\T1/lmr/m/n/12 Ketiga, dari as-pek sen-si-tiv-i-tas per-forma dan spasial (Ru
 -mu-san
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 1778--1808
+Underfull \hbox (badness 2503) in paragraph at lines 1813--1843
 \T1/lmr/m/it/12 seed\T1/lmr/m/n/12 . Berdasarkan pen-gu-jian \T1/lmr/m/it/12 bl
 ock boot-strap\T1/lmr/m/n/12 , ke-ung-gu-lan Coper-ni-cus
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 1778--1808
+Underfull \hbox (badness 1052) in paragraph at lines 1813--1843
 \T1/lmr/m/n/12 keper-cayaan tidak memuat ni-lai nol, meskipun be-saran selisi-h
 -nya ke-cil
  []
 
-[37]
-Underfull \hbox (badness 1371) in paragraph at lines 1809--1822
+[38]
+Underfull \hbox (badness 1371) in paragraph at lines 1844--1857
 \T1/lmr/m/n/12 es-ti-masi kin-erja model ter-hadap \T1/lmr/bx/n/12 de-sain peng
 am-bi-lan sam-pel ke-las
  []
 
+[39]
+Underfull \hbox (badness 1454) in paragraph at lines 1865--1891
+\T1/lmr/m/n/12 rep-re-sen-tasi per-mukaan an-tara SRTM yang berba-sis radar pit
+a-C dan
+ []
 
-Underfull \hbox (badness 1845) in paragraph at lines 1830--1851
-\T1/lmr/m/n/12 ter-hadap salah satu pro-duk per-lakuan karena pen-yaringan kemi
-ringan
+[40] [41]
+Underfull \hbox (badness 1005) in paragraph at lines 1943--1950
+\T1/lmr/m/n/12 dan off-set ver-tikal an-tarpro-duk (Sub-bab 4.1); arah lereng m
+a-suk
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 1830--1851
-\T1/lmr/m/n/12 lereng meng-gu-nakan SRTM, se-men-tara pen-yaringan perairan per
--ma-nen
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 1830--1851
-\T1/lmr/m/n/12 sama dit-er-ap-kan iden-tik pada ketiga kon-fig-urasi, ke-se-tar
-aan per-lakuan
- []
-
-[38] [39] [40]
-Underfull \hbox (badness 1394) in paragraph at lines 1915--1929
+Underfull \hbox (badness 1394) in paragraph at lines 1957--1971
 \T1/lmr/m/n/12 tetapi kon-sis-ten: ke-ung-gu-lan Coper-ni-cus DEM GLO-30 ter-ha
 dap
  []
 
+[42
 
-Underfull \hbox (badness 1348) in paragraph at lines 1929--1933
+]
+Underfull \hbox (badness 1348) in paragraph at lines 1971--1975
 \T1/lmr/m/n/12 World-Cover: ke-las tu-tu-pan po-hon pal-ing sta-bil, di-ikuti k
 awasan
  []
 
 
-Underfull \hbox (badness 7397) in paragraph at lines 1929--1933
+Underfull \hbox (badness 7397) in paragraph at lines 1971--1975
 \T1/lmr/m/n/12 ter-ban-gun, sedan-gkan sen-si-tiv-i-tas tert-inggi terkon-sen-t
 rasi pada
  []
 
-[41
 
-]
-Underfull \hbox (badness 5954) in paragraph at lines 1947--1950
+Underfull \hbox (badness 5954) in paragraph at lines 1989--1992
 []\T1/lmr/m/n/12 Penambahan eval-u-asi keti-dak-pas-tian \T1/lmr/m/it/12 flood 
 in-ven-tory\T1/lmr/m/n/12 , khusus-nya
  []
 
-[42]
-Underfull \hbox (badness 1472) in paragraph at lines 1958--1958
+[43]
+Underfull \hbox (badness 1472) in paragraph at lines 2000--2000
 \T1/lmr/m/n/12 (In-done-sia): Char-ac-ter-is-tics, Im-pacts and Causes^^Q. In: 
 \T1/lmr/m/it/12 Ge-o-mat-ics,
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 1958--1958
+Underfull \hbox (badness 2809) in paragraph at lines 2000--2000
 []\T1/lmr/m/n/12 Husnayaen et al. ^^P  Phys-i-cal As-sess-ment of Coastal Vul-n
 er-a-bil-ity
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 1958--1958
+Underfull \hbox (badness 1231) in paragraph at lines 2000--2000
 \T1/lmr/m/n/12 Un-der En-hanced Land Sub-si-dence in Se-marang, In-done-sia, Us
 -ing
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 1958--1958
+Underfull \hbox (badness 2189) in paragraph at lines 2000--2000
 \T1/lmr/m/n/12 for Flood Sus-cep-ti-bil-ity Map-ping Us-ing Sentinel-1-Derived 
 Flood
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 1958--1958
+Underfull \hbox (badness 2478) in paragraph at lines 2000--2000
 \T1/lmr/m/n/12 of Freely Avail-able Global DEMs (FAB-DEM, Coper-ni-cus DEM,
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1958--1958
+Underfull \hbox (badness 1259) in paragraph at lines 2000--2000
 \T1/lmr/m/n/12 Model by ALOS PRISM^^Q. In: \T1/lmr/m/it/12 The In-ter-na-tional
  Archives of the
  []
 
-[43
+[44
 
 ]
-Underfull \hbox (badness 1448) in paragraph at lines 1958--1958
+Underfull \hbox (badness 1448) in paragraph at lines 2000--2000
 []\T1/lmr/m/n/12 D. R. Roberts et al. ^^P  Cross-Validation Strate-gies for Dat
 a with
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 1958--1958
+Underfull \hbox (badness 4378) in paragraph at lines 2000--2000
 \T1/lmr/m/n/12 Tem-po-ral, Spa-tial, Hi-er-ar-chi-cal, or Phy-lo-ge-netic Struc
 -ture^^Q. In:
  []
 
-[44]
-Underfull \hbox (badness 1365) in paragraph at lines 1958--1958
+[45]
+Underfull \hbox (badness 1365) in paragraph at lines 2000--2000
 \T1/lmr/m/n/12 Mod-els^^Q. In: \T1/lmr/m/it/12 Nat-u-ral Haz-ards \T1/lmr/m/n/1
 2 120.6 (2024), pp. 5333^^U5368. \T1/lmr/m/sc/12 issn\T1/lmr/m/n/12 :
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 1958--1958
+Underfull \hbox (badness 2486) in paragraph at lines 2000--2000
 []\T1/lmr/m/n/12 D. Ya-mazaki et al. ^^P  MERIT Hy-dro: A High-Resolution Globa
 l
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 1958--1958
+Underfull \hbox (badness 1596) in paragraph at lines 2000--2000
 \T1/lmr/m/n/12 Ma-chine Learn-ing Based Flood Sus-cep-ti-bil-ity Pre-dic-tion i
 n Data
  []
 
-[45] (proposal_revisi-final.aux)
+[46] (proposal_revisi-final.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1926,4 +1934,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  84i,13n,117p,1168b,4957s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on proposal_revisi-final.pdf (49 pages).
+Output written on proposal_revisi-final.pdf (50 pages).
