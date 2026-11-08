@@ -1,0 +1,11 @@
+name,comparison,active_valid,backup_valid,active_invalid_backup_valid,active_valid_backup_invalid,common_valid,unequal_values_common_valid,max_abs_value_delta_common_valid,same_grid,limit
+agreement_glo30_vs_aw3d30.tif,active_vs_backup_unmasked,1429582,3277653,1848071,0,1429582,0,0.0,True,backup raster is not an independent AOI geometry
+agreement_srtm_vs_aw3d30.tif,active_vs_backup_unmasked,1429582,3277653,1848071,0,1429582,0,0.0,True,backup raster is not an independent AOI geometry
+agreement_srtm_vs_glo30.tif,active_vs_backup_unmasked,1444085,3292156,1848071,0,1444085,0,0.0,True,backup raster is not an independent AOI geometry
+delta_abs_glo30_vs_aw3d30.tif,active_vs_backup_unmasked,1429582,3277653,1848071,0,1429582,0,0.0,True,backup raster is not an independent AOI geometry
+delta_abs_srtm_vs_aw3d30.tif,active_vs_backup_unmasked,1429582,3277653,1848071,0,1429582,0,0.0,True,backup raster is not an independent AOI geometry
+delta_abs_srtm_vs_glo30.tif,active_vs_backup_unmasked,1444085,3292156,1848071,0,1444085,0,0.0,True,backup raster is not an independent AOI geometry
+prob_aw3d30.tif,active_vs_backup_unmasked,1429582,3277653,1848071,0,1429582,0,0.0,True,backup raster is not an independent AOI geometry
+prob_glo30.tif,active_vs_backup_unmasked,1444085,3292156,1848071,0,1444085,0,0.0,True,backup raster is not an independent AOI geometry
+prob_srtm.tif,active_vs_backup_unmasked,1444085,3292156,1848071,0,1444085,0,0.0,True,backup raster is not an independent AOI geometry
+proxy_flood_label_sentinel1.tif,active_vs_backup_unmasked,1444085,3301808,1857723,0,1444085,0,0.0,True,backup raster is not an independent AOI geometry
