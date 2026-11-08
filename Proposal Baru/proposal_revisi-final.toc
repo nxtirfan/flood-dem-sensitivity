@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {I}Pendahuluan}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Latar Belakang}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Rumusan Masalah}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Tujuan Penelitian}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Tujuan Penelitian}{3}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Kepentingan Penelitian}{4}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Manfaat Penelitian}{5}{subsection.1.5}%
 \contentsline {subsubsection}{\numberline {1.5.1}Manfaat Akademis}{5}{subsubsection.1.5.1}%
@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {2.10}Kerangka Berpikir}{12}{subsection.2.10}%
 \contentsline {section}{\numberline {III}Metode Penelitian}{15}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Pendekatan dan Desain Penelitian}{15}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Wilayah Penelitian}{16}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Wilayah Penelitian}{15}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Data dan Sumber Data}{16}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Perangkat Penelitian}{16}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Pembentukan Flood Inventory}{16}{subsection.3.5}%
@@ -36,7 +36,7 @@
 \contentsline {subsubsection}{\numberline {3.8.1}Diagnostik Autokorelasi Spasial}{21}{subsubsection.3.8.1}%
 \contentsline {subsection}{\numberline {3.9}Analisis Sensitivitas}{23}{subsection.3.9}%
 \contentsline {subsubsection}{\numberline {3.9.1}Sensitivitas performa}{23}{subsubsection.3.9.1}%
-\contentsline {subsubsection}{\numberline {3.9.2}Sensitivitas spasial}{24}{subsubsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.2}Sensitivitas spasial}{23}{subsubsection.3.9.2}%
 \contentsline {subsection}{\numberline {3.10}Stratifikasi Berdasarkan Tutupan Lahan}{24}{subsection.3.10}%
 \contentsline {subsection}{\numberline {3.11}Tahapan Penelitian}{24}{subsection.3.11}%
 \contentsline {section}{\numberline {IV}Hasil dan Pembahasan}{27}{section.4}%

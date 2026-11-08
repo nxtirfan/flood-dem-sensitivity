@@ -2,6 +2,12 @@
 
 Tanggal: 8 November 2026. Aturan editor: baca `AGENTS.md` terlebih dahulu.
 
+## Update T13 — wording Bab I–V selesai
+
+Pengguna menyetujui perapian bahasa pasca-T12. Rincian dan verifikasi ada di `docs/temuan/T13-revisi-wording.md`. Naskah dan PDF terkini telah diperbarui tanpa rerun atau perubahan angka/data/model; draf pra-audit tidak diterapkan mentah. Kelas WorldCover 20 tidak muncul pada sampel utama, bukan kategori acuan yang sengaja dibuang. Statistik spasial raster berasal dari peta GEE; statistik titik OOF dan metrik berasal dari evaluasi scikit-learn.
+
+PDF akhir T13: 50 halaman, 0 undefined, 5 overfull warisan, 1 warning inputenc yang sudah ada pada baseline. ZIP sumber telah diuji; 300 berkas beku dan bibliografi identik. Beberapa halaman subbab bergeser, jadi gunakan daftar isi PDF terbaru untuk konsultasi. Topik dan batas T12 di bawah tetap relevan; angka historis yang belum terlacak tetap [GATED].
+
 ## 1. Status dan keluaran
 
 Tugas A–E round-2 yang diminta pada Bagian 6 AGENTS.md telah dikerjakan langsung di repo. Laporan tunggal sesi: `docs/temuan/T12-round-2.md`.
@@ -12,7 +18,7 @@ Tugas A–E round-2 yang diminta pada Bagian 6 AGENTS.md telah dikerjakan langsu
 - D: tepat lima topik konsultasi Dr. Iqbal, isu, harapan masukan, dan halaman acuan.
 - E: revisi tekstual dan ketidakpastian yang masih [GATED - perlu cek artefak] dijelaskan tanpa menciptakan angka atau mengusulkan eksperimen.
 
-Naskah: `Proposal Baru/proposal_revisi-final.tex`; PDF terbaru 50 halaman. Build tiga lintasan XeLaTeX: 0 undefined; 7 overfull warisan yang sama pada baseline. Satu warning inputenc juga muncul pada build T11 asli di sandbox ini: paket diabaikan mesin UTF-8. Karena itu hasil tidak disebut 0 warning. ZIP sumber diperbarui dengan direktori `figures/`.
+Pada akhir T12, PDF memiliki 50 halaman, 0 undefined, dan 7 overfull warisan pada baseline. Naskah serta PDF terkini sudah diperbarui oleh T13; rujuk update di atas. Satu warning inputenc juga muncul pada build T11 asli di sandbox ini: paket diabaikan mesin UTF-8. Karena itu hasil tidak disebut 0 warning. ZIP sumber diperbarui dengan direktori `figures/`.
 
 ## 2. Perubahan tekstual penting
 

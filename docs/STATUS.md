@@ -223,3 +223,10 @@
 - Tidak ada eksperimen; 300 berkas zona beku tetap identik SHA256, serta semua rentang matematika inline lama pada TEX tidak berubah. Bibliografi/key sitasi T11 dipertahankan.
 - PDF dibangun ulang 50 halaman, 0 undefined, 7 overfull warisan yang sama; 1 warning inputenc yang juga muncul pada build baseline dengan XeLaTeX sandbox ini. Tidak mengklaim 0 warning. ZIP dibangun ulang dengan struktur `figures/` dan diperiksa terhadap sumber saat ini.
 - Tahap berikut: konsultasi Dr. Iqbal menggunakan lima topik berhalaman pada laporan T12, kemudian keputusan artikel SMDS. Angka pembanding historis tetap berstatus perlu ketertelusuran arsip; tidak ada klaim baru tentang ground truth, mask eksak, atau estimator identik.
+
+## Update 2026-11-08 - T13 perapian wording Bab I–V
+
+- Wording naskah pasca-T12 dirapikan selektif setelah pemeriksaan makna; draf lama tidak diterapkan otomatis. Klarifikasi kode WorldCover 20: tidak muncul pada sampel utama, bukan dummy kategori acuan yang sengaja dihapus. Sumber statistik spasial raster GEE dan titik OOF sklearn dibedakan.
+- Tidak ada hasil/data/notebook/model/seed diubah atau eksperimen dijalankan; 300 berkas zona beku dan bibliografi tetap identik. Token angka, rumus, sitasi, referensi, dan struktur naskah tidak berubah.
+- PDF 50 halaman, 0 undefined, 5 overfull warisan dan 1 warning inputenc yang juga muncul pada baseline T12. ZIP sumber direbuild/diuji. Detail dan batas pemeriksaan: `docs/temuan/T13-revisi-wording.md`.
+- Lanjut konsultasi Dr. Iqbal memakai topik T12 dan PDF T13, kemudian putuskan artikel SMDS; beberapa halaman daftar isi bergeser.
