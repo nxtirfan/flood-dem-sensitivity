@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {I}Pendahuluan}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Latar Belakang}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Rumusan Masalah}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Tujuan Penelitian}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Tujuan Penelitian}{3}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Kepentingan Penelitian}{4}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Manfaat Penelitian}{5}{subsection.1.5}%
 \contentsline {subsubsection}{\numberline {1.5.1}Manfaat Akademis}{5}{subsubsection.1.5.1}%
@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {2.10}Kerangka Berpikir}{12}{subsection.2.10}%
 \contentsline {section}{\numberline {III}Metode Penelitian}{15}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Pendekatan dan Desain Penelitian}{15}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Wilayah Penelitian}{16}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Wilayah Penelitian}{15}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Data dan Sumber Data}{16}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Perangkat Penelitian}{16}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Pembentukan Flood Inventory}{16}{subsection.3.5}%
@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {4.3}Hasil Pemodelan Random Forest}{29}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Perbandingan Performa}{30}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Analisis Sensitivitas Spasial}{33}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Sensitivitas Berdasarkan Tutupan Lahan}{34}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.6}Sensitivitas Berdasarkan Tutupan Lahan}{35}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}Analisis Autokorelasi Spasial}{35}{subsection.4.7}%
 \contentsline {subsubsection}{\numberline {4.7.1}Autokorelasi Spasial pada Titik Sampel}{36}{subsubsection.4.7.1}%
 \contentsline {subsubsection}{\numberline {4.7.2}Autokorelasi Spasial pada Peta Probabilitas}{37}{subsubsection.4.7.2}%

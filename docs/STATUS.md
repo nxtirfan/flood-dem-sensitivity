@@ -215,3 +215,22 @@
   struktur figures/; sweep PDF: klaim lama=0, 226-240=1, 157-162=1. Laporan `docs/temuan/T11-audit-astra.md`.
 - Offset AW3D30 +0,39 m dipertahankan (rectifikasi audit: bukan 0,74); APPLY_VERTICAL_OFFSET tetap FALSE;
   seluruh angka hasil tidak berubah sedikit pun.
+
+## Update 2026-11-08 - T12 verifikasi round-2 dan persiapan konsultasi
+
+- Tugas A–E pada handoff pasca-T11 selesai; tabel 13 koreksi, temuan per tingkat, redaksi offset, dan lima topik konsultasi ada di `docs/temuan/T12-round-2.md`.
+- Teks diperjelas: dua jalur GEE/sklearn (17/24 input, seluruh sampel versus pemisahan evaluasi), makna kelas 0 dan dukungan positif JRC, RM/tujuan elevasi-slope, atribusi Meadows, offset, domain tabel dan kontras sampel yang bukan estimasi kausal. Angka hasil tidak diubah.
+- Tidak ada eksperimen; 300 berkas zona beku tetap identik SHA256, serta semua rentang matematika inline lama pada TEX tidak berubah. Bibliografi/key sitasi T11 dipertahankan.
+- PDF dibangun ulang 50 halaman, 0 undefined, 7 overfull warisan yang sama; 1 warning inputenc yang juga muncul pada build baseline dengan XeLaTeX sandbox ini. Tidak mengklaim 0 warning. ZIP dibangun ulang dengan struktur `figures/` dan diperiksa terhadap sumber saat ini.
+- Tahap berikut: konsultasi Dr. Iqbal menggunakan lima topik berhalaman pada laporan T12, kemudian keputusan artikel SMDS. Angka pembanding historis tetap berstatus perlu ketertelusuran arsip; tidak ada klaim baru tentang ground truth, mask eksak, atau estimator identik.
+
+## Update 2026-11-08 - T13 perapian wording Bab I–V
+
+- Wording naskah pasca-T12 dirapikan selektif setelah pemeriksaan makna; draf lama tidak diterapkan otomatis. Klarifikasi kode WorldCover 20: tidak muncul pada sampel utama, bukan dummy kategori acuan yang sengaja dihapus. Sumber statistik spasial raster GEE dan titik OOF sklearn dibedakan.
+- Tidak ada hasil/data/notebook/model/seed diubah atau eksperimen dijalankan; 300 berkas zona beku dan bibliografi tetap identik. Token angka, rumus, sitasi, referensi, dan struktur naskah tidak berubah.
+- PDF 50 halaman, 0 undefined, 5 overfull warisan dan 1 warning inputenc yang juga muncul pada baseline T12. ZIP sumber direbuild/diuji. Detail dan batas pemeriksaan: `docs/temuan/T13-revisi-wording.md`.
+- Lanjut konsultasi Dr. Iqbal memakai topik T12 dan PDF T13, kemudian putuskan artikel SMDS; beberapa halaman daftar isi bergeser.
+
+## Update 2026-11-08 - T14 titik koma prosa
+
+Sembilan belas titik koma pada prosa dipisah menjadi kalimat yang lebih alami; titik koma yang membantu rincian tetap dipertahankan. Naskah tidak dipangkas demi jumlah halaman. PDF tetap 50 halaman, 0 undefined, 5 overfull warisan dan 1 warning inputenc baseline. Angka/rumus/rujukan dan 301 hash zona beku/bibliografi tetap. Laporan: `docs/temuan/T14-tanda-baca.md`.

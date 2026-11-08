@@ -192,44 +192,41 @@ NIP. ....................................\par
 
 \subsection{Latar Belakang}
 
-Banjir merupakan salah satu permasalahan hidrometeorologi yang membutuhkan
-informasi spasial untuk mendukung identifikasi wilayah yang memiliki
-kecenderungan lebih tinggi mengalami genangan. Salah satu pendekatan yang
+Banjir merupakan permasalahan hidrometeorologi yang memerlukan informasi
+spasial untuk mengidentifikasi wilayah dengan kecenderungan lebih tinggi
+mengalami genangan. Salah satu pendekatan yang
 banyak digunakan adalah \textit{flood susceptibility mapping}, yaitu pemetaan
 kecenderungan suatu wilayah untuk mengalami banjir berdasarkan karakteristik
 lingkungan yang berkaitan dengan kejadian banjir. Pendekatan berbasis
 \textit{machine learning} memungkinkan hubungan antara kejadian banjir dan
 berbagai faktor lingkungan dipelajari secara nonlinier dari data spasial.
 
-Wilayah pesisir Semarang--Demak merupakan kawasan yang relevan untuk
-penelitian tersebut karena memiliki kombinasi dataran rendah, kawasan
-terbangun, pertanian, jaringan sungai, serta lingkungan pesisir yang
-berhubungan dengan kerentanan terhadap genangan, ditambah riwayat kejadian
-banjir dan penurunan muka tanah yang telah terdokumentasi
+Pesisir Semarang--Demak relevan untuk penelitian ini karena mencakup
+dataran rendah, kawasan terbangun, pertanian, jaringan sungai, dan lingkungan
+pesisir yang berkaitan dengan kerentanan terhadap genangan. Wilayah ini juga
+memiliki riwayat banjir dan penurunan muka tanah yang telah terdokumentasi
 \cite{marfai2008,abidin2015,Husnayaen2018,Sakina2025}. Informasi topografi
 menjadi salah satu komponen penting dalam menggambarkan kondisi tersebut.
-Namun, ketersediaan data topografi beresolusi tinggi tidak selalu mudah
-diperoleh, sehingga produk elevasi global yang tersedia secara terbuka sering
-digunakan sebagai sumber data alternatif.
+Namun, data topografi beresolusi tinggi tidak selalu tersedia, sehingga
+produk elevasi global yang tersedia secara terbuka sering digunakan sebagai
+sumber data alternatif.
 
-Penelitian sebelumnya pada wilayah Semarang--Demak telah menunjukkan bahwa
+Penelitian sebelumnya di wilayah Semarang--Demak menunjukkan bahwa peta
 \textit{flood susceptibility} dapat dibangun dengan menggabungkan
 \textit{flood inventory} dari Sentinel-1 SAR (\textit{Synthetic Aperture
-Radar}) dengan berbagai variabel
-geospasial dan model \textit{machine learning} \cite{hakim2026}. Penelitian
+Radar}) dengan berbagai variabel geospasial dan model \textit{machine learning} \cite{hakim2026}. Penelitian
 tersebut menggunakan perubahan \textit{backscatter} Sentinel-1 sebelum dan
 sesudah kejadian banjir untuk menghasilkan label banjir, kemudian membandingkan
 tujuh model \textit{ensemble learning}. Random Forest (RF) memperoleh kinerja
 diskriminasi tertinggi di antara model yang diuji, meskipun perbedaan dengan
 beberapa model teratas tidak signifikan secara statistik.
 
-Hasil tersebut memberikan dasar untuk penelitian lanjutan. Jika penelitian
-sebelumnya berfokus pada pertanyaan mengenai model \textit{machine learning}
-yang digunakan untuk menghasilkan \textit{flood susceptibility}, penelitian
-ini menggeser fokus pada pertanyaan mengenai \textbf{ketergantungan hasil
-model terhadap sumber data elevasi}. Dengan demikian, Random Forest digunakan
-sebagai model yang dikontrol, bukan kembali dibandingkan dengan berbagai
-algoritme.
+Hasil tersebut menjadi dasar bagi penelitian lanjutan. Berbeda dengan
+penelitian sebelumnya yang membandingkan model \textit{machine learning}
+untuk menghasilkan \textit{flood susceptibility}, penelitian ini berfokus
+pada \textbf{ketergantungan hasil model terhadap sumber data elevasi}.
+Random Forest dipertahankan sebagai model dalam perbandingan, bukan kembali
+dibandingkan dengan berbagai algoritme.
 
 Permasalahan tersebut penting karena produk elevasi global tidak menghasilkan
 representasi permukaan yang identik. Meadows dkk.\ membandingkan lima produk
@@ -241,9 +238,9 @@ pada lingkungan yang
 berkaitan dengan banjir \cite{meadows2024}. Hasilnya menunjukkan bahwa
 karakteristik tutupan lahan dan kemiringan berhubungan dengan kesalahan
 elevasi, sehingga performa suatu produk elevasi dapat berbeda menurut kondisi
-lingkungan. Penelitian tersebut menekankan bahwa keunggulan produk lebih
-mengikuti kondisi lingkungan serta metrik yang dinilai, sehingga tidak
-satu pun produk menempati posisi terbaik pada seluruh konteks penilaian.
+lingkungan. Dalam perbandingan tersebut, FABDEM secara konsisten berada
+pada peringkat pertama, sementara interpretasi galat tetap perlu
+mempertimbangkan kondisi lingkungan serta metrik yang dinilai.
 
 Pengaruh pemilihan data elevasi terhadap analisis banjir juga telah
 ditunjukkan dalam penelitian lain. Tique dkk.\ \cite{Tique2026}, misalnya,
@@ -254,12 +251,10 @@ menggunakan empat DEM, beberapa metode hidrologi, serta tiga model
 metode hidrologi dapat menghasilkan perbedaan performa pemetaan.
 
 Penelitian tersebut menunjukkan bahwa pilihan DEM dapat menjadi sumber
-variasi dalam \textit{flood susceptibility mapping}. Rancangan penelitian
-tersebut memvariasikan sejumlah komponen sekaligus, sehingga fokus
-penelitiannya berbeda dari penelitian ini. Penelitian ini mengambil gagasan
-tersebut dengan menyederhanakan perlakuan: sumber elevasi menjadi perlakuan
-utama, sedangkan Random Forest, \textit{flood inventory}, wilayah penelitian,
-serta prediktor non-elevasi dipertahankan sama.
+variasi dalam \textit{flood susceptibility mapping}. Berbeda dari rancangan
+tersebut yang memvariasikan beberapa komponen, penelitian ini memusatkan
+perlakuan pada sumber elevasi, sedangkan Random Forest, \textit{flood inventory},
+wilayah penelitian, serta prediktor non-elevasi dipertahankan sama.
 
 Tiga produk elevasi yang digunakan adalah SRTM, Copernicus DEM GLO-30, dan
 ALOS AW3D30 (\textit{ALOS World 3D} resolusi 30 meter, dari satelit
@@ -296,14 +291,12 @@ Berdasarkan latar belakang tersebut, rumusan masalah penelitian ini adalah:
 
 \begin{enumerate}
 \item Sejauh mana perbedaan karakteristik SRTM, Copernicus DEM GLO-30, dan
-ALOS AW3D30 tercermin pada parameter topografi (elevasi, kemiringan lereng,
-dan arah lereng) yang dihitung dari masing-masing produk pada wilayah
-pesisir Semarang--Demak?
-\item Bagaimana peta probabilitas \textit{flood susceptibility} yang
-dihasilkan Random Forest terkontrol ketika sumber produk elevasi yang
-digunakan untuk menghitung lima prediktor turunan DEM diganti, sementara
-prediktor lainnya dipertahankan sama, baik pada ukuran performa model
-maupun pada pola spasial?
+ALOS AW3D30 tercermin pada elevasi dan kemiringan lereng yang dihitung
+dari masing-masing produk di wilayah pesisir Semarang--Demak?
+\item Bagaimana perubahan performa model dan pola spasial peta probabilitas
+\textit{flood susceptibility} ketika sumber elevasi untuk menghitung lima
+prediktor turunan DEM diganti, sementara prediktor lainnya dipertahankan sama
+dalam eksperimen Random Forest terkontrol?
 \item Seberapa sensitif hasil \textit{flood susceptibility mapping}
 terhadap pergantian sumber produk elevasi dalam eksperimen terkontrol,
 dengan evaluasi yang memperhitungkan autokorelasi spasial?
@@ -318,15 +311,13 @@ Selanjutnya, rumusan masalah disingkat RM.
 Penelitian ini bertujuan untuk:
 
 \begin{enumerate}
-\item Mengukur perbedaan karakteristik produk elevasi serta parameternya
-(elevasi, kemiringan lereng, dan arah lereng) yang dihitung dari SRTM,
-Copernicus DEM GLO-30, dan ALOS AW3D30 pada wilayah pesisir
-Semarang--Demak.
+\item Mengukur perbedaan elevasi dan kemiringan lereng di pesisir
+Semarang--Demak berdasarkan ketiga produk elevasi yang dibandingkan.
 \item Menghasilkan tiga peta probabilitas \textit{flood susceptibility}
 menggunakan Random Forest dengan lima prediktor turunan DEM yang
 disesuaikan menurut produk elevasi yang digunakan, sementara prediktor
-lainnya dipertahankan sama, kemudian membandingkan performa serta pola
-spasialnya.
+lainnya dipertahankan sama, kemudian membandingkan performa model serta pola
+spasial peta.
 \item Menganalisis sensitivitas hasil \textit{flood susceptibility mapping}
 terhadap pemilihan sumber produk elevasi dalam kondisi eksperimen yang
 dikontrol.
@@ -347,9 +338,9 @@ memengaruhi hasil pemodelan banjir. Meadows dkk.\ telah menunjukkan bahwa
 kesalahan produk elevasi juga berkaitan dengan karakteristik tutupan lahan
 dan kemiringan \cite{meadows2024}.
 
-Oleh karena itu, mengetahui sensitivitas hasil \textit{flood susceptibility}
-terhadap sumber elevasi dapat membantu menentukan seberapa konsisten hasil
-pemetaan ketika data elevasi yang digunakan diganti. Penelitian ini juga
+Oleh karena itu, pengukuran sensitivitas hasil \textit{flood susceptibility}
+terhadap sumber elevasi dapat menunjukkan konsistensi hasil pemetaan ketika
+data elevasi yang digunakan diganti. Penelitian ini juga
 relevan untuk pengembangan alur kerja berbasis data terbuka dan Google Earth
 Engine karena ketiga produk elevasi dapat digunakan dalam lingkungan
 pengolahan yang sama \cite{gorelick2017}.
@@ -396,8 +387,7 @@ dalam eksperimen;
 pada ketiga eksperimen;
 \item produk elevasi menjadi faktor perlakuan utama;
 \item ESA (\textit{European Space Agency}) WorldCover digunakan untuk
-melakukan stratifikasi hasil
-berdasarkan tutupan lahan;
+melakukan stratifikasi hasil berdasarkan tutupan lahan;
 \item penelitian berfokus pada sensitivitas sumber elevasi dan tidak
 bertujuan menentukan DEM terbaik secara universal.
 \end{enumerate}
@@ -411,19 +401,18 @@ bertujuan menentukan DEM terbaik secara universal.
 
 \subsection{Flood Susceptibility Mapping}
 
-\textit{Flood susceptibility mapping} merupakan pendekatan untuk
-mengidentifikasi kecenderungan spasial suatu wilayah terhadap kejadian banjir
-berdasarkan karakteristik lingkungan. Berbeda dengan pemetaan genangan
-aktual yang menggambarkan lokasi yang benar-benar tergenang pada suatu
-kejadian, \textit{susceptibility mapping} berusaha mempelajari pola hubungan
-antara lokasi kejadian banjir dan kondisi lingkungan yang menyertainya.
+\textit{Flood susceptibility mapping} digunakan untuk mengidentifikasi
+kecenderungan spasial suatu wilayah mengalami banjir berdasarkan
+karakteristik lingkungan. Berbeda dari pemetaan genangan aktual yang
+menunjukkan lokasi tergenang dalam suatu kejadian, \textit{susceptibility mapping}
+mengkaji hubungan antara lokasi kejadian banjir dan kondisi lingkungannya.
 
 Pendekatan \textit{machine learning} dapat digunakan karena hubungan antara
-faktor lingkungan dan kejadian banjir dapat bersifat nonlinier dan melibatkan
-interaksi beberapa variabel. Dalam penelitian sebelumnya yang diterbitkan di
-jurnal SMDS (\textit{Statistical Modeling and Data Science}), pendekatan
-tersebut diterapkan dengan menggunakan \textit{flood inventory} Sentinel-1
-dan beberapa model \textit{ensemble learning} \cite{hakim2026}.
+faktor lingkungan dan kejadian banjir dapat bersifat nonlinier serta melibatkan
+interaksi beberapa variabel. Studi terdahulu yang diterbitkan di jurnal
+SMDS (\textit{Statistical Modeling and Data Science}) menerapkan pendekatan
+ini dengan \textit{flood inventory} Sentinel-1 dan beberapa model
+\textit{ensemble learning} \cite{hakim2026}.
 
 Penelitian Tique dkk.\ yang lebih baru juga menunjukkan penerapan beberapa
 model
@@ -458,11 +447,13 @@ ini merupakan label referensi pemodelan, bukan \textit{ground truth}
 lapangan yang sepenuhnya independen. Dengan struktur pelabelan tersebut,
 label kelas~1 menyatakan piksel yang terdeteksi banjir oleh pipeline
 proksi, sedangkan label kelas~0 menyatakan piksel yang tidak diidentifikasi
-sebagai banjir oleh pipeline yang sama --- di antaranya karena tidak
-terakuisisi citra Sentinel-1 atau berada di luar dukungan pengamatan
-banjir historis JRC --- dan bukan bukti bahwa lokasi tersebut tidak
-berbanjir; besaran \textit{false negative} pada kelas~0 tidak diketahui
-dalam eksperimen ini dan dibedah sebagai keterbatasan pada Subbab~4.8.
+sebagai banjir oleh pipeline yang sama, termasuk di luar area yang
+mendukung pembentukan label positif melalui mask JRC. Label kelas~0 bukan
+bukti bahwa lokasi tersebut tidak berbanjir. Besaran \textit{false negative}
+tidak diketahui dalam eksperimen ini. Implikasi batas dukungan label
+dibahas pada Subbab~\ref{ssec:pembahasan}. Istilah non-banjir pada
+pelaporan sampel dan piksel selanjutnya merujuk pada kelas~0 menurut
+definisi proksi ini.
 
 \subsection{Produk Elevasi Global}
 
@@ -474,7 +465,7 @@ sekitar $5{,}6$ cm) pada satu lintasan misi STS-99 tahun 2000
 \cite{farr2007}. Sinyal pita-C berinteraksi dengan kanopi vegetasi dan
 struktur bangunan, sehingga tinggi yang terukur lebih representatif bagi
 permukaan atas (kanopi serta atap bangunan) daripada permukaan tanah tanpa
-vegetasi (\textit{bare-earth}); dengan demikian, SRTM mempunyai
+vegetasi (\textit{bare-earth}). Dengan demikian, SRTM mempunyai
 karakteristik \textit{Digital Surface Model} (DSM).
 Acuan vertikal yang menyertai SRTM adalah EGM96. Produk ini telah banyak
 digunakan sebagai sumber topografi dalam penelitian
@@ -501,7 +492,7 @@ merekam citra pankromatik pada tiga arah pandang (maju, tengah, mundur) pada
 satu lintasan sehingga elevasi dapat direkonstruksi secara fotogrametrik,
 bukan dari interferometri radar. Karena berbasis citra optik, kawasan yang
 tertutupi awan berkelanjutan berpotensi menyisakan piksel tanpa nilai
-(\textit{void}); alur kerja penelitian memanfaatkan peta \textit{void mask}
+(\textit{void}). Alur kerja penelitian memanfaatkan peta \textit{void mask}
 resmi produk ini agar sumber nilai untuk setiap piksel, termasuk piksel
 hasil pengisian (\textit{fill}), terdokumentasi. Tinggi yang dilaporkan
 adalah tinggi ortometrik terhadap model geoid EGM96. Seperti kedua produk radar
@@ -538,10 +529,9 @@ literatur. Secara konseptual, alur transformasinya adalah:
 \end{tikzpicture}
 \end{center}
 
-Karena penelitian ini bertujuan menguji sumber elevasi, setiap parameter yang
-diturunkan dari DEM akan dihitung dengan prosedur yang sama untuk
-masing-masing produk. Prediktor yang tidak berasal dari DEM dipertahankan
-sama.
+Untuk menguji sumber elevasi, setiap parameter turunan DEM dihitung dengan
+prosedur yang sama untuk setiap produk, sedangkan prediktor non-DEM
+dipertahankan tetap.
 
 Daftar final prediktor \textbf{telah ditetapkan} dan dirinci lengkap pada
 Subbab~3.6, terdiri atas 5 prediktor yang dihitung dari produk elevasi yang
@@ -555,10 +545,9 @@ acuan sekaligus ketersediaan data di Google Earth Engine
 \subsection{Random Forest untuk Flood Susceptibility}
 
 Random Forest merupakan metode \textit{ensemble learning} yang membangun
-sejumlah \textit{decision tree} dan menggabungkan hasilnya untuk memperoleh
-prediksi \cite{breiman2001}. Metode ini banyak digunakan pada pemodelan
-spasial karena mampu menangani hubungan nonlinier dan interaksi
-antarvariabel.
+sejumlah \textit{decision tree} dan menggabungkan hasil prediksinya
+\cite{breiman2001}. Metode ini banyak digunakan dalam pemodelan spasial
+karena mampu menangani hubungan nonlinier dan interaksi antarvariabel.
 
 Dalam penelitian sebelumnya \cite{hakim2026}, Random Forest menghasilkan
 kinerja tertinggi di antara tujuh model yang dibandingkan berdasarkan
@@ -567,9 +556,9 @@ meskipun perbedaan dengan beberapa model teratas tidak signifikan secara
 statistik.
 
 Oleh karena itu, penelitian ini menggunakan Random Forest sebagai
-\textbf{model yang dikontrol}. Tujuannya bukan menguji kembali Random Forest
-melawan model lain, tetapi mempertahankan algoritma pemodelan sehingga
-faktor yang diuji dapat difokuskan pada sumber elevasi.
+\textbf{model yang dikontrol}. Fokusnya bukan membandingkan Random Forest dengan model lain, melainkan
+mempertahankannya sebagai algoritma pemodelan agar pengujian berpusat pada
+sumber elevasi.
 
 Secara mekanistik, setiap \textit{decision tree} dibangun pada sampel
 bootstrap dari data latih (bagging), dan pada setiap titik pemisahan
@@ -612,7 +601,7 @@ susceptibility & susceptibility & susceptibility \\
 \end{tabular}
 \end{center}
 
-Perbedaan ketiga output kemudian digunakan untuk mengukur
+Ketiga keluaran dibandingkan untuk mengukur
 \textit{DEM-source sensitivity}.
 
 Pengukuran sensitivitas tersebut menuntut kehati-hatian evaluasi. Titik
@@ -668,7 +657,7 @@ Yuwono dkk.\ (2024) \cite{yuwono2024} & Perbandingan DEM pada pemodelan hidrolik
 Verdyansyah dkk.\ (2025) \cite{verdyansyah2025} & \textit{Machine learning} + banjir di Kabupaten Demak & Konteks pemodelan banjir berbasis \textit{machine learning} lokal & Sumber elevasi divariasikan secara sistematis \\
 Hakim dkk.\ (SMDS) \cite{hakim2026} & Sentinel-1 + tujuh model untuk \textit{flood susceptibility} Semarang--Demak & \textit{Flood inventory} Sentinel-1 dan baseline Random Forest & RF dipertahankan dan DEM dijadikan faktor eksperimen \\
 Fikri dkk.\ (2026) \cite{fikri2026} & Pengaruh karakteristik/resolusi DEM terhadap \textit{flood modelling} & Sensitivitas output terhadap data elevasi & Fokus pada \textit{source sensitivity} dan \textit{spatial susceptibility} \\
-Studi Tique dkk.\ (2026) \cite{Tique2026} & Multi-DEM + ML \textit{flood susceptibility} & Bukti empiris bahwa pilihan DEM berpengaruh & Variabel lain dikontrol sehingga fokus pada sumber DEM \\
+Studi Tique dkk.\ (2026) \cite{Tique2026} & Multi-DEM + ML \textit{flood susceptibility} & Bukti empiris bahwa pilihan DEM berpengaruh & Fokus variasi sumber DEM pada satu algoritme RF \\
 \bottomrule
 \end{tabular}
 \end{adjustbox}
@@ -690,7 +679,7 @@ tunggal pada satu faktor menjadi ciri rancangan penelitian ini.
 
 \subsection{Kerangka Teori}
 
-Kerangka teori penelitian dapat dirumuskan sebagai rangkaian alur berikut:
+Kerangka teori penelitian diringkas dalam rangkaian alur berikut:
 
 \begin{figure}[ht]
 \centering
@@ -798,13 +787,10 @@ lanjut menurut kelas tutupan lahan.
 
 \subsection{Pendekatan dan Desain Penelitian}
 
-Penelitian ini menggunakan pendekatan kuantitatif dengan desain
-\textbf{eksperimen terkontrol}. Eksperimen dilakukan untuk menguji
-sensitivitas hasil \textit{flood susceptibility mapping} terhadap pemilihan
-produk elevasi.
-
-Faktor perlakuan dalam penelitian adalah \textbf{sumber produk elevasi},
-dengan tiga level perlakuan:
+Penelitian kuantitatif ini menggunakan desain
+\textbf{eksperimen terkontrol} untuk menguji sensitivitas hasil
+\textit{flood susceptibility mapping} terhadap pemilihan produk elevasi.
+Faktor perlakuan, yaitu \textbf{sumber produk elevasi}, memiliki tiga level:
 
 \begin{enumerate}
 \item SRTM;
@@ -812,12 +798,10 @@ dengan tiga level perlakuan:
 \item ALOS AW3D30.
 \end{enumerate}
 
-Random Forest digunakan sebagai model yang sama pada ketiga eksperimen.
-\textit{Flood inventory}, wilayah penelitian, prediktor non-elevasi, prosedur
-preprocessing, prosedur sampling, dan prosedur evaluasi dipertahankan sama.
-Dengan demikian, perbedaan hasil antarperlakuan terutama ditujukan untuk
-merepresentasikan pengaruh perubahan sumber elevasi. Ringkasan desain
-eksperimen disajikan pada Tabel~\ref{tab:desain}.
+Pada ketiga eksperimen, model Random Forest, \textit{flood inventory},
+wilayah penelitian, prediktor non-elevasi, preprocessing, sampling, dan
+evaluasi dipertahankan sama. Dengan demikian, perbandingan berfokus pada
+sumber elevasi (Tabel~\ref{tab:desain}).
 
 \begin{table}[ht]
 \centering
@@ -905,6 +889,7 @@ yang sama, sehingga ketiga produk elevasi dapat diolah dengan prosedur yang
 konsisten.
 
 \subsection{Pembentukan Flood Inventory}
+\label{ssec:flood-inventory}
 
 Flood inventory dibentuk menggunakan citra Sentinel-1 SAR. Tahapan utamanya:
 
@@ -947,7 +932,7 @@ menghasilkan artefak pada inventori banjir, misalnya artefak geometris
 radar pita-C (\textit{layover} dan \textit{foreshortening}) pada area
 berlereng curam, bukan membatasi domain pesisir.
 Karena acuan lereng berasal dari SRTM, label ini tidak sepenuhnya independen
-terhadap karakteristik satu produk perlakuan; implikasi hal tersebut
+terhadap karakteristik satu produk perlakuan. Implikasi hal tersebut
 dipertimbangkan dalam pembahasan pada Subbab~4.8.
 
 \subsection{Pembentukan Prediktor}
@@ -973,7 +958,7 @@ sampai $360^{\circ}$ sehingga mengandung diskontinuitas melingkar pada batas
 $0^{\circ}$/$360^{\circ}$. Untuk menghindari kesalahan interpretasi nilai
 sudut oleh model, \textit{aspect} direpresentasikan melalui dekomposisi
 sinus dan kosinusnya, serta satu indikator biner yang menandai piksel dengan
-arah lereng terdefinisi; pada daerah datar, arah lereng tidak terdefinisi
+arah lereng terdefinisi. Pada daerah datar, arah lereng tidak terdefinisi
 sehingga kasus tersebut dipisahkan secara eksplisit oleh indikator. Kelima fitur tersebut
 diulang identik untuk masing-masing produk elevasi yang diuji, sehingga jumlah
 prediktor yang diturunkan dari DEM sama pada ketiga konfigurasi.
@@ -1007,20 +992,20 @@ Normalized Difference Water Index}), dan NDBI (\textit{Normalized
 Difference Built-up Index}).
 \end{itemize}
 
-Perlu dicatat bahwa prediktor hidrologi dari MERIT Hydro menyimpan informasi
-topografi yang diturunkan dari produk DEM lain (\textit{MERIT DEM});
-variabel tersebut tetap memuat muatan topografi meski tidak dihitung dari
-produk elevasi yang diuji. Karena dihitung dari satu sumber yang sama dan
-dipertahankan identik antarperlakuan, variabel ini bukan sumber variasi
-hasil, tetapi interpretasi perannya sebagai prediktor non-elevasi perlu
-diperhitungkan.
+Prediktor hidrologi MERIT Hydro memuat informasi topografi yang
+diturunkan dari \textit{MERIT DEM}, bukan dari produk elevasi perlakuan.
+Karena bersumber dari satu produk dan dipertahankan identik pada semua
+perlakuan, prediktor ini bukan sumber variasi antarperlakuan. Namun,
+kandungan topografinya tetap perlu diperhitungkan saat prediktor ini
+ditafsirkan sebagai variabel non-elevasi.
 
 Delapan variabel \textit{dummy} tutupan lahan dihasilkan dari
 kategorisasi kelas ESA WorldCover \cite{zanaga2021} (kode 10 tutupan pohon,
 30 padang rumput, 40 lahan pertanian, 50 kawasan terbangun, 60 lahan tanpa
-vegetasi, 80 badan air, 90 lahan basah herba, dan 95 mangrove), dengan kelas
-tutupan semak belukar (kode 20) sebagai kategori acuan yang tidak
-dimodelkan. Dengan demikian, jumlah total fitur tertutup menjadi
+vegetasi, 80 badan air, 90 lahan basah herba, dan 95 mangrove). Kelas
+tutupan semak belukar (kode 20) tidak muncul pada sampel utama sehingga tidak
+menghasilkan variabel dummy pada evaluasi tersebut. Dengan demikian, jumlah
+total prediktor pada evaluasi utama menjadi
 $5+11+8=24$ variabel prediktor.
 
 \subsection{Eksperimen Random Forest Terkontrol}
@@ -1052,13 +1037,14 @@ dengan 400 pohon, jumlah minimum sampel pada simpul daun
 (\textit{minimum samples leaf}) 2,
 pemberatan kelas \textit{balanced} (\texttt{class\_weight}), dan
 \textit{random state} yang disamakan antarperlakuan. Kedua implementasi
-ini tidak dipandang sebagai satu model yang sama: hanya sumber elevasi dan
-input yang dibersamaan, sedangkan metrik pada scikit-learn dilaporkan
-sebagai evaluasi kinerja berbasis sampel dan peta serta statistik spasial
-dibawa keluar dari model GEE; perbandingan antarproduk tetap terkendali di
-dalam masing-masing jalur, sementara kesetaraan antar kedua jalur tidak
-dituntut. Pengambilan sampel
-dilakukan terstratifikasi sebanyak 2.978 titik per kelas
+tidak dipandang sebagai satu model yang sama. Jalur GEE memakai kode tutupan
+lahan sebagai satu masukan dan melatih model pada seluruh
+sampel beku utama, sedangkan jalur scikit-learn memakai variabel dummy
+tutupan lahan dan pemisahan sampel untuk evaluasi. Representasi 17 masukan GEE berbeda dari 24 masukan pada evaluasi utama
+scikit-learn. Metrik scikit-learn bukan validasi langsung terhadap
+model pembentuk peta GEE. Perbandingan antarproduk elevasi dipertahankan
+dalam masing-masing jalur, bukan sebagai bukti kesetaraan kedua implementasi.
+Pengambilan sampel dilakukan terstratifikasi sebanyak 2.978 titik per kelas
 (\textit{seed}~42) mengikuti jumlah populasi berlabel pada kedua kelas,
 kemudian data dibagi 75\% latih dan 25\% uji dan diperlakukan identik pada
 ketiga perlakuan. Estimasi ketahanan hasil terhadap efek autokorelasi
@@ -1299,8 +1285,8 @@ Bab ini menyajikan hasil eksperimen terkontrol untuk satu kejadian banjir pada
 satu wilayah kajian (\textit{Area of Interest}), dengan satu sampel induk
 (\textit{master sample}) acak yang terdiri atas 2.978 titik banjir dan 2.978
 titik non-banjir ($n=5.956$). Sampel induk dipertahankan identik pada ketiga
-konfigurasi produk elevasi. Setiap model Random Forest \cite{breiman2001}
-menggunakan 24 prediktor, yaitu 11 prediktor non-elevasi, 8 variabel
+konfigurasi produk elevasi. Pada evaluasi utama scikit-learn, setiap model
+Random Forest \cite{breiman2001} menggunakan 24 prediktor, yaitu 11 prediktor non-elevasi, 8 variabel
 \textit{dummy} tutupan lahan, dan 5 prediktor topografi yang diturunkan dari
 masing-masing produk DEM yang diuji. Pengolahan dilakukan menggunakan Google
 Earth Engine dan lingkungan komputasi Kaggle (GPU T4). Statistik spasial pada
@@ -1319,7 +1305,8 @@ mencakup sekitar 97,9\% wilayah kajian. ROC-AUC validasi silang spasial pada
 domain sempit di sekitar perairan hanya sekitar $0{,}70$, sedangkan pada
 seluruh wilayah kajian mencapai $0{,}870$ hingga $0{,}890$. Selisih sekitar
 $0{,}17$ ini menunjukkan bahwa hasil evaluasi perlu ditafsirkan dengan
-mempertimbangkan desain pengambilan sampel kelas non-banjir. Seluruh
+mempertimbangkan desain pengambilan sampel kelas non-banjir, bukan sebagai
+estimasi kausal pengaruh perluasan domain. Seluruh
 hasil berikutnya berasal dari desain yang telah diperbaiki.
 
 \subsection{Hasil Karakteristik Produk Elevasi}
@@ -1335,12 +1322,16 @@ SRTM, $39{,}06$~m untuk Copernicus DEM GLO-30, dan $41{,}36$~m untuk ALOS
 AW3D30, dengan nilai median masing-masing sebesar $8{,}50$~m, $4{,}94$~m, dan
 $8{,}53$~m. Selisih (\textit{offset}) vertikal rata-rata terhadap SRTM adalah
 $-1{,}56$~m pada Copernicus DEM GLO-30 dan $+0{,}39$~m pada ALOS AW3D30. Nilai
-tersebut dilaporkan tanpa transformasi koreksi vertikal, sehingga merupakan
-gabungan perbedaan acuan vertikal bawaan antarproduk (EGM96 untuk SRTM dan
-ALOS AW3D30, EGM2008 untuk Copernicus DEM GLO-30) serta perbedaan
-karakteristik pengukuran masing-masing produk; karena SRTM dan ALOS AW3D30
-memakai model geoid yang sama, selisih kedua produk tersebut tidak dapat
-disandarkan pada perbedaan datum geoid. Sementara itu, rata-rata
+tersebut merupakan rerata selisih elevasi pada piksel yang valid pada
+kedua produk yang dibandingkan, bukan pengurangan dua rerata wilayah
+dengan cakupan valid yang dapat berbeda. Tidak dilakukan transformasi
+koreksi vertikal. SRTM dan ALOS AW3D30 sama-sama memakai model geoid EGM96
+sebagai acuan tinggi. Karena itu, selisih keduanya tidak dapat dijelaskan
+oleh perbedaan model geoid. Copernicus DEM GLO-30 memakai EGM2008.
+Selisih antarproduk dapat mencerminkan perbedaan karakteristik pengukuran
+dan, pada pasangan yang berbeda model geoid, perbedaan acuan tinggi.
+Kontribusi masing-masing belum dipisahkan dalam penelitian ini.
+Sementara itu, rata-rata
 kemiringan lereng (\textit{slope}) yang dihasilkan oleh masing-masing produk
 adalah $3{,}03^{\circ}$ pada SRTM, $2{,}46^{\circ}$ pada Copernicus DEM GLO-30,
 dan $3{,}13^{\circ}$ pada ALOS AW3D30.
@@ -1455,7 +1446,7 @@ optimistis akibat autokorelasi spasial \cite{roberts2017}, kemampuan
 generalisasi spasial model diuji lebih lanjut menggunakan validasi silang
 spasial 4-\textit{fold} (\textit{4-fold spatial cross-validation}). Pada skema
 ini, wilayah kajian dibagi ke dalam 16 blok berbasis kuantil bujur dan
-lintang; setiap \textit{fold} melatih model pada 12 blok dan menguji kinerja
+lintang. Setiap \textit{fold} melatih model pada 12 blok dan menguji kinerja
 prediksi probabilitas pada 4 blok yang dipisahkan. Hasil validasi silang
 spasial disajikan pada Tabel~\ref{tab:spatial-cv}.
 
@@ -1531,7 +1522,7 @@ lahan mengikuti kelas ESA WorldCover yang benar-benar hadir pada sampel
 masing-masing \textit{seed}: kelas~20 (semak belukar) hadir pada sampel
 \textit{seed}~100, 2024, dan 7 sehingga jumlah input efektif membesar menjadi
 25 pada \textit{seed} tersebut, sedangkan sampel utama serta \textit{seed}~42
-dan 99 memakai 24 prediktor; kontras antarproduk dalam satu \textit{seed}
+dan 99 memakai 24 prediktor. Kontras antarproduk dalam satu \textit{seed}
 tetap dihitung berpasangan sehingga pembandingan antarproduk tidak terganggu
 perbedaan ini.
 
@@ -1558,8 +1549,8 @@ sebesar $0{,}802$, lebih rendah dibandingkan nilai acuan sebesar $0{,}852$
 (selisih sekitar $0{,}05$), diikuti oleh Copernicus DEM GLO-30 sebesar
 $0{,}795$ dan ALOS AW3D30 sebesar $0{,}792$. Hasil ini menunjukkan bahwa alur
 pemodelan mampu mendekati tingkat kinerja acuan secara kasar, namun urutan
-peringkat pada pengujian pembanding ini tidak sama dengan eksperimen utama;
-urutan peringkat antarproduk karenanya bergantung pada himpunan sampel yang
+peringkat pada pengujian pembanding ini tidak sama dengan eksperimen utama.
+Urutan peringkat antarproduk karenanya bergantung pada himpunan sampel yang
 dipakai, temuan yang memperkuat keterbatasan pada Subbab~4.8 mengenai
 sensitivitas hasil terhadap desain sampel. Di samping itu, perbandingan
 dengan eksperimen awal pada domain terbatas di sekitar perairan kembali
@@ -1573,11 +1564,9 @@ hasil pemodelan pada seluruh wilayah kajian.
 Evaluasi sensitivitas spasial dilakukan melalui perbandingan piksel demi
 piksel pada seluruh wilayah penelitian (sekitar $1{,}4$~juta piksel) di
 antara ketiga peta probabilitas \textit{flood susceptibility}. Ringkasan hasil
-perbandingan disajikan pada Tabel~\ref{tab:sensitivitas}. Pola yang diperoleh
-bersifat konsisten pada tiga skema pengambilan sampel yang telah diuji, yaitu
-pengambilan sampel acak berbasis piksel, stratifikasi dengan kelas non-banjir
-terbatas pada zona sekitar perairan, dan stratifikasi dengan kelas non-banjir
-yang mencakup seluruh wilayah kajian. Pada ketiganya, \textbf{pasangan SRTM
+perbandingan disajikan pada Tabel~\ref{tab:sensitivitas}. Pembahasan
+berikut dibatasi pada ketiga peta dari eksperimen utama. Pada perbandingan
+antarpeta tersebut, \textbf{pasangan SRTM
 dan ALOS AW3D30 menunjukkan
 tingkat kemiripan spasial tertinggi, sedangkan pasangan yang melibatkan
 Copernicus DEM GLO-30 menghasilkan perbedaan spasial yang lebih besar}.
@@ -1617,11 +1606,12 @@ transisi dari kelas~4 ke kelas~5 sebanyak 25.679~piksel. Sebaliknya,
 perbandingan antara SRTM dan ALOS AW3D30 lebih didominasi oleh kesesuaian pada
 kelas yang sama (elemen diagonal), seperti pada kelas~2 sebanyak
 174.072~piksel dan pada kelas~5 sebanyak 91.194~piksel. Angka matriks
-tersebut dihitung pada reduksi server Google Earth Engine dengan kelimpahan
-piksel berbeda sedikit dari jumlah piksel valid pada raster peta ter-ekspor
-akibat perbedaan registrasi grid reduksi dan grid ekspor; persentase dan
-luas pada laporan ini dihitung pada domain masing-masing tabel, bukan pada
-domain yang diharapkan identik antar tabel.
+tersebut berasal dari reduksi server Google Earth Engine, sedangkan
+Moran's I peta dihitung dari raster ter-ekspor. Jumlah piksel pada kedua
+analisis tidak identik. Perbedaan registrasi grid dan kriteria piksel valid
+perlu diperhatikan, tetapi kontribusinya terhadap selisih tersebut belum
+dipisahkan. Persentase dan luas dibaca menurut domain masing-masing tabel,
+bukan dengan mengasumsikan penyebut yang identik antaranalisis.
 
 \subsection{Sensitivitas Berdasarkan Tutupan Lahan}
 
@@ -1659,10 +1649,9 @@ di bawah tingkat kesesuaian tutupan pohon dan kawasan terbangun.
 
 \subsection{Analisis Autokorelasi Spasial}
 
-Analisis diagnostik autokorelasi spasial dilakukan sesuai prosedur pada
-Subbab~3.8.1 dan dilaporkan pada dua unit analisis yang tidak dapat disatukan
-tafsirannya, yaitu titik sampel OOF (probabilitas dan residual) dan raster
-peta probabilitas.
+Sesuai prosedur pada Subbab~3.8.1, autokorelasi spasial dilaporkan terpisah
+untuk titik sampel OOF (probabilitas dan residual) dan raster peta
+probabilitas karena unit analisis dan tafsirnya berbeda.
 
 \subsubsection{Autokorelasi Spasial pada Titik Sampel}
 
@@ -1746,11 +1735,11 @@ diskontinuitas di batas \textit{fold} dapat ikut memengaruhi nilai $I$.
 
 \subsubsection{Autokorelasi Spasial pada Peta Probabilitas}
 
-Pengujian kedua dilakukan pada raster probabilitas kerawanan banjir yang
-dihasilkan model Google Earth Engine. Bobot spasial memakai \textit{queen
-contiguity} delapan tetangga yang distandardisasi per baris pada grid yang
-sama untuk ketiga DEM; piksel valid tanpa tetangga valid tidak disertakan.
-Hasil pengujian disajikan pada Tabel~\ref{tab:moran-raster}.
+Moran's I dihitung pula pada raster probabilitas kerawanan dari model Google
+Earth Engine. Bobot spasial menggunakan \textit{queen contiguity} delapan
+tetangga yang distandardisasi per baris pada grid yang sama untuk ketiga DEM.
+Piksel valid tanpa tetangga valid tidak disertakan. Hasil disajikan pada
+Tabel~\ref{tab:moran-raster}.
 
 \begin{table}[ht]
 \centering
@@ -1780,17 +1769,13 @@ ini konsisten dengan sifat permukaan geografis yang berubah secara kontinu
 dan menunjukkan adanya pengelompokan spasial yang kuat pada ketiga peta
 probabilitas.
 
-Hasil raster tersebut tidak dapat dibandingkan secara numerik dengan Moran's
-I pada titik OOF karena keduanya menggunakan unit analisis dan definisi bobot
-spasial yang berbeda. Selain itu, raster probabilitas merupakan keluaran
-model yang dilatih menggunakan sampel induk secara keseluruhan, bukan
-prediksi OOF. Oleh karena itu, autokorelasi pada tiga kelompok informasi
-tersebut membawa tafsiran yang berbeda: nilai pada probabilitas OOF
-menggambarkan koherensi spasial keluaran model yang tidak pernah melihat
-titiknya, nilai pada residual OOF menggambarkan struktur galat yang belum
-terjelaskan, sedangkan nilai pada raster menggambarkan struktur spasial
-permukaan prediksi penuh. Ketiganya digunakan secara terpisah dan tidak
-gabungan dalam tafsiran pada bab ini.
+Moran's I raster tidak dapat dibandingkan secara numerik dengan Moran's I
+titik OOF karena unit analisis dan definisi bobot spasial berbeda. Raster
+merupakan keluaran model yang dilatih pada seluruh sampel, bukan prediksi OOF.
+Karena itu, probabilitas OOF menggambarkan koherensi spasial pada titik yang
+tidak dilihat model, residual OOF menggambarkan struktur galat yang belum
+terjelaskan, dan raster menggambarkan permukaan prediksi penuh. Ketiganya
+ditafsirkan secara terpisah.
 
 \subsection{Pembahasan}
 \label{ssec:pembahasan}
@@ -1801,12 +1786,12 @@ aspek karakteristik parameter topografi (Rumusan Masalah~1), SRTM, Copernicus
 DEM GLO-30, dan ALOS AW3D30 menghasilkan representasi bentang lahan makro yang
 sejalan pada wilayah pesisir Semarang--Demak, namun memiliki perbedaan
 sistematis pada elevasi median di dataran rendah pesisir serta variasi
-kemiringan lereng lokal akibat perbedaan karakteristik sensor dan acuan
-vertikal bawaan (EGM96 pada SRTM dan ALOS AW3D30 dibandingkan EGM2008 pada
-Copernicus DEM GLO-30). Kedua, dari aspek pemodelan \textit{flood
+kemiringan lereng lokal. Kontribusi karakteristik sensor dan acuan tinggi
+terhadap perbedaan tersebut belum dipisahkan. Kedua, dari aspek pemodelan \textit{flood
 susceptibility} berbasis Random Forest (Rumusan Masalah~2), ketiga sumber
-produk elevasi mampu menghasilkan peta kerawanan banjir dengan daya
-diskriminasi yang tinggi, baik pada skema evaluasi \textit{holdout} acak
+produk elevasi menghasilkan peta kerawanan pada jalur GEE, sedangkan
+evaluasi scikit-learn menunjukkan diskriminasi terhadap label proksi
+pada skema \textit{holdout} acak
 (ROC-AUC $0{,}932$--$0{,}940$) maupun validasi silang spasial 4-\textit{fold}
 (ROC-AUC $0{,}870$--$0{,}890$).
 
@@ -1845,49 +1830,55 @@ Di luar keempat rumusan masalah utama tersebut, eksperimen ini juga mengungkap
 temuan metodologis tambahan mengenai tingginya kepekaan estimasi kinerja model
 terhadap \textbf{desain pengambilan sampel kelas non-banjir}. Pergeseran
 domain sampel non-banjir dari zona sekitar perairan permanen menuju seluruh
-wilayah kajian meningkatkan ROC-AUC validasi silang spasial dari sekitar
+wilayah kajian disertai perbedaan ROC-AUC validasi silang spasial dari sekitar
 $0{,}70$ menjadi $0{,}870$ hingga $0{,}890$ ($\Delta\text{AUC} \approx
 0{,}17$) dibandingkan selisih antarproduk elevasi
 ($\Delta\text{AUC} \approx 0{,}01$). Kedua angka ini berasal dari domain
-sampel yang berbeda, sehingga perbandingannya bersifat indikatif. Meskipun
+sampel yang berbeda, sehingga perbandingannya bersifat deskriptif dan tidak
+mengisolasi pengaruh domain atau satu komponen desain tertentu. Meskipun
 \textit{block bootstrap} dan pengujian multi-\textit{seed} mendukung keunggulan
 Copernicus DEM GLO-30 pada eksperimen ini, hasil tersebut tidak dimaksudkan
 untuk menetapkan satu produk elevasi sebagai pilihan terbaik di seluruh
 wilayah atau kejadian banjir lain.
 
-Keterbatasan penelitian ini dipandang dari dua sisi, yaitu cakupan eksperimen
-dan konstruksi label. Dari sisi cakupan, eksperimen hanya mencakup satu
-periode kejadian banjir pada satu wilayah kajian dengan satu nilai
-\textit{seed} utama untuk pembuatan peta (kestabilan metrik telah diuji
-lintas lima \textit{seed}), sehingga hasil tidak dimaksudkan menggambarkan
-perilaku model pada kejadian banjir lain atau wilayah tersebut.
+Eksperimen mencakup satu periode kejadian banjir pada satu wilayah kajian dan
+menggunakan satu \textit{seed} utama untuk pembuatan peta. Kestabilan metrik
+telah diuji pada lima \textit{seed}. Karena itu, hasil ini belum menggambarkan
+perilaku model pada kejadian banjir atau wilayah lain.
 
 Dari sisi konstruksi label, \textit{flood inventory} Sentinel-1 yang digunakan
 merupakan label proksi pengamatan, bukan data pengamatan lapangan
 (\textit{ground truth}) yang independen. Konsekuensinya sejalan dengan
-definisi pada Subbab~3.5: label kelas~1 menyatakan piksel yang terdeteksi
+definisi pada Subbab~2.2 dan prosedur pada
+Subbab~\ref{ssec:flood-inventory}: label kelas~1 menyatakan piksel yang terdeteksi
 banjir oleh pipeline proksi, sedangkan label kelas~0 menyatakan piksel yang
 tidak diidentifikasi banjir oleh pipeline yang sama dan bukan bukti lokasi
-tersebut tidak berbanjir; besaran \textit{false negative} pada kelas~0 tidak
+tersebut tidak berbanjir. Besaran \textit{false negative} pada kelas~0 tidak
 terkuantifikasi dalam eksperimen ini. Label juga tidak sepenuhnya
 independen terhadap salah satu produk perlakuan karena penyaringan kemiringan
 lereng menggunakan SRTM, sementara penyaringan perairan permanen memanfaatkan
 pita JRC Global Surface Water yang cakupannya terbatas (masker mencakup
 sekitar 12,8\%--14,4\% wilayah kajian dan nilai \textit{occurrence} terbaca
-pada sekitar 4,3\% wilayah kajian), sehingga label banjir hanya dapat
-terbentuk di dalam area cakupan tersebut. Kecocokan label hasil ekstraksi
-ulang juga baru mencapai 70\% terhadap 1.870 titik penelitian acuan akibat
-pembaruan arsip Sentinel-1. Karena himpunan label yang sama diterapkan identik
+pada sekitar 4,3\% wilayah kajian), sehingga label positif hanya dapat
+terbentuk di dalam area dukungan tersebut, sedangkan kandidat kelas~0
+mencakup area di dalam dan di luarnya. Kecocokan label hasil ekstraksi
+ulang dilaporkan sebesar 70\% terhadap 1.870 titik penelitian acuan.
+Perbedaan ini belum dapat diatribusikan hanya pada pembaruan arsip
+Sentinel-1. Karena himpunan label yang sama diterapkan identik
 pada ketiga konfigurasi, kesetaraan perlakuan antarproduk elevasi tetap
 terjaga, namun kesetaraan pengolahan tersebut tidak menghilangkan seluruh
 sumber bias label. Dengan demikian, hasil evaluasi perlu ditafsirkan sebagai
 kemampuan model mereproduksi label proksi tersebut, bukan sebagai ukuran
-akurasi terhadap seluruh kejadian banjir aktual di lapangan. Prediksi kerawanan banjir di luar area cakupan pita JRC
-karenanya perlu diinterpretasikan sebagai hasil ekstrapolasi spasial model.
+akurasi terhadap seluruh kejadian banjir aktual di lapangan. Di luar
+dukungan label positif JRC, prediksi berasal dari model yang dapat menerima
+sampel kelas~0 dari area tersebut tetapi tidak memiliki contoh positif
+setempat. Prediksi ini tidak membuktikan keberadaan atau ketiadaan banjir
+aktual di luar dukungan label positif.
 Terdapat pula perbedaan sifat representasi permukaan antara SRTM yang
 berbasis radar pita-C dan Copernicus DEM GLO-30 serta ALOS AW3D30 yang
 berkarakteristik \textit{Digital Surface Model} (DSM), ditambah perbedaan
-datum vertikal yang dilaporkan tanpa koreksi geoid.
+acuan tinggi (EGM96 pada SRTM dan ALOS AW3D30, EGM2008 pada Copernicus
+DEM GLO-30) yang dilaporkan tanpa koreksi geoid.
 
 Batasan yang memengaruhi interpretasi juga bersumber dari prediktor. Prediktor
 hidrologi berasal dari MERIT Hydro, yakni turunan produk elevasi di luar
@@ -1897,32 +1888,32 @@ DEM bersifat tidak langsung. Prediktor terkait air seperti NDWI, MNDWI, dan
 jarak ke badan air menangkap informasi yang sebagian tumpang tindih dengan
 definisi label berbasis Sentinel-1, sehingga tingkat probabilitas absolut
 pada masing-masing peta perlu dibaca dengan hati-hati meskipun perbandingan
-antarproduk tetap valid.
+antarproduk memakai label yang sama.
 
 Granularitas evaluasi spasial masih terbatas pada 16 blok kuantil, dan
 implementasi pemodelan dilakukan pada dua lingkungan dengan konfigurasi
 serumpun, yaitu peta dengan 300 pohon pada Google Earth Engine serta metrik
-evaluasi dengan 400 pohon pada scikit-learn, sehingga statistik spasial
-berasal dari output model pertama sedangkan metrik performa berasal dari
-model kedua. Keterbatasan tersebut menjadi dasar bagi arah pengembangan yang
+evaluasi dengan 400 pohon pada scikit-learn. Statistik spasial raster
+berasal dari peta Google Earth Engine, sedangkan statistik titik OOF dan
+metrik performa berasal dari evaluasi scikit-learn. Keterbatasan tersebut
+menjadi dasar bagi arah pengembangan yang
 diuraikan pada Subbab~5.2.
 
 Analisis diagnostik autokorelasi spasial membawa keterbatasan yang
 perlu dicatat. \textit{Spatial cross-validation} memakai 16 blok bersebelahan
 tanpa zona penyangga, sehingga titik di tepi blok dapat berdekatan dengan
-data latih; kebocoran berkurang tetapi tidak dapat dinyatakan hilang. Global
+data latih. Kebocoran berkurang tetapi tidak dapat dinyatakan hilang. Global
 Moran's I adalah analisis diagnostik: hasilnya tidak membuktikan ada atau
 tidaknya \textit{spatial leakage}, dan hasil yang tidak signifikan tidak
 menunjukkan ketiadaan autokorelasi. Nilai Moran's I juga bergantung pada
-definisi bobot spasial; uji kepekaan dilakukan untuk $k=5$, $8$, dan $12$,
+definisi bobot spasial. Uji kepekaan dilakukan untuk $k=5$, $8$, dan $12$,
 tetapi definisi lain (misalnya pita jarak) tidak diuji.
 
-Selain itu, probabilitas OOF tiap \textit{fold} berasal dari model yang
-berbeda, dan analisis dilakukan pada evaluasi utama saja; Moran's I belum
-dihitung pada dataset multi-\textit{seed}. Uji permutasi mengasumsikan
-keterpertukaran nilai di bawah $H_0$, yang dapat dilanggar oleh residual yang
-heteroskedastis. Perbedaan Moran's I antar-DEM tidak diuji secara
-inferensial.
+Probabilitas OOF tiap \textit{fold} berasal dari model berbeda, dan Moran's I
+hanya dianalisis pada evaluasi utama, bukan pada dataset multi-\textit{seed}.
+Uji permutasi mengasumsikan keterpertukaran nilai di bawah $H_0$, yang dapat
+dilanggar jika residual bersifat heteroskedastis. Perbedaan Moran's I
+antar-DEM tidak diuji secara inferensial.
 
 \FloatBarrier
 
@@ -1944,7 +1935,7 @@ keempat pertanyaan rumusan masalah pada Subbab~1.2:
 ke dalam parameter topografi yang dihitung dari masing-masing produk:
 perbedaan antarproduk dilaporkan secara deskriptif dan spasial pada elevasi
 serta kemiringan lereng, termasuk nilai median elevasi dan offset vertikal
-antarproduk (Subbab~4.1); arah lereng masuk sebagai prediktor melalui
+antarproduk (Subbab~4.1). Arah lereng masuk sebagai prediktor melalui
 dekomposisi sinus--kosinus beserta indikator validitasnya, tanpa ringkasan
 numerik lintasproduk yang dilaporkan tersendiri.
 \item Ketiga peta probabilitas kerawanan banjir dihasilkan menggunakan sampel,
@@ -1958,7 +1949,7 @@ ketiganya serupa dengan variasi terbatas pada kelas risiko sangat tinggi
 tetapi konsisten: keunggulan Copernicus DEM GLO-30 terhadap ALOS AW3D30 dan
 terhadap SRTM konsisten pada sampel ulang blok (Subbab~4.4), sedangkan
 selang kepercayaan untuk pasangan SRTM dan ALOS AW3D30 masih memuat nol
-sehingga peringkat keduanya belum dapat dipisahkan; autokorelasi spasial
+sehingga peringkat keduanya belum dapat dipisahkan. Autokorelasi spasial
 diperhitungkan melalui validasi silang spasial dan \textit{bootstrap} pada
 tingkat blok (Subbab~3.8). Diagnostik autokorelasi spasial menguatkan rancangan
 tersebut: Moran's I residual OOF bernilai positif dan signifikan pada ketiga
