@@ -1,0 +1,17 @@
+check,pass,left_sha256,right_sha256,rows,exact_probability_differences,max_abs_probability_delta,left_bootstrap_sha256,right_bootstrap_sha256,source,fold,n_points,n_predictions
+prediction_copy_comparison,True,7098a3d98899c164e225255f4707a11dbcf505701b416d245620bd639a64278d,54bcc93bc2bd54538811cc161e52176334fffc2ffd48918aff1c1a71bcc583cb,17868.0,2323.0,3.3306690738754696e-16,db600f0f81f7bfb63a60ffed81d267842857cdae5aa7bdda934f642b06074307,db600f0f81f7bfb63a60ffed81d267842857cdae5aa7bdda934f642b06074307,,,,
+fold_label_block_order,True,,,,,0.0,,,srtm,0,2489.0,2489.0
+fold_label_block_order,True,,,,,0.0,,,glo30,0,2489.0,2489.0
+fold_label_block_order,True,,,,,0.0,,,aw3d30,0,2489.0,2489.0
+fold_label_block_order,True,,,,,0.0,,,srtm,1,1366.0,1366.0
+fold_label_block_order,True,,,,,0.0,,,glo30,1,1366.0,1366.0
+fold_label_block_order,True,,,,,0.0,,,aw3d30,1,1366.0,1366.0
+fold_label_block_order,True,,,,,0.0,,,srtm,2,1333.0,1333.0
+fold_label_block_order,True,,,,,0.0,,,glo30,2,1333.0,1333.0
+fold_label_block_order,True,,,,,0.0,,,aw3d30,2,1333.0,1333.0
+fold_label_block_order,True,,,,,0.0,,,srtm,3,768.0,768.0
+fold_label_block_order,True,,,,,0.0,,,glo30,3,768.0,768.0
+fold_label_block_order,True,,,,,0.0,,,aw3d30,3,768.0,768.0
+stored_probability_match,True,,,,,0.0,,,srtm,all,5956.0,5956.0
+stored_probability_match,True,,,,,0.0,,,glo30,all,5956.0,5956.0
+stored_probability_match,True,,,,,0.0,,,aw3d30,all,5956.0,5956.0

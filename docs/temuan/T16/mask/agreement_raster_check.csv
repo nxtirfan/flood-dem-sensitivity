@@ -1,0 +1,4 @@
+pair,shared_class_valid_pixels,matrix_agree_pixels,matrix_agreement_percent,stored_agreement_valid_pixels,stored_agreement_true_pixels,stored_agreement_percent,mask_difference_pixels,agreement_true_difference_pixels,denominator
+srtm_vs_glo30,1444085,1146218,79.37330558796747,1444085,1146217,79.37323633996614,0,1,shared valid class rasters vs agreement raster valid domain
+srtm_vs_aw3d30,1429582,1204815,84.27743214450098,1429582,1204816,84.27750209501798,0,1,shared valid class rasters vs agreement raster valid domain
+glo30_vs_aw3d30,1429582,1165421,81.52180147763472,1429582,1165421,81.52180147763472,0,0,shared valid class rasters vs agreement raster valid domain
