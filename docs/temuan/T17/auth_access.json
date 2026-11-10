@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-11-10T10:47:17.745402+00:00",
+  "environment_presence": {
+    "GOOGLE_APPLICATION_CREDENTIALS": false,
+    "GEE_SERVICE_ACCOUNT_JSON": false,
+    "FLOOD_DEM_ROOT": false
+  },
+  "declared_file_presence": [
+    {
+      "path": "/kaggle/input/datasets/nxtirfan/gee-service-account-credential/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/kaggle/input/gee-service-account-credential/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/content/drive/MyDrive/GEE_DEM_Sensitivity_Semarang_Demak/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/content/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/kaggle/working/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/tmp/hoplite/workspace/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/content/drive/MyDrive/Analisis Flood DEM Susceptibility/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/kaggle/working/Analisis Flood DEM Susceptibility/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/tmp/hoplite/workspace/Analisis Flood DEM Susceptibility/gee-service-account.json",
+      "exists": false
+    },
+    {
+      "path": "/home/hoplite/.config/earthengine/credentials",
+      "exists": false
+    },
+    {
+      "path": "/home/hoplite/.config/gcloud/application_default_credentials.json",
+      "exists": false
+    }
+  ],
+  "versions": {
+    "earthengine-api": "1.7.52",
+    "playwright": "1.65.0"
+  },
+  "gee_computation_executed": false,
+  "initialization": "BLOCKED",
+  "exception_type": "EEException",
+  "requests_authentication": true
+}
