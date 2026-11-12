@@ -1,0 +1,5 @@
+Fungsi Global Moran's I siap (kNN titik, queen raster, permutasi kondisional).
+Wrote diagnostics to /tmp/hoplite/workspace/docs/temuan/T16/statistics
+OOF rows: 21; I matches at 1e-12: 21/21
+Raster rows: 6; bootstrap rows: 6
+Max paired CSV prediction delta: 3.3306690738754696e-16

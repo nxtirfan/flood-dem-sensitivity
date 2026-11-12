@@ -1,0 +1,7 @@
+# T17 diagnostic files
+
+- `t17_slope_diagnostic.js` — standalone Code Editor request for the exact 30 frozen T16 audit coordinates. It compares four explicitly named native/UTM routes; none is claimed to be the effective historic label grid. It records SRTM slope and threshold mask weights/validity, input coordinates, snapped sampling-pixel centers, CRS, affine transform, transform WKT, nominal scale, and the selected ROI names/fallback. No new stratified sample locations, label edits, training, or full Sentinel-1/flood-label rebuild; `sampleRegions` is used only to extract values at the fixed audit points.
+- `build_t17_diagnostic.py` — regenerates the JS coordinate list and provenance hashes from the frozen audit, notebook, and manifest. It validates exactly 30 positive unique coordinates.
+- `PROVENANCE_AND_LIMITS.md` — provenance, API references, metadata-check plan, access status, and interpretive limits.
+
+Access is **BLOCKED** in the parent environment (Google sign-in / Earth Engine authentication); this request is **NOT_EXECUTED**. No GEE values or simulated results are included. After authentication, the script reports selected ROI names and issues small projection metadata calls plus one bounded FeatureCollection evaluation (120 expected rows). The optional Drive export remains off by default. `node --check` passed, but that is syntax-only, not a runtime verification. See provenance notes for the separate current asset/Sentinel-1 metadata-check plan.

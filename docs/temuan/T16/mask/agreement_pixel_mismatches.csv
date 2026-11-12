@@ -1,0 +1,3 @@
+pair,row_zero_based,column_zero_based,x_center_epsg32749_m,y_center_epsg32749_m,left_dem_class,right_dem_class,stored_agreement_value,matrix_equality_value,probability_left,probability_right,interpretation_limit
+srtm_vs_glo30,525,1332,459255.0,9242775.0,4,4,0.0,1,0.6017693877220154,0.6617781519889832,discrete class disagreement identified; cause (threshold/float/projection/serialization) is unproven
+srtm_vs_aw3d30,525,1332,459255.0,9242775.0,4,3,1.0,0,0.6017693877220154,0.5652406215667725,discrete class disagreement identified; cause (threshold/float/projection/serialization) is unproven

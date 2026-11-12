@@ -1,0 +1,221 @@
+notebook,cell,line,text
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,0,10,"3. wilayah penelitian (AOI),"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,9,147,"keys = ['ROI_MODE', 'SURROUNDING_RECTANGLE', 'BEFORE_START', 'BEFORE_END', 'AFTER_START',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,237,"def verify_all_rasters(grid=None, aoi_pixel_count=None):"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,281,if aoi_pixel_count and have(f'prob_{DEM_NAMES[0]}'):
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,283,"add('piksel_valid_vs_hitungan_GEE', 'PASS' if abs(nv - aoi_pixel_count) / aoi_pixel_count < 1e-3 else 'INFO',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,284,f'raster={nv} | GEE={aoi_pixel_count} | selisih relatif={(nv - aoi_pixel_count) / aoi_pixel_count:+.2e}')
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,286,# v27.1 (T10): jumlah piksel valid per raster tidak jauh dari hitungan piksel AOI GEE.
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,287,"# Toleransi 5e-2 mengakomodasi (a) lubang NoData di dalam AOI (AW3D30 ~1,4%) dan"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,288,# (b) perbedaan semantik tepi AOI (mask raster = footprint bersinggungan; hitungan
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,289,"# GEE = pusat piksel; selisih tepi ~0,4%). Ekspor tanpa mask AOI tetap terdeteksi"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,291,if aoi_pixel_count:
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,295,_rel = abs(_nv - aoi_pixel_count) / aoi_pixel_count
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,296,"add(f'valid_vs_aoi:{_n}', 'PASS' if _rel < _tol else 'FAIL',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,297,f'raster={_nv} | hitungan piksel AOI (GEE)={aoi_pixel_count} | selisih relatif={_rel:+.2e}')
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,298,if aoi_pixel_count and 'proxy_flood_label_sentinel1' in infos:
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,300,_rel = abs(_nv - aoi_pixel_count) / aoi_pixel_count
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,301,"add('valid_vs_aoi:proxy_flood_label_sentinel1',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,303,f'raster={_nv} | hitungan piksel AOI (GEE)={aoi_pixel_count} | selisih relatif={_rel:+.2e}')
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,370,"tt = _gee_table_any(f'transition_{a}_vs_{b}.csv', index_col=0)"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,381,"at = _gee_table_any('area_per_risk_class_km2.csv', index_col=0)"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,390,"f'selisih relatif total = {rel:.2e} (lokal memakai 900 m2/piksel, GEE memakai pixelArea)')"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,13,95,"GEE_ASSET_IDS = ['FAO/GAUL/2015/level2', 'COPERNICUS/S1_GRD', 'COPERNICUS/S2_SR_HARMONIZED',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,15,5,ROI_MODE = 'SEMDEMAK_ONLY'
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,15,6,"SURROUNDING_RECTANGLE = [109.95, -7.45, 111.05, -6.65]  # [lon_min, lat_min, lon_max, lat_max]"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,3,"wilayah_indonesia = ee.FeatureCollection('FAO/GAUL/2015/level2').filter(ee.Filter.eq('ADM0_NAME', 'Indonesia'))"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,5,if ROI_MODE == 'SEMDEMAK_ONLY':
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,12,roi = semarang_demak.geometry()
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,14,roi = ee.Geometry.Rectangle(SURROUNDING_RECTANGLE)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,17,# v27.1 (T10): masker AOI eksplisit untuk seluruh raster. Nilai 0/1 di seluruh grid
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,19,"# 1 di dalam AOI, 0 di luar AOI. updateMask menahan mask lama di posisi yang"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,20,"# ter-mask, sehingga idiom unmask(0) ini wajib sebagai penjaga piksel luar AOI."
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,21,_AOI_MASK = ee.Image.constant(1).clip(roi).unmask(0)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,19,9,.filterBounds(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,19,17,return col.median().clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,19,32,coords = feature.geometry().coordinates()
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,19,38,.reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,20,9,penjaga terhadap artefak radar C-band di lereng selatan AOI
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,21,21,dem_for_label = ee.Image('USGS/SRTMGL1_003').select('elevation').clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,21,25,jrc_water = ee.Image('JRC/GSW1_4/GlobalSurfaceWater').select('occurrence').clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,21,42,flood_label = flood_connected.rename('flood').clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,5,merit = ee.Image('MERIT/Hydro/v1_0_1').clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,21,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,31,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,36,.filterBounds(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,40,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,44,.filterBounds(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,48,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,52,.filterBounds(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,57,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,69,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,85,]).clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,5,return ee.Image(cfg['asset']).select(cfg['band']).clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,6,return ee.ImageCollection(cfg['asset']).select(cfg['band']).mosaic().clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,14,aw3d_msk = ee.ImageCollection(DEM_CONFIGS['aw3d30']['asset']).select('MSK').mosaic().clip(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,15,_msk_area = ee.Image.pixelArea().addBands(aw3d_msk.rename('msk'))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,16,_msk_stats = _msk_area.reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,36,"dem_raw[_name] = dem_raw[_name].reproject(crs=ANALYSIS_CRS, scale=ANALYSIS_SCALE).clip(roi)"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,44,off = diff.reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,73,"[elev, slp, asp_sin, asp_cos, asp_valid]).clip(roi)"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,84,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,29,3,stats = img.select(band).reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,29,28,.rename(f'elev_diff_{a}_{b}').clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,30,10,"kelas-0 rata-rata 4,2 m vs 42,7 m se-AOI). **Fix v24**:"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,30,12,"air; pool kembali se-AOI (97,95% dari label=0). Probe piksel di bawah"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,10,"# diperlakukan BUKAN air; pool kelas-0 kembali se-AOI (1.382.033 px,"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,17,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,21,tot = ee.Image.constant(1).updateMask(mask_img).rename(name).reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,43,"_n_aoi = _masked_count(ee.Image.constant(1), 'px')"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,49,print(f'[probe] piksel AOI (grid 30 m): {_n_aoi}')
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,50,"print(f'[probe] JRC valid: {_n_jrc} ({100.0 * _n_jrc / max(_n_aoi, 1):.2f}% dari AOI)')"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,33,24,"return (ee.ImageCollection('COPERNICUS/S1_GRD').filterBounds(roi).filterDate(a, b)"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,33,30,'s2_composite': _ids(ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED').filterBounds(roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,33,35,".filterDate(ee.Date(AFTER_START).advance(-d, 'day'), AFTER_START).filterBounds(roi))"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,38,21,"estimasi se-AOI, bukan hanya dalam domain sabuk."
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,49,55,.clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,49,59,ref_stats = prob_map['srtm'].reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,49,75,"# updateMask(_p.gte(0)), dan updateMask(_AOI_MASK) menjamin piksel di luar AOI menjadi"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,49,96,.updateMask(_AOI_MASK)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,5,# (marker -1) di dalam AOI; selain itu NoData. Statistik reduceRegion(geometry=roi)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,6,# tidak berubah nilainya karena piksel di luar AOI memang tidak pernah masuk hitungan.
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,14,.updateMask(_AOI_MASK)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,15,.rename('delta_abs').clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,18,.updateMask(_AOI_MASK)
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,19,.rename('agreement').clip(roi))
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,24,mean_abs = delta_abs[p].reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,28,agree = agreement_map[p].reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,42,transition_matrices = {}
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,45,hist = code_img.reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,55,transition_matrices[p] = mat
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,56,"mat.to_csv(os.path.join(OUTPUT_DIR, f'transition_{p[0]}_vs_{p[1]}.csv'))"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,58,"transition_matrices[('srtm', 'glo30')]"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,54,5,area_img = ee.Image.pixelArea().addBands(risk_class[name])
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,54,6,res = area_img.reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,54,17,"area_df.to_csv(os.path.join(OUTPUT_DIR, 'area_per_risk_class_km2.csv'))"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,56,13,.reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,57,3,"for _f in ['sensitivity_summary.csv', 'area_per_risk_class_km2.csv', 'worldcover_sensitivity.csv',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,57,4,"'transition_srtm_vs_glo30.csv', 'transition_srtm_vs_aw3d30.csv', 'transition_glo30_vs_aw3d30.csv']:"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,37,"for _f in ['sensitivity_summary.csv', 'area_per_risk_class_km2.csv', 'worldcover_sensitivity.csv',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,38,"'transition_srtm_vs_glo30.csv', 'transition_srtm_vs_aw3d30.csv',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,39,'transition_glo30_vs_aw3d30.csv']:
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,45,_aoi_px = None
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,47,_aoi_px = int(round(float(prob_map[DEM_NAMES[0]].mask().rename('m').reduceRegion(
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,50,"print('Piksel valid peta (GEE, grid asli):', _aoi_px)"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,55,_st['aoi_pixel_count_gee'] = _aoi_px
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,71,# diberi mask AOI yang sama; grid/CRS/resolusi/transformasi tidak berubah.
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,72,"export_raster(_name, _kind, _img.toFloat().updateMask(_AOI_MASK).unmask(EXPORT_NODATA), GRID, fetch_tile_gee)"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,75,"EXPORT_CHECKS = verify_all_rasters(GRID, _aoi_px)"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,69,14,"'statistik_spasial_peta': ['sensitivity_summary.csv', 'area_per_risk_class_km2.csv',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,69,15,"'transition_srtm_vs_glo30.csv', 'transition_srtm_vs_aw3d30.csv',"
+Proposal Baru/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,69,16,"'transition_glo30_vs_aw3d30.csv', 'worldcover_sensitivity.csv'],"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,0,10,"3. wilayah penelitian (AOI),"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,9,147,"keys = ['ROI_MODE', 'SURROUNDING_RECTANGLE', 'BEFORE_START', 'BEFORE_END', 'AFTER_START',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,237,"def verify_all_rasters(grid=None, aoi_pixel_count=None):"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,281,if aoi_pixel_count and have(f'prob_{DEM_NAMES[0]}'):
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,283,"add('piksel_valid_vs_hitungan_GEE', 'PASS' if abs(nv - aoi_pixel_count) / aoi_pixel_count < 1e-3 else 'INFO',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,284,f'raster={nv} | GEE={aoi_pixel_count} | selisih relatif={(nv - aoi_pixel_count) / aoi_pixel_count:+.2e}')
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,286,# v27.1 (T10): jumlah piksel valid per raster tidak jauh dari hitungan piksel AOI GEE.
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,287,"# Toleransi 5e-2 mengakomodasi (a) lubang NoData di dalam AOI (AW3D30 ~1,4%) dan"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,288,# (b) perbedaan semantik tepi AOI (mask raster = footprint bersinggungan; hitungan
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,289,"# GEE = pusat piksel; selisih tepi ~0,4%). Ekspor tanpa mask AOI tetap terdeteksi"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,291,if aoi_pixel_count:
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,295,_rel = abs(_nv - aoi_pixel_count) / aoi_pixel_count
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,296,"add(f'valid_vs_aoi:{_n}', 'PASS' if _rel < _tol else 'FAIL',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,297,f'raster={_nv} | hitungan piksel AOI (GEE)={aoi_pixel_count} | selisih relatif={_rel:+.2e}')
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,298,if aoi_pixel_count and 'proxy_flood_label_sentinel1' in infos:
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,300,_rel = abs(_nv - aoi_pixel_count) / aoi_pixel_count
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,301,"add('valid_vs_aoi:proxy_flood_label_sentinel1',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,303,f'raster={_nv} | hitungan piksel AOI (GEE)={aoi_pixel_count} | selisih relatif={_rel:+.2e}')
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,370,"tt = _gee_table_any(f'transition_{a}_vs_{b}.csv', index_col=0)"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,381,"at = _gee_table_any('area_per_risk_class_km2.csv', index_col=0)"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,10,390,"f'selisih relatif total = {rel:.2e} (lokal memakai 900 m2/piksel, GEE memakai pixelArea)')"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,13,95,"GEE_ASSET_IDS = ['FAO/GAUL/2015/level2', 'COPERNICUS/S1_GRD', 'COPERNICUS/S2_SR_HARMONIZED',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,15,5,ROI_MODE = 'SEMDEMAK_ONLY'
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,15,6,"SURROUNDING_RECTANGLE = [109.95, -7.45, 111.05, -6.65]  # [lon_min, lat_min, lon_max, lat_max]"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,3,"wilayah_indonesia = ee.FeatureCollection('FAO/GAUL/2015/level2').filter(ee.Filter.eq('ADM0_NAME', 'Indonesia'))"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,5,if ROI_MODE == 'SEMDEMAK_ONLY':
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,12,roi = semarang_demak.geometry()
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,14,roi = ee.Geometry.Rectangle(SURROUNDING_RECTANGLE)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,17,# v27.1 (T10): masker AOI eksplisit untuk seluruh raster. Nilai 0/1 di seluruh grid
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,19,"# 1 di dalam AOI, 0 di luar AOI. updateMask menahan mask lama di posisi yang"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,20,"# ter-mask, sehingga idiom unmask(0) ini wajib sebagai penjaga piksel luar AOI."
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,16,21,_AOI_MASK = ee.Image.constant(1).clip(roi).unmask(0)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,19,9,.filterBounds(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,19,17,return col.median().clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,19,32,coords = feature.geometry().coordinates()
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,19,38,.reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,20,9,penjaga terhadap artefak radar C-band di lereng selatan AOI
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,21,21,dem_for_label = ee.Image('USGS/SRTMGL1_003').select('elevation').clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,21,25,jrc_water = ee.Image('JRC/GSW1_4/GlobalSurfaceWater').select('occurrence').clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,21,42,flood_label = flood_connected.rename('flood').clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,5,merit = ee.Image('MERIT/Hydro/v1_0_1').clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,21,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,31,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,36,.filterBounds(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,40,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,44,.filterBounds(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,48,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,52,.filterBounds(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,57,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,69,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,25,85,]).clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,5,return ee.Image(cfg['asset']).select(cfg['band']).clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,6,return ee.ImageCollection(cfg['asset']).select(cfg['band']).mosaic().clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,14,aw3d_msk = ee.ImageCollection(DEM_CONFIGS['aw3d30']['asset']).select('MSK').mosaic().clip(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,15,_msk_area = ee.Image.pixelArea().addBands(aw3d_msk.rename('msk'))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,16,_msk_stats = _msk_area.reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,36,"dem_raw[_name] = dem_raw[_name].reproject(crs=ANALYSIS_CRS, scale=ANALYSIS_SCALE).clip(roi)"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,44,off = diff.reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,73,"[elev, slp, asp_sin, asp_cos, asp_valid]).clip(roi)"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,27,84,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,29,3,stats = img.select(band).reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,29,28,.rename(f'elev_diff_{a}_{b}').clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,30,10,"kelas-0 rata-rata 4,2 m vs 42,7 m se-AOI). **Fix v24**:"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,30,12,"air; pool kembali se-AOI (97,95% dari label=0). Probe piksel di bawah"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,10,"# diperlakukan BUKAN air; pool kelas-0 kembali se-AOI (1.382.033 px,"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,17,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,21,tot = ee.Image.constant(1).updateMask(mask_img).rename(name).reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,43,"_n_aoi = _masked_count(ee.Image.constant(1), 'px')"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,49,print(f'[probe] piksel AOI (grid 30 m): {_n_aoi}')
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,31,50,"print(f'[probe] JRC valid: {_n_jrc} ({100.0 * _n_jrc / max(_n_aoi, 1):.2f}% dari AOI)')"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,33,24,"return (ee.ImageCollection('COPERNICUS/S1_GRD').filterBounds(roi).filterDate(a, b)"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,33,30,'s2_composite': _ids(ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED').filterBounds(roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,33,35,".filterDate(ee.Date(AFTER_START).advance(-d, 'day'), AFTER_START).filterBounds(roi))"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,38,21,"estimasi se-AOI, bukan hanya dalam domain sabuk."
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,49,55,.clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,49,59,ref_stats = prob_map['srtm'].reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,49,75,"# updateMask(_p.gte(0)), dan updateMask(_AOI_MASK) menjamin piksel di luar AOI menjadi"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,49,96,.updateMask(_AOI_MASK)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,5,# (marker -1) di dalam AOI; selain itu NoData. Statistik reduceRegion(geometry=roi)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,6,# tidak berubah nilainya karena piksel di luar AOI memang tidak pernah masuk hitungan.
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,14,.updateMask(_AOI_MASK)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,15,.rename('delta_abs').clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,18,.updateMask(_AOI_MASK)
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,19,.rename('agreement').clip(roi))
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,24,mean_abs = delta_abs[p].reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,28,agree = agreement_map[p].reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,42,transition_matrices = {}
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,45,hist = code_img.reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,55,transition_matrices[p] = mat
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,56,"mat.to_csv(os.path.join(OUTPUT_DIR, f'transition_{p[0]}_vs_{p[1]}.csv'))"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,53,58,"transition_matrices[('srtm', 'glo30')]"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,54,5,area_img = ee.Image.pixelArea().addBands(risk_class[name])
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,54,6,res = area_img.reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,54,17,"area_df.to_csv(os.path.join(OUTPUT_DIR, 'area_per_risk_class_km2.csv'))"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,56,13,.reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,57,3,"for _f in ['sensitivity_summary.csv', 'area_per_risk_class_km2.csv', 'worldcover_sensitivity.csv',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,57,4,"'transition_srtm_vs_glo30.csv', 'transition_srtm_vs_aw3d30.csv', 'transition_glo30_vs_aw3d30.csv']:"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,37,"for _f in ['sensitivity_summary.csv', 'area_per_risk_class_km2.csv', 'worldcover_sensitivity.csv',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,38,"'transition_srtm_vs_glo30.csv', 'transition_srtm_vs_aw3d30.csv',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,39,'transition_glo30_vs_aw3d30.csv']:
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,45,_aoi_px = None
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,47,_aoi_px = int(round(float(prob_map[DEM_NAMES[0]].mask().rename('m').reduceRegion(
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,50,"print('Piksel valid peta (GEE, grid asli):', _aoi_px)"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,55,_st['aoi_pixel_count_gee'] = _aoi_px
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,71,# diberi mask AOI yang sama; grid/CRS/resolusi/transformasi tidak berubah.
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,72,"export_raster(_name, _kind, _img.toFloat().updateMask(_AOI_MASK).unmask(EXPORT_NODATA), GRID, fetch_tile_gee)"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,59,75,"EXPORT_CHECKS = verify_all_rasters(GRID, _aoi_px)"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,69,14,"'statistik_spasial_peta': ['sensitivity_summary.csv', 'area_per_risk_class_km2.csv',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,69,15,"'transition_srtm_vs_glo30.csv', 'transition_srtm_vs_aw3d30.csv',"
+Proposal Baru/v27_delivery/Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb,69,16,"'transition_glo30_vs_aw3d30.csv', 'worldcover_sensitivity.csv'],"
