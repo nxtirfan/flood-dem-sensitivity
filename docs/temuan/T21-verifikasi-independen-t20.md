@@ -157,4 +157,4 @@ Inventarisasi arsip lama, duplikat, dan berkas sementara dilakukan dengan pemeri
 - **Dihapus:** `docs/temuan/T19/__pycache__/` (residu build, tidak dirujuk dokumen mana pun) dan `olds/arsip_draft_proposal/Outdated_proposal_revisi-final_source.zip` (duplikat usang: tex lama 102.997 B tanpa frasa L1057, tergantikan zip kanonis).
 - **Dipulihkan/dibangun ulang:** `proposal_revisi-final.bbl` + `.bcf` dari HEAD; `proposal_revisi-final_source.zip` dibangun ulang sesuai resep AGENTS.md §5.5 (tex, bbl, bcf, references.bib, logo_unnes.png, proposal_revisi-final.pdf, 11 figure di `figures/` — 17 entri, 7.718.356 B).
 
-Laporan ini tidak melakukan perubahan apa pun pada data hasil dan tidak di-commit, sesuai instruksi.
+Laporan ini tidak melakukan perubahan apa pun pada data hasil dan tidak di-commit saat pembuatan (verifikasi read-only); laporan kini tersimpan di repo dan masuk commit `9e4bc08` (18 Nov 2026).
