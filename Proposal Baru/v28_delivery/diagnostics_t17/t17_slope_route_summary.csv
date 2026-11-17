@@ -1,0 +1,5 @@
+route,n_rows,n_valid,n_slope_lt_5,n_slope_gte_5,min_slope_deg,max_slope_deg,max_abs_diff_vs_historic_export
+feature_slope_final_sampling_grid_control,30,30,0,30,5.103612,11.483837,0.0
+feature_srtm_slope_analysis_grid,30,30,0,30,5.103612,11.483837,0.0
+label_native_projection_control,30,30,30,0,1.316168,4.9872,10.1676687
+label_slope_forced_analysis_grid_control,30,30,8,22,4.986845,11.230177,0.2536602

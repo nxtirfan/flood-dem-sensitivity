@@ -1,0 +1,37 @@
+{
+  "generated_at_utc": "2026-11-12T16:24:11.203335+00:00",
+  "dataset": "FAO/GAUL/2015/level2",
+  "roi_selection": "primary Kota Semarang + Demak",
+  "selected_adm2_names": [
+    "Demak",
+    "Kota Semarang"
+  ],
+  "feature_count": 2,
+  "geodesic_area_km2": 1310.0914779201482,
+  "asset_status": {
+    "FAO/GAUL/2015/level2": {
+      "status": "OK",
+      "type": "TABLE",
+      "updateTime": "2023-12-04T09:37:14.012831Z",
+      "version": null
+    },
+    "USGS/SRTMGL1_003": {
+      "status": "OK",
+      "type": "IMAGE",
+      "updateTime": "2022-01-12T12:32:47.055141Z",
+      "version": null
+    },
+    "COPERNICUS/S1_GRD": {
+      "status": "OK",
+      "type": "IMAGE_COLLECTION",
+      "updateTime": "2026-11-12T16:22:17.817644Z",
+      "version": null
+    },
+    "JRC/GSW1_4/GlobalSurfaceWater": {
+      "status": "OK",
+      "type": "IMAGE",
+      "updateTime": "2025-06-05T20:36:52.798175Z",
+      "version": null
+    }
+  }
+}

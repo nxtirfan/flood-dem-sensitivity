@@ -8,7 +8,8 @@ Folder ini berisi **file/folder yang TIDAK dipakai naskah final**, dipindahkan 4
 |---|---|
 | `proposal_revisi-final.tex` + `.pdf/.bbl/.aux/.bcf/.blg/.log/.out/.run.xml/.toc` | Naskah resmi 43 hlm + file build (jangan dihapus) |
 | `references.bib` | Sumber pustaka bersama (entri [21] = WorldCover v200, DOI 10.5281/zenodo.7254221; key `zanaga2021` dipakai naskah) |
-| `Flood_DEM_Sensitivity_Notebook_v26.ipynb` | Notebook final: pipeline utama v24 + block bootstrap 16 blok + multiseed 5 seed |
+| `Flood_DEM_Sensitivity_Notebook_v28.ipynb` | Notebook kanonik final (72 sel): pipeline utama + block bootstrap 16 blok + multiseed 5 seed + rekomputasi Moran AW3D30 + verifikasi T17 & poligon AOI independen |
+| `v28_delivery\` | Folder delivery aktif lengkap (`Analisis Flood DEM Susceptibility\` + `diagnostics_t17\` + `Laporan_v28.md`) |
 | `figures\` | Dua gambar BAB IV (`fig_roc.png`, `fig_agreement.png`, konten sumber v26) — tex memakai path `figures/...` |
 | `logo_unnes.png` | Logo cover (TETAP di root; di-`\includegraphics`) |
 | `hasil_kaggle\` | SATU SUMBER KEBENARAN: 25 artefak v26 flat (v24 diarsip ke sini sebagai `hasil_kaggle_v24\`) |
@@ -32,6 +33,10 @@ Folder ini berisi **file/folder yang TIDAK dipakai naskah final**, dipindahkan 4
 | `hasil_kaggle_v20\` | Pilot n=5872; spatial holdout INVALID | USANG — bukan acuan angka |
 | `hasil_kaggle_v22\` | Run utama pra-fix MET-001 (label kelas-0 = sabuk JRC) | USANG — bukan acuan angka |
 | `hasil_kaggle_v23\` | Bridging baseline (SRTM 0.802 vs 0.852) | ARSIP — angkanya masih dikutip 4.4/4.7 sebagai run terpisah |
+| `v27_delivery\` | Bundle delivery v27 (pra-konsolidasi v28; 2 piksel pulau AW3D30 belum dikecualikan di Moran & manifest pra-sinkronisasi) | Arsip — digantikan `v28_delivery\` (13 Nov 2026) |
+| `Flood_DEM_Sensitivity_Notebook_v27_maskAOI.ipynb` | Notebook v27 pasca-patch mask AOI (sebelum integrasi T16–T18) | Arsip — digantikan `Flood_DEM_Sensitivity_Notebook_v28.ipynb` |
+| `hasil_kaggle_v26_legacy\` | 7 file CSV spasial pra-masking v26 + file sementara konversi | Arsip — `hasil_kaggle\` kini sinkron penuh dengan CSV pasca-masking `v28_delivery` |
+| `colab_t17_fallback_output_arsip\` | Folder sementara hasil path fallback saat eksekusi Colab diagnostik T17 (isinya sudah disalin ke `v28_delivery/diagnostics_t17/`) | Arsip |
 
 Catatan:
 - **Angka resmi** naskah = `..\hasil_kaggle\` (25 file v26, flat — sumber TUNGGAL sejak 4 Nov).
